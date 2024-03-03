@@ -1,1 +1,3 @@
-<x-layout></x-layout>
+<x-layout>
+    <livewire:last-posts />
+</x-layout>

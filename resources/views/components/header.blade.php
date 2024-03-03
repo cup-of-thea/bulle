@@ -7,7 +7,7 @@
             </a>
         </div>
         <div class="flex gap-x-12">
-            <a href="{{ route('posts.index') }}" class="text-sm font-semibold leading-6 text-gray-900">
+            <a href="{{ route('blog') }}" class="text-sm font-semibold leading-6 text-gray-900">
                 Blog
             </a>
             <a href="{{ route('association') }}" class="text-sm font-semibold leading-6 text-gray-900">
