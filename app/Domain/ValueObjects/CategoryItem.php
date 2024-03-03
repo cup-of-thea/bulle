@@ -36,7 +36,7 @@ readonly class CategoryItem
             $lastPostTitle,
             $lastPostSlug,
             $lastPostDate,
-            collect($authors)->map(fn($author) => AuthorItem::from($author->name, $author->slug))
+            collect($authors)->map(fn($author) => PostItemAuthor::from($author->name, $author->slug))
         );
     }
 }

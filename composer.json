@@ -4,7 +4,7 @@
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "require": {
         "php": "^8.2",
         "andreiio/blade-iconoir": "^4.1",
