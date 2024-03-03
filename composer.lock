@@ -5664,16 +5664,16 @@
         },
         {
             "name": "thea/markdown-blog",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cup-of-thea/markdown-blog.git",
-                "reference": "9bb19c31ad6d6ed1fc4662c4b6863d27d857e7d8"
+                "reference": "c5e688956dfbaa96606cbcd3284a21d2d07f5c7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cup-of-thea/markdown-blog/zipball/9bb19c31ad6d6ed1fc4662c4b6863d27d857e7d8",
-                "reference": "9bb19c31ad6d6ed1fc4662c4b6863d27d857e7d8",
+                "url": "https://api.github.com/repos/cup-of-thea/markdown-blog/zipball/c5e688956dfbaa96606cbcd3284a21d2d07f5c7c",
+                "reference": "c5e688956dfbaa96606cbcd3284a21d2d07f5c7c",
                 "shasum": ""
             },
             "require": {
@@ -5714,9 +5714,9 @@
             "description": "Laravel package dedicated to manage a blog in markdown",
             "support": {
                 "issues": "https://github.com/cup-of-thea/markdown-blog/issues",
-                "source": "https://github.com/cup-of-thea/markdown-blog/tree/1.4.0"
+                "source": "https://github.com/cup-of-thea/markdown-blog/tree/1.5.0"
             },
-            "time": "2024-03-02T14:24:59+00:00"
+            "time": "2024-03-03T03:33:32+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
