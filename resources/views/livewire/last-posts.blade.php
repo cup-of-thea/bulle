@@ -17,12 +17,13 @@
                 @foreach($this->posts as $post)
                     <article class="flex max-w-xl flex-col items-start justify-between">
                         <div class="flex items-center gap-x-4 text-xs">
-                            <time datetime="{{ $post->rawDate }}" class="text-gray-500">
-                                {{ $post->date }}
+                            <time datetime="{{ $post->date->format('Y-m-d') }}" class="text-gray-500">
+                                {{ $post->date->format('LLL') }}
                             </time>
-                            @if($post->category_slug)
-                                <a href="{{ route('categories.show', $post->category_slug) }}" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                                    {{ $post->category_title }}
+                            @if($post->category?->slug)
+                                <a href="{{ route('categories.show', $post->category->slug) }}"
+                                   class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                                    {{ $post->category->title }}
                                 </a>
                             @endif
                         </div>

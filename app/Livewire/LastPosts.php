@@ -2,46 +2,32 @@
 
 namespace App\Livewire;
 
-use Carbon\Carbon;
-use Illuminate\Support\Facades\DB;
+use App\Domain\UseCases\LastPostsQuery;
+use App\Domain\ValueObjects\PostItem;
+use Illuminate\Contracts\View\View;
+use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
 class LastPosts extends Component
 {
-    #[Computed]
-    public function posts()
+    private LastPostsQuery $lastPostsQuery;
+
+    public function boot(LastPostsQuery $lastPostsQuery): void
     {
-        // @todo: thea/markdown-blog add new query
-        $posts = DB::table('posts as p')
-            ->select(
-                'p.id',
-                'p.title',
-                'p.slug',
-                'p.date',
-                'p.content',
-                'c.title as category_title',
-                'c.slug as category_slug',
-            )
-            ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
-            ->orderBy('date', 'desc')
-            ->get();
-
-        $posts->each(function ($post) {
-            $date = new Carbon($post->date);
-            $post->date = $date->format('LLL');
-            $post->rawDate = $date->format('Y-m-d');
-            $post->authors = DB::table('post_author as pa')
-                ->select('a.name', 'a.slug')
-                ->join('authors as a', 'pa.author_id', '=', 'a.id')
-                ->where('pa.post_id', $post->id)
-                ->get();
-        });
-
-        return $posts;
+        $this->lastPostsQuery = $lastPostsQuery;
     }
 
-    public function render()
+    #[Computed]
+    /**
+     * @return Collection<PostItem>
+     */
+    public function posts(): Collection
+    {
+        return $this->lastPostsQuery->get();
+    }
+
+    public function render(): View
     {
         return view('livewire.last-posts');
     }
