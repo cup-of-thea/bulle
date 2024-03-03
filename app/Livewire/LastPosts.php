@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use App\Domain\UseCases\LastPostsQuery;
-use App\Domain\ValueObjects\PostItem;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
@@ -19,9 +18,6 @@ class LastPosts extends Component
     }
 
     #[Computed]
-    /**
-     * @return Collection<PostItem>
-     */
     public function posts(): Collection
     {
         return $this->lastPostsQuery->get();

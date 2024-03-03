@@ -4,9 +4,11 @@
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "require": {
         "php": "^8.2",
+        "andreiio/blade-iconoir": "^4.1",
+        "blade-ui-kit/blade-icons": "^1.6",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
