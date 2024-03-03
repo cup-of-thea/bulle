@@ -15,6 +15,7 @@
     @livewireStyles
 </head>
 <body class="antialiased">
+<x-banner/>
     <x-header />
 
     {{ $slot }}
