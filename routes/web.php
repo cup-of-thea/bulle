@@ -31,4 +31,6 @@ Route::get('/categories/{slug}', fn() => view('categories.show'))->name('categor
 
 Route::get('/tags', fn() => view('tags.index'))->name('tags.index');
 
+Route::get('/tags/{slug}', fn() => view('tags.show'))->name('tags.show');
+
 Route::get('/auteur·rice·x·s/{slug}', fn() => view('authors.show'))->name('authors.show');

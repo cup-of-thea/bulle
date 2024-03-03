@@ -30,6 +30,12 @@ class LastPostsQuery
                     ->where('pa.post_id', $post->id)
                     ->get()
                     ->toArray(),
+                DB::table('post_tag as pt')
+                    ->select('t.title', 't.slug')
+                    ->join('tags as t', 'pt.tag_id', '=', 't.id')
+                    ->where('pt.post_id', $post->id)
+                    ->get()
+                    ->toArray(),
             ))->collect();
     }
 }
