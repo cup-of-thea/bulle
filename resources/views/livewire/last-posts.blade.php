@@ -34,7 +34,9 @@
                                     {{ $post->title }}
                                 </a>
                             </h3>
-                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.</p>
+                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                {{ $post->description }}
+                            </p>
                         </div>
                         @foreach($post->authors as $author)
                             <div class="relative mt-8 flex items-center gap-x-4">
