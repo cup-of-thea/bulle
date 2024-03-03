@@ -13,22 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', fn() => view('welcome'))->name('home');
 
-Route::get('/articles', function () {
-    return view('posts.index');
-})->name('posts.index');
+Route::get('/association', fn() => view('association'))->name('association');
 
-Route::get('/association', function () {
-    return view('association');
-})->name('association');
+Route::get('/mentions-legales', fn() => view('legals'))->name('legals');
 
-Route::get('/mentions-legales', function () {
-    return view('legals');
-})->name('legals');
+Route::get('/auteur·rice·x·s', fn() => view('authors.index'))->name('authors.index');
 
-Route::get('/auteur·rice·x·s', function () {
-    return view('authors.index');
-})->name('authors.index');
+Route::get('/articles', fn() => view('blog'))->name('blog');
+
+Route::get('/articles/{slug}', fn() => view('posts.show'))->name('posts.show');
+
+Route::get('/categories', fn() => view('categories.index'))->name('categories.index');
+
+Route::get('/categories/{slug}', fn() => view('categories.show'))->name('categories.show');
+
+Route::get('/tags', fn() => view('tags.index'))->name('tags.index');
+
+Route::get('/auteur·rice·x·s/{slug}', fn() => view('authors.show'))->name('authors.show');
