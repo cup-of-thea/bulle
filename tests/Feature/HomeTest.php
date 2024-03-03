@@ -13,6 +13,9 @@ it('displays the header nav', function () {
 });
 
 it('displays the footer nav', function () {
-    $this->get('/')->assertSee('/contact');
-    $this->get('/')->assertSee('/mentions-legales');
+    $this->get(route('home'))->assertSeeInOrder([
+        route('association'),
+        route('authors.index'),
+        route('legals'),
+    ]);
 });

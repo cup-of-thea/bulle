@@ -18,6 +18,8 @@
     <x-header />
 
     {{ $slot }}
+
+    <x-footer />
     @livewireScripts
 </body>
 </html>
