@@ -12,23 +12,13 @@
     </div>
     <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p class="text-sm leading-6 text-gray-900">
-            <strong class="font-semibold">GeneriCon 2023</strong>
+            <strong class="font-semibold">La Première Ligne est écrite ❤️‍🔥</strong>
             <svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
                 <circle cx="1" cy="1" r="1"/>
             </svg>
-            Join us in Denver from June 7 – 9 to see what’s coming next.
+            Nous sommes heureuxses de vous annoncer que la première édition de notre magasine est enfin disponible&nbsp;!
         </p>
-        <a href="#"
-           class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register
-            now <span aria-hidden="true">&rarr;</span></a>
     </div>
     <div class="flex flex-1 justify-end">
-        <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
-            <span class="sr-only">Dismiss</span>
-            <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path
-                    d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/>
-            </svg>
-        </button>
     </div>
 </div>
