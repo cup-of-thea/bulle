@@ -22,6 +22,11 @@ it('displays post details', function () {
         ['title' => 'Category 1', 'slug' => 'category-1', 'created_at' => now(), 'updated_at' => now()],
     ]);
 
+    DB::table('tags')->insert([
+        ['id' => 1, 'title' => 'Tag 1', 'slug' => 'tag-1', 'created_at' => now(), 'updated_at' => now()],
+        ['id' => 2, 'title' => 'Tag 2', 'slug' => 'tag-2', 'created_at' => now(), 'updated_at' => now()],
+    ]);
+
     DB::table('authors')->insert([
         ['id' => 1, 'name' => 'Author 1', 'slug' => 'author-1', 'created_at' => now(), 'updated_at' => now()],
         ['id' => 2, 'name' => 'Author 2', 'slug' => 'author-2', 'created_at' => now(), 'updated_at' => now()],
@@ -36,14 +41,26 @@ it('displays post details', function () {
         ['post_id' => 1, 'author_id' => 2, 'created_at' => now(), 'updated_at' => now()],
     ]);
 
+    DB::table('post_tag')->insert([
+        ['post_id' => 1, 'tag_id' => 1, 'created_at' => now(), 'updated_at' => now()],
+        ['post_id' => 1, 'tag_id' => 2, 'created_at' => now(), 'updated_at' => now()],
+    ]);
+
     livewire(LastPosts::class)
         ->assertSeeInOrder([
-            Carbon::createFromFormat('Y-m-d', '2021-01-01')->format('LLL'),
+            Carbon::createFromFormat('Y-m-d', '2021-01-01')->format('LL'),
+            route('categories.show', 'category-1'),
             'Category 1',
+            route('tags.show', 'tag-1'),
+            '#Tag 1',
+            route('tags.show', 'tag-2'),
+            '#Tag 2',
             route('posts.show', 'post-1'),
             'Post 1',
             'This is sparta',
+            route('authors.show', 'author-1'),
             'Author 1',
+            route('authors.show', 'author-2'),
             'Author 2',
         ]);
 });

@@ -16,6 +16,7 @@ readonly class PostItem
         public Carbon      $date,
         public ?Category   $category,
         public ?Collection $authors,
+        public ?Collection $tags,
     )
     {
     }
@@ -28,6 +29,7 @@ readonly class PostItem
         Carbon    $date,
         ?Category $category,
         ?array    $authors,
+        ?array    $tags,
     ): self
     {
         return new self(
@@ -38,6 +40,7 @@ readonly class PostItem
             $date,
             $category,
             collect($authors)->map(fn($author) => AuthorItem::from($author->name, $author->slug)),
+            collect($tags)->map(fn($tag) => TagItem::from($tag->title, $tag->slug)),
         );
     }
 }
