@@ -24,3 +24,11 @@ Route::get('/articles', function () {
 Route::get('/association', function () {
     return view('association');
 })->name('association');
+
+Route::get('/mentions-legales', function () {
+    return view('legals');
+})->name('legals');
+
+Route::get('/auteur·rice·x·s', function () {
+    return view('authors.index');
+})->name('authors.index');
