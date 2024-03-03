@@ -11,6 +11,9 @@
                 <a href="{{ route('tags.index') }}" class="font-semibold leading-6 text-gray-900">
                     Tags
                 </a>
+                <a href="{{ route('authors.index') }}" class="font-semibold leading-6 text-gray-900">
+                    Auteur·rice·x·s
+                </a>
             </div>
             <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
                 <ul role="list" class="divide-y divide-gray-100">

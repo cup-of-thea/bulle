@@ -2,11 +2,17 @@
 
 namespace App\Domain\ValueObjects;
 
-readonly class AuthorItem
+use Carbon\Carbon;
+
+class AuthorItem
 {
-    private function __construct(
-        public string $name,
-        public string $slug,
+    public function __construct(
+        public string      $name,
+        public string      $slug,
+        public int         $postsCount,
+        public string      $lastPostTitle,
+        public string      $lastPostSlug,
+        public Carbon      $lastPostDate
     )
     {
     }
@@ -14,8 +20,19 @@ readonly class AuthorItem
     public static function from(
         string $name,
         string $slug,
+        int    $postsCount,
+        string $lastPostTitle,
+        string $lastPostSlug,
+        Carbon $lastPostDate
     ): self
     {
-        return new self($name, $slug);
+        return new self(
+            $name,
+            $slug,
+            $postsCount,
+            $lastPostTitle,
+            $lastPostSlug,
+            $lastPostDate
+        );
     }
 }
