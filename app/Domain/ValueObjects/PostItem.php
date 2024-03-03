@@ -40,7 +40,7 @@ readonly class PostItem
             $date,
             $category,
             collect($authors)->map(fn($author) => AuthorItem::from($author->name, $author->slug)),
-            collect($tags)->map(fn($tag) => TagItem::from($tag->title, $tag->slug)),
+            collect($tags)->map(fn($tag) => PostItemTag::from($tag->title, $tag->slug)),
         );
     }
 }
