@@ -3,7 +3,7 @@
         <div class="flex lg:flex-1">
             <a href="{{ route('home') }}" class="-m-1.5 p-1.5">
                 <span class="sr-only">Bulle</span>
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                <img class="h-8 w-auto" src="/img/icons/logo.png" alt="">
             </a>
         </div>
         <div class="flex gap-x-12">
