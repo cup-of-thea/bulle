@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Domain\UseCases\LastPostsQuery;
+use App\Domain\UseCases\Queries\LastPostsQuery;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
