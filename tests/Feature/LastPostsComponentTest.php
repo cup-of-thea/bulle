@@ -18,9 +18,9 @@ it('displays last posts', function () {
 });
 
 it('displays post details', function () {
-    DB::table('categories')->insert([
+    $categoryId = DB::table('categories')->insertGetId(
         ['title' => 'Category 1', 'slug' => 'category-1', 'created_at' => now(), 'updated_at' => now()],
-    ]);
+    );
 
     DB::table('tags')->insert([
         ['id' => 1, 'title' => 'Tag 1', 'slug' => 'tag-1', 'created_at' => now(), 'updated_at' => now()],
@@ -33,7 +33,7 @@ it('displays post details', function () {
     ]);
 
     DB::table('posts')->insert(
-        ['id' => 1, 'title' => 'Post 1', 'slug' => 'post-1', 'description' => 'This is sparta', 'filePath' => 'file-path-1', 'content' => 'Content 1', 'date' => '2021-01-01', 'category_id' => 1, 'created_at' => now(), 'updated_at' => now()],
+        ['id' => 1, 'title' => 'Post 1', 'slug' => 'post-1', 'description' => 'This is sparta', 'filePath' => 'file-path-1', 'content' => 'Content 1', 'date' => '2021-01-01', 'category_id' => $categoryId, 'created_at' => now(), 'updated_at' => now()],
     );
 
     DB::table('post_author')->insert([
