@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Domain\UseCases\CategoriesQuery;
+use App\Domain\UseCases\Queries\CategoriesQuery;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\UseCases;
+namespace App\Domain\UseCases\Queries;
 
 use App\Domain\ValueObjects\PostItem;
 use Carbon\Carbon;

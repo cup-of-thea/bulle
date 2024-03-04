@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ShowCategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,7 +28,7 @@ Route::get('/articles/{slug}', fn() => view('posts.show'))->name('posts.show');
 
 Route::get('/categories', fn() => view('categories.index'))->name('categories.index');
 
-Route::get('/categories/{slug}', fn() => view('categories.show'))->name('categories.show');
+Route::get('/categories/{slug}', ShowCategoryController::class)->name('categories.show');
 
 Route::get('/tags', fn() => view('tags.index'))->name('tags.index');
 

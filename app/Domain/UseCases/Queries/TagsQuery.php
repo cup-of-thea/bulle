@@ -1,32 +1,34 @@
 <?php
 
-namespace App\Domain\UseCases;
+namespace App\Domain\UseCases\Queries;
 
-use App\Domain\ValueObjects\CategoryItem;
+use App\Domain\ValueObjects\TagItem;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 
-class CategoriesQuery
+class TagsQuery
 {
     public function get(): Collection
     {
-        return DB::table('categories as c')
-            ->select('c.id', 'c.title', 'c.slug')
+        return DB::table('tags as t')
+            ->select('t.id', 't.title', 't.slug')
             ->get()
-            ->map(function ($category) {
-                $lastPost = DB::table('posts')
-                    ->select('title', 'slug', 'date')
-                    ->where('category_id', $category->id)
+            ->map(function ($tag) {
+                $lastPost = DB::table('posts as p')
+                    ->select('p.title', 'p.slug', 'p.date')
+                    ->join('post_tag as pt', 'p.id', '=', 'pt.post_id')
+                    ->where('pt.tag_id', $tag->id)
                     ->orderBy('date', 'desc')
                     ->first();
-                $postsCount = DB::table('posts')
-                    ->select('id')
-                    ->where('category_id', $category->id)
+                $postsCount = DB::table('posts as p')
+                    ->select('p.id')
+                    ->join('post_tag as pt', 'p.id', '=', 'pt.post_id')
+                    ->where('pt.tag_id', $tag->id)
                     ->count();
-                return CategoryItem::from(
-                    $category->title,
-                    $category->slug,
+                return TagItem::from(
+                    $tag->title,
+                    $tag->slug,
                     $postsCount,
                     $lastPost->title,
                     $lastPost->slug,
@@ -35,7 +37,8 @@ class CategoriesQuery
                         ->select('a.name', 'a.slug')
                         ->join('authors as a', 'pa.author_id', '=', 'a.id')
                         ->join('posts as p', 'pa.post_id', '=', 'p.id')
-                        ->where('p.category_id', $category->id)
+                        ->join('post_tag as pt', 'p.id', '=', 'pt.post_id')
+                        ->where('pt.tag_id', $tag->id)
                         ->orderBy('p.date', 'desc')
                         ->limit(5)
                         ->get()
