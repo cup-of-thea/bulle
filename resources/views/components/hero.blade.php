@@ -29,10 +29,7 @@
                             <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                                 La Première Ligne
                             </h1>
-                            <p class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Cupidatat minim id
-                                magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et labore
-                                commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla
-                                sunt mollit id pariatur in voluptate cillum.</p>
+                            <p class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Seules, parler du sexisme est risqué, c’est se rendre vulnérables, risquer d’être attaquées, et nous sommes fatiguées de devoir porter cette lutte chacune de notre côté. Nous sommes la première ligne, celle qui commence le combat, qui trace le chemin pour les autres, et qui débute le récit.</p>
                             <div class="mt-10 flex items-center gap-x-6">
                                 <a href="{{ route('blog') }}"
                                    class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
