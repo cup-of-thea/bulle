@@ -1,3 +1,3 @@
 <x-layout>
-    <livewire:tags />
+    <livewire:list-tags-component />
 </x-layout>
