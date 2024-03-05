@@ -1,13 +1,15 @@
 <?php
 
-use App\Domain\UseCases\Queries\AuthorsQuery;
+use App\Domain\Repositories\IAuthorsRepository;
 use App\Domain\ValueObjects\AuthorItem;
 use App\Livewire\ListAuthorsComponent;
 use Illuminate\Support\Collection;
 use function Pest\Livewire\livewire;
 
 it('should return a list of authors', function () {
-    $this->mock(AuthorsQuery::class)->shouldReceive('get')->andReturn(Collection::make([
+    $this->mock(IAuthorsRepository::class)
+        ->shouldReceive('all')
+        ->andReturn(Collection::make([
         AuthorItem::from(
             'Jane Doe',
             'jane-doe',
