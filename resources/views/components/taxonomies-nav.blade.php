@@ -1,4 +1,7 @@
 <div class="flex gap-x-12 mt-6">
+    <a href="{{ route('editions.index') }}" class="font-semibold leading-6 text-gray-900">
+        Éditions
+    </a>
     <a href="{{ route('categories.index') }}" class="font-semibold leading-6 text-gray-900">
         Catégories
     </a>
