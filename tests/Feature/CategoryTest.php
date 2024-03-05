@@ -2,7 +2,7 @@
 
 use App\Domain\ValueObjects\Category;
 use App\Domain\ValueObjects\CategoryId;
-use App\Livewire\CategoryComponent;
+use App\Livewire\ShowCategoryComponent;
 use Illuminate\Support\Facades\DB;
 use function Pest\Livewire\livewire;
 
@@ -29,7 +29,7 @@ it('displays category details', function () {
 
     $this->get(route('categories.show', 'category-1'))
         ->assertSee('Category 1')
-        ->assertSeeLivewire(CategoryComponent::class);
+        ->assertSeeLivewire(ShowCategoryComponent::class);
 });
 
 it('displays category details with posts', function () {
@@ -41,7 +41,7 @@ it('displays category details with posts', function () {
     ]);
 
     livewire(
-        CategoryComponent::class,
+        ShowCategoryComponent::class,
         ['category' => Category::from(CategoryId::from($id), 'Category 1', 'category-1')]
     )
         ->assertSee('Category 1')

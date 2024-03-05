@@ -9,7 +9,7 @@ use Livewire\Attributes\Computed;
 use Livewire\Attributes\Locked;
 use Livewire\Component;
 
-class CategoryComponent extends Component
+class ShowCategoryComponent extends Component
 {
     #[Locked]
     public Category $category;
