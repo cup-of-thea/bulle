@@ -7,8 +7,7 @@ use Illuminate\Support\Collection;
 use function Pest\Livewire\livewire;
 
 it('should return a list of authors', function () {
-    $authorsQuery = $this->mock(AuthorsQuery::class);
-    $authorsQuery->shouldReceive('get')->andReturn(Collection::make([
+    $this->mock(AuthorsQuery::class)->shouldReceive('get')->andReturn(Collection::make([
         AuthorItem::from(
             'Jane Doe',
             'jane-doe',

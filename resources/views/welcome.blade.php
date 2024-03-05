@@ -1,5 +1,5 @@
 <x-layout>
     <x-hero/>
     <x-figures/>
-    <livewire:last-posts />
+    <livewire:get-last-posts-component />
 </x-layout>

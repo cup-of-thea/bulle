@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\GetLastPostsComponent;
+
 it('shows the home page', function () {
     $this->get(route('home'))->assertStatus(200);
 });
@@ -22,5 +24,5 @@ it('displays the footer nav', function () {
 
 it('displays posts', function () {
     $this->get(route('home'))
-        ->assertSeeLivewire(\App\Livewire\LastPosts::class);
+        ->assertSeeLivewire(GetLastPostsComponent::class);
 });
