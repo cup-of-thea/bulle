@@ -32,6 +32,7 @@ it('should return category posts', function () {
                         (object)['title' => 'TagA', 'slug' => 'taga'],
                         (object)['title' => 'TagB', 'slug' => 'tagb'],
                     ],
+                    null,
                 ),
                 Post::from(
                     'Another from category A',
@@ -47,6 +48,7 @@ it('should return category posts', function () {
                     [
                         (object)['title' => 'TagB', 'slug' => 'tagb'],
                     ],
+                    null,
                 ),
             ])
         );

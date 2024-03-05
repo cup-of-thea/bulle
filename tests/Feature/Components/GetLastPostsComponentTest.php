@@ -29,6 +29,7 @@ it('displays last posts', function () {
                 (object)['title' => 'Tag 5', 'slug' => 'tag-5'],
                 (object)['title' => 'Tag 6', 'slug' => 'tag-6'],
             ],
+            null,
         ),
         Post::from(
             'Post 2',
@@ -46,6 +47,7 @@ it('displays last posts', function () {
                 (object)['title' => 'Tag 3', 'slug' => 'tag-3'],
                 (object)['title' => 'Tag 4', 'slug' => 'tag-4'],
             ],
+            null,
         ),
         Post::from(
             'Post 1',
@@ -63,6 +65,7 @@ it('displays last posts', function () {
                 (object)['title' => 'Tag 1', 'slug' => 'tag-1'],
                 (object)['title' => 'Tag 2', 'slug' => 'tag-2'],
             ],
+            null,
         ),
     ]));
 

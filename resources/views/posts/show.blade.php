@@ -8,6 +8,7 @@
         <meta property="og:article:author" content="{{ $post->authors->implode('name', ', ') }}"/>
         <meta property="og:article:section" content="{{ $post->category->title }}"/>
         <meta property="og:article:tag" content="{{ $post->tags->implode('title', ', ') }}"/>
+        <link rel="canonical" href="{{ $post->canonical ?: route('posts.show', $post->slug) }}"/>
     </x-slot:meta>
     <x-slot:metaTitle>{{ $post->title }}</x-slot:metaTitle>
     <div class="bg-white px-6 py-32 lg:px-8">

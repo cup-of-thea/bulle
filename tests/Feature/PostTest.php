@@ -29,6 +29,7 @@ it('displays post page', function () {
                     (object)['title' => 'Tag 1', 'slug' => 'tag-1'],
                     (object)['title' => 'Tag 2', 'slug' => 'tag-2'],
                 ],
+                'https://canonical.com/my-first-post'
             )
         );
 
@@ -50,5 +51,6 @@ it('displays post page', function () {
         ->assertSee(`<meta property="og:article:author" content="Author 1, Author 2"/>`)
         ->assertSee(`<meta property="og:article:section" content="Category 1"/>`)
         ->assertSee(`<meta property="og:article:tag" content="Tag 1, Tag 2"/>`)
-        ->assertSee(`<title>My first post</title>`);
+        ->assertSee(`<title>My first post</title>`)
+        ->assertSee(`<link rel="canonical" href="https://canonical.com/my-first-post"/>`);
 });

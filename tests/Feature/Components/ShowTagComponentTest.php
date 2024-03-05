@@ -34,6 +34,7 @@ it('should return tag posts', function () {
                         (object)['title' => 'TagA', 'slug' => 'taga'],
                         (object)['title' => 'TagB', 'slug' => 'tagb'],
                     ],
+                    null,
                 ),
                 Post::from(
                     'Another from tag A',
@@ -49,6 +50,7 @@ it('should return tag posts', function () {
                     [
                         (object)['title' => 'TagA', 'slug' => 'taga'],
                     ],
+                    null,
                 ),
             ])
         );
