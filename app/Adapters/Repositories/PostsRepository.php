@@ -20,25 +20,41 @@ class PostsRepository implements IPostsRepository
             ->where('c.id', $category->categoryId->value())
             ->orderBy('date', 'desc')
             ->get()
-            ->map(fn($post) => PostItem::from(
-                $post->title,
-                $post->slug,
-                $post->description,
-                $post->content,
-                new Carbon($post->date),
-                $post->category_slug ? CategoryData::from($post->category_title, $post->category_slug) : null,
-                DB::table('post_author as pa')
-                    ->select('a.name', 'a.slug')
-                    ->join('authors as a', 'pa.author_id', '=', 'a.id')
-                    ->where('pa.post_id', $post->id)
-                    ->get()
-                    ->toArray(),
-                DB::table('post_tag as pt')
-                    ->select('t.title', 't.slug')
-                    ->join('tags as t', 'pt.tag_id', '=', 't.id')
-                    ->where('pt.post_id', $post->id)
-                    ->get()
-                    ->toArray(),
-            ))->collect();
+            ->map(fn($post) => $this->hydratePostItem($post))->collect();
+    }
+
+    public function getLastPosts(): Collection
+    {
+        return DB::table('posts as p')
+            ->select('p.id', 'p.title', 'p.slug', 'p.date', 'p.description', 'p.content', 'c.title as category_title', 'c.slug as category_slug',)
+            ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
+            ->orderBy('date', 'desc')
+            ->limit(500)
+            ->get()
+            ->map(fn($post) => $this->hydratePostItem($post))->collect();
+    }
+
+    public function hydratePostItem($post): PostItem
+    {
+        return PostItem::from(
+            $post->title,
+            $post->slug,
+            $post->description,
+            $post->content,
+            new Carbon($post->date),
+            $post->category_slug ? CategoryData::from($post->category_title, $post->category_slug) : null,
+            DB::table('post_author as pa')
+                ->select('a.name', 'a.slug')
+                ->join('authors as a', 'pa.author_id', '=', 'a.id')
+                ->where('pa.post_id', $post->id)
+                ->get()
+                ->toArray(),
+            DB::table('post_tag as pt')
+                ->select('t.title', 't.slug')
+                ->join('tags as t', 'pt.tag_id', '=', 't.id')
+                ->where('pt.post_id', $post->id)
+                ->get()
+                ->toArray(),
+        );
     }
 }

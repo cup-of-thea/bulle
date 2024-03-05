@@ -9,4 +9,6 @@ interface IPostsRepository
 {
 
     public function getPostsFromCategory(Category $category): Collection;
+
+    public function getLastPosts(): Collection;
 }
