@@ -2,16 +2,16 @@
 
 namespace App\Livewire;
 
-use App\Domain\UseCases\Queries\AuthorsQuery;
+use App\Domain\UseCases\Queries\ListAuthorsQuery;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
 class ListAuthorsComponent extends Component
 {
-    private AuthorsQuery $authorsQuery;
+    private ListAuthorsQuery $authorsQuery;
 
-    public function boot(AuthorsQuery $authorsQuery): void
+    public function boot(ListAuthorsQuery $authorsQuery): void
     {
         $this->authorsQuery = $authorsQuery;
     }

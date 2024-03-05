@@ -5,9 +5,9 @@ namespace App\Domain\UseCases\Queries;
 use App\Domain\Repositories\ITagsRepository;
 use Illuminate\Support\Collection;
 
-class TagsQuery
+readonly class ListTagsQuery
 {
-    public function __construct(private readonly ITagsRepository $tagsRepository)
+    public function __construct(private ITagsRepository $tagsRepository)
     {
     }
 

@@ -5,7 +5,7 @@ namespace App\Domain\UseCases\Queries;
 use App\Domain\Repositories\IAuthorsRepository;
 use Illuminate\Support\Collection;
 
-readonly class AuthorsQuery
+readonly class ListAuthorsQuery
 {
     public function __construct(private IAuthorsRepository $authorsRepository)
     {

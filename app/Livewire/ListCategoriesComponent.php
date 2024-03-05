@@ -2,16 +2,16 @@
 
 namespace App\Livewire;
 
-use App\Domain\UseCases\Queries\CategoriesQuery;
+use App\Domain\UseCases\Queries\ListCategoriesQuery;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
 class ListCategoriesComponent extends Component
 {
-    private CategoriesQuery $categoriesQuery;
+    private ListCategoriesQuery $categoriesQuery;
 
-    public function boot(CategoriesQuery $categoriesQuery): void
+    public function boot(ListCategoriesQuery $categoriesQuery): void
     {
         $this->categoriesQuery = $categoriesQuery;
     }

@@ -2,16 +2,16 @@
 
 namespace App\Livewire;
 
-use App\Domain\UseCases\Queries\LastPostsQuery;
+use App\Domain\UseCases\Queries\GetLastPostsQuery;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
 class GetLastPostsComponent extends Component
 {
-    private LastPostsQuery $lastPostsQuery;
+    private GetLastPostsQuery $lastPostsQuery;
 
-    public function boot(LastPostsQuery $lastPostsQuery): void
+    public function boot(GetLastPostsQuery $lastPostsQuery): void
     {
         $this->lastPostsQuery = $lastPostsQuery;
     }
