@@ -1,6 +1,6 @@
 <?php
 
-use App\Domain\UseCases\Queries\LastPostsQuery;
+use App\Domain\Repositories\IPostsRepository;
 use App\Domain\ValueObjects\PostItem;
 use App\Livewire\GetLastPostsComponent;
 use Carbon\Carbon;
@@ -8,7 +8,7 @@ use Thea\MarkdownBlog\Domain\ValueObjects\Category;
 use function Pest\Livewire\livewire;
 
 it('displays last posts', function () {
-    $this->mock(LastPostsQuery::class)->shouldReceive('get')->andReturn(collect([
+    $this->mock(IPostsRepository::class)->shouldReceive('getLastPosts')->andReturn(collect([
         PostItem::from(
             'Post 3',
             'post-3',

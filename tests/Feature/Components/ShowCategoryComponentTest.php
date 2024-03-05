@@ -1,6 +1,6 @@
 <?php
 
-use App\Domain\UseCases\Queries\GetPostsFromCategoryQuery;
+use App\Domain\Repositories\IPostsRepository;
 use App\Domain\ValueObjects\Category;
 use App\Domain\ValueObjects\CategoryId;
 use App\Domain\ValueObjects\PostItem;
@@ -10,8 +10,8 @@ use Thea\MarkdownBlog\Domain\ValueObjects\Category as CategoryData;
 use function Pest\Livewire\livewire;
 
 it('should return category posts', function () {
-    $this->mock(GetPostsFromCategoryQuery::class)
-        ->shouldReceive('get')
+    $this->mock(IPostsRepository::class)
+        ->shouldReceive('getPostsFromCategory')
         ->andReturn(Collection::make([
             PostItem::from(
                 'Post from category A',

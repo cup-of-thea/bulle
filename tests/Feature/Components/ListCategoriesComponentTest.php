@@ -1,14 +1,14 @@
 <?php
 
-use App\Domain\UseCases\Queries\CategoriesQuery;
+use App\Domain\Repositories\ICategoriesRepository;
 use App\Domain\ValueObjects\CategoryItem;
 use App\Livewire\ListCategoriesComponent;
 use Illuminate\Support\Collection;
 use function Pest\Livewire\livewire;
 
 it('should return a list of categories', function () {
-    $this->mock(CategoriesQuery::class)
-        ->shouldReceive('get')
+    $this->mock(ICategoriesRepository::class)
+        ->shouldReceive('all')
         ->andReturn(Collection::make([
             CategoryItem::from(
                 'Category B',
