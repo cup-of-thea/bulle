@@ -3,12 +3,11 @@
 namespace App\Livewire;
 
 use App\Domain\UseCases\Queries\CategoriesQuery;
-use Illuminate\Contracts\View\View;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
-class Categories extends Component
+class ListCategoriesComponent extends Component
 {
     private CategoriesQuery $categoriesQuery;
 
@@ -21,10 +20,5 @@ class Categories extends Component
     public function categories(): Collection
     {
         return $this->categoriesQuery->get();
-    }
-
-    public function render(): View
-    {
-        return view('livewire.categories');
     }
 }
