@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ShowCategoryController;
+use App\Http\Controllers\ShowPostController;
 use App\Http\Controllers\ShowTagController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,7 +26,7 @@ Route::get('/auteur·rice·x·s', fn() => view('authors.index'))->name('authors.
 
 Route::get('/magasine', fn() => view('blog'))->name('blog');
 
-Route::get('/articles/{slug}', fn() => view('posts.show'))->name('posts.show');
+Route::get('/articles/{slug}', ShowPostController::class)->name('posts.show');
 
 Route::get('/categories', fn() => view('categories.index'))->name('categories.index');
 

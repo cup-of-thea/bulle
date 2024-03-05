@@ -2,8 +2,13 @@
 export default {
     content: ["./resources/**/*.blade.php"],
     theme: {
-    extend: {},
-  },
-  plugins: [],
+        fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+        },
+        extend: {},
+    },
+    plugins: [
+        require('@tailwindcss/typography'),
+    ],
 }
 

@@ -7,14 +7,14 @@
         </time>
         @if($post->category?->slug)
             <a href="{{ route('categories.show', $post->category->slug) }}"
-               class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+               class="font-semibold leading-7 text-indigo-600 hover:text-indigo-800">
                 {{ $post->category->title }}
             </a>
         @endif
         @if($post->tags->isNotEmpty())
             @foreach($post->tags as $tag)
                 <a href="{{ route('tags.show', $tag->slug) }}"
-                   class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                   class="font-semibold leading-7 text-red-600 hover:text-red-800">
                     #{{ $tag->title }}
                 </a>
             @endforeach
@@ -32,16 +32,18 @@
         </p>
     </div>
     @foreach($post->authors as $author)
-        <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="/img/authors/{{ $author->slug }}.jpg" alt="" class="h-12 w-12 rounded-full bg-gray-50 aspect-square object-cover">
-            <div class="text-sm leading-6">
-                <p class="font-semibold text-gray-900">
-                    <a href="{{ route('authors.show', $author->slug) }}">
-                        <span class="absolute inset-0"></span>
-                        {{ $author->name }}
-                    </a>
-                </p>
+        <a href="{{ route('authors.show', $author->slug) }}" class="mt-6 flex items-center gap-x-6">
+            <img class="h-12 w-12 rounded-full bg-gray-50 object-cover"
+                 src="{{ $author->image() }}"
+                 alt="{{ $author->slug }}">
+            <div class="text-base">
+                <div class="font-semibold text-gray-900">
+                    {{ $author->name }}
+                </div>
+                <div class="mt-1 text-gray-500">
+                    {{ $author->title() }}
+                </div>
             </div>
-        </div>
+        </a>
     @endforeach
 </article>

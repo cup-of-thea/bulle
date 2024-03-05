@@ -2,19 +2,8 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Auteur·rice·x·s</h2>
-            <p class="my-4 text-lg leading-8 text-gray-600">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
-            <div class="flex gap-x-12">
-                <a href="{{ route('categories.index') }}" class="font-semibold leading-6 text-gray-900">
-                    Catégories
-                </a>
-                <a href="{{ route('tags.index') }}" class="font-semibold leading-6 text-gray-900">
-                    Tags
-                </a>
-            </div>
-            <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+            <x-taxonomies-nav/>
+            <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:pt-0">
                 <ul role="list" class="divide-y divide-gray-100">
                     @foreach($this->authors as $author)
                         <li class="flex flex-wrap items-center justify-between gap-x-6 gap-y-4 py-5 sm:flex-nowrap">
@@ -22,7 +11,7 @@
                                 <a href="{{ route('authors.show', $author->slug)  }}">
                                     <img class="h-12 w-12 rounded-full bg-gray-50 aspect-square object-cover"
                                          src="/img/authors/{{ $author->slug }}.jpg"
-                                         alt="{{ $author->name }}" />
+                                         alt="{{ $author->name }}"/>
                                 </a>
                                 <div>
                                     <p class="text-sm font-semibold leading-6 text-gray-900">

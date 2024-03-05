@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    overflow-y: scroll;
+}
+
+.prose blockquote {
+    @apply mt-10 border-l border-indigo-600 pl-9 font-semibold text-gray-900;
+}
+
+.prose a {
+    @apply text-indigo-600;
+}

@@ -2,15 +2,8 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tags</h2>
-            <div class="flex gap-x-12">
-                <a href="{{ route('categories.index') }}" class="font-semibold leading-6 text-gray-900">
-                    Catégories
-                </a>
-                <a href="{{ route('authors.index') }}" class="font-semibold leading-6 text-gray-900">
-                    Auteur·rice·x·s
-                </a>
-            </div>
-            <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+            <x-taxonomies-nav/>
+            <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:pt-0">
                 <ul role="list" class="divide-y divide-gray-100">
                     @foreach($this->tags as $tag)
                         <li class="flex flex-wrap items-center justify-between gap-x-6 gap-y-4 py-5 sm:flex-nowrap">
