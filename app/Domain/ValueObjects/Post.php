@@ -17,6 +17,7 @@ readonly class Post
         public ?Edition $edition,
         public ?Collection $authors,
         public ?Collection $tags,
+        public ?string $canonical,
     ) {
     }
 
@@ -30,6 +31,7 @@ readonly class Post
         ?Edition $edition,
         ?array $authors,
         ?array $tags,
+        ?string $canonical,
     ): self {
         return new self(
             $title,
@@ -41,6 +43,7 @@ readonly class Post
             $edition,
             collect($authors)->map(fn($author) => PostItemAuthor::from($author->name, $author->slug)),
             collect($tags)->map(fn($tag) => PostItemTag::from($tag->title, $tag->slug)),
+            $canonical
         );
     }
 }

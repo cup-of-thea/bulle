@@ -25,6 +25,7 @@ class PostsRepository implements IPostsRepository
                 'p.date',
                 'p.description',
                 'p.content',
+                'p.canonical',
                 'c.id as categoryId',
                 'c.title as categoryTitle',
                 'c.slug as categorySlug',
@@ -50,6 +51,7 @@ class PostsRepository implements IPostsRepository
                 'p.date',
                 'p.description',
                 'p.content',
+                'p.canonical',
                 'c.id as categoryId',
                 'c.title as categoryTitle',
                 'c.slug as categorySlug',
@@ -76,6 +78,7 @@ class PostsRepository implements IPostsRepository
                 'p.date',
                 'p.description',
                 'p.content',
+                'p.canonical',
                 'c.id as categoryId',
                 'c.title as categoryTitle',
                 'c.slug as categorySlug',
@@ -102,6 +105,7 @@ class PostsRepository implements IPostsRepository
                 'p.date',
                 'p.description',
                 'p.content',
+                'p.canonical',
                 'c.id as categoryId',
                 'c.title as categoryTitle',
                 'c.slug as categorySlug',
@@ -130,6 +134,7 @@ class PostsRepository implements IPostsRepository
                 'p.date',
                 'p.description',
                 'p.content',
+                'p.canonical',
                 'c.id as categoryId',
                 'c.title as categoryTitle',
                 'c.slug as categorySlug',
@@ -171,6 +176,7 @@ class PostsRepository implements IPostsRepository
                 ->where('pt.post_id', $post->id)
                 ->get()
                 ->toArray(),
+            $post->canonical,
         );
     }
 }
