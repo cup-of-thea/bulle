@@ -14,6 +14,7 @@ readonly class Post
         public string $content,
         public Carbon $date,
         public ?Category $category,
+        public ?Edition $edition,
         public ?Collection $authors,
         public ?Collection $tags,
     ) {
@@ -26,6 +27,7 @@ readonly class Post
         string $content,
         Carbon $date,
         ?Category $category,
+        ?Edition $edition,
         ?array $authors,
         ?array $tags,
     ): self {
@@ -36,6 +38,7 @@ readonly class Post
             $content,
             $date,
             $category,
+            $edition,
             collect($authors)->map(fn($author) => PostItemAuthor::from($author->name, $author->slug)),
             collect($tags)->map(fn($tag) => PostItemTag::from($tag->title, $tag->slug)),
         );

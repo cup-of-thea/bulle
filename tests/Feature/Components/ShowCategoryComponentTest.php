@@ -3,6 +3,8 @@
 use App\Domain\Repositories\IPostsRepository;
 use App\Domain\ValueObjects\Category;
 use App\Domain\ValueObjects\CategoryId;
+use App\Domain\ValueObjects\Edition;
+use App\Domain\ValueObjects\EditionId;
 use App\Domain\ValueObjects\Post;
 use App\Livewire\ShowCategoryComponent;
 use Illuminate\Support\Collection;
@@ -21,6 +23,7 @@ it('should return category posts', function () {
                     'category-a',
                     now(),
                     Category::from(CategoryId::from(1), 'Category A', 'category-a'),
+                    Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
                     [
                         (object)['name' => 'Jane Doe', 'slug' => 'jane-doe'],
                         (object)['name' => 'John Doe', 'slug' => 'john-doe'],
@@ -37,6 +40,7 @@ it('should return category posts', function () {
                     'category-a',
                     now(),
                     Category::from(CategoryId::from(1), 'Category A', 'category-a'),
+                    Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
                     [
                         (object)['name' => 'Jane Doe', 'slug' => 'jane-doe'],
                     ],
