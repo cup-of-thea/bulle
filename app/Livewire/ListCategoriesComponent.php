@@ -19,6 +19,6 @@ class ListCategoriesComponent extends Component
     #[Computed]
     public function categories(): Collection
     {
-        return $this->categoriesQuery->get();
+        return $this->categoriesQuery->all();
     }
 }

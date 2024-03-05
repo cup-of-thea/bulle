@@ -11,7 +11,7 @@ readonly class AuthorsQuery
     {
     }
 
-    public function getAllAuthors(): Collection
+    public function all(): Collection
     {
         return $this->authorsRepository->all();
     }
