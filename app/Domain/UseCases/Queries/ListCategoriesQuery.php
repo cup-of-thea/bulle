@@ -5,7 +5,7 @@ namespace App\Domain\UseCases\Queries;
 use App\Domain\Repositories\ICategoriesRepository;
 use Illuminate\Support\Collection;
 
-readonly class CategoriesQuery
+readonly class ListCategoriesQuery
 {
     public function __construct(private ICategoriesRepository $categoriesRepository)
     {

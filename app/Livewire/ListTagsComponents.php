@@ -2,16 +2,16 @@
 
 namespace App\Livewire;
 
-use App\Domain\UseCases\Queries\TagsQuery;
+use App\Domain\UseCases\Queries\ListTagsQuery;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
 class ListTagsComponents extends Component
 {
-    private TagsQuery $tagsQuery;
+    private ListTagsQuery $tagsQuery;
 
-    public function boot(TagsQuery $tagsQuery): void
+    public function boot(ListTagsQuery $tagsQuery): void
     {
         $this->tagsQuery = $tagsQuery;
     }
