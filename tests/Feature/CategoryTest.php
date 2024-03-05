@@ -22,10 +22,7 @@ it('lists all categories', function () {
 });
 
 it('displays category details', function () {
-    $category = DB::table('categories')->insertGetId([
-        'title' => 'Category 1',
-        'slug' => 'category-1',
-    ]);
+    DB::table('categories')->insertGetId(['title' => 'Category 1', 'slug' => 'category-1']);
 
     $this->get(route('categories.show', 'category-1'))
         ->assertSee('Category 1')

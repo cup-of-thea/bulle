@@ -5,6 +5,7 @@ namespace App\Adapters\Repositories;
 use App\Domain\Repositories\IPostsRepository;
 use App\Domain\ValueObjects\Category;
 use App\Domain\ValueObjects\PostItem;
+use App\Domain\ValueObjects\Tag;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -12,17 +13,6 @@ use Thea\MarkdownBlog\Domain\ValueObjects\Category as CategoryData;
 
 class PostsRepository implements IPostsRepository
 {
-    public function getPostsFromCategory(Category $category): Collection
-    {
-        return DB::table('posts as p')
-            ->select('p.id', 'p.title', 'p.slug', 'p.date', 'p.description', 'p.content', 'c.title as category_title', 'c.slug as category_slug',)
-            ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
-            ->where('c.id', $category->categoryId->value())
-            ->orderBy('date', 'desc')
-            ->limit(500)
-            ->get()
-            ->map(fn($post) => $this->hydratePostItem($post))->collect();
-    }
 
     public function getLastPosts(): Collection
     {
@@ -35,7 +25,33 @@ class PostsRepository implements IPostsRepository
             ->map(fn($post) => $this->hydratePostItem($post))->collect();
     }
 
-    public function hydratePostItem($post): PostItem
+    public function getPostsFromCategory(Category $category): Collection
+    {
+        return DB::table('posts as p')
+            ->select('p.id', 'p.title', 'p.slug', 'p.date', 'p.description', 'p.content', 'c.title as category_title', 'c.slug as category_slug',)
+            ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
+            ->where('c.id', $category->categoryId->value())
+            ->orderBy('date', 'desc')
+            ->limit(500)
+            ->get()
+            ->map(fn($post) => $this->hydratePostItem($post))->collect();
+    }
+
+    public function getPostsFromTag(Tag $tag): Collection
+    {
+        return DB::table('posts as p')
+            ->select('p.id', 'p.title', 'p.slug', 'p.date', 'p.description', 'p.content', 'c.title as category_title', 'c.slug as category_slug',)
+            ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
+            ->join('post_tag as pt', 'p.id', '=', 'pt.post_id')
+            ->join('tags as t', 'pt.tag_id', '=', 't.id')
+            ->where('t.id', $tag->tagId->value())
+            ->orderBy('date', 'desc')
+            ->limit(500)
+            ->get()
+            ->map(fn($post) => $this->hydratePostItem($post))->collect();
+    }
+
+    protected function hydratePostItem($post): PostItem
     {
         return PostItem::from(
             $post->title,
@@ -58,4 +74,5 @@ class PostsRepository implements IPostsRepository
                 ->toArray(),
         );
     }
+
 }

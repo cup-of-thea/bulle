@@ -2,11 +2,6 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tags</h2>
-            <p class="my-4 text-lg leading-8 text-gray-600">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua.
-            </p>
             <div class="flex gap-x-12">
                 <a href="{{ route('categories.index') }}" class="font-semibold leading-6 text-gray-900">
                     Catégories
@@ -22,7 +17,7 @@
                             <div>
                                 <p class="text-sm font-semibold leading-6 text-gray-900">
                                     <a href="{{ route('tags.show', $tag->slug) }}" class="hover:underline">
-                                        {{ $tag->title }}
+                                        #{{ $tag->title }}
                                     </a>
                                 </p>
                                 <div class="mt-1 flex items-center gap-x-2 text-xs leading-5 text-gray-500">
