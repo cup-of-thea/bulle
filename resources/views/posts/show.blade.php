@@ -2,20 +2,33 @@
     @php /** @var App\Domain\ValueObjects\Post $post */ @endphp
     <div class="bg-white px-6 py-32 lg:px-8">
         <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap items-center gap-x-4 text-xs">
+                @if($post->edition?->slug)
+                    <a href="{{ route('editions.show', $post->edition->slug) }}"
+                       class="font-semibold leading-7 text-indigo-600 hover:text-indigo-800 flex gap-x-2">
+                        <x-iconoir-journal-page/>
+                        <p>
+                            {{ $post->edition->title }}
+                        </p>
+                    </a>
+                @endif
                 <time datetime="{{ $post->date->format('Y-m-d') }}" class="text-gray-500">
                     {{ $post->date->isoFormat('LL') }}
                 </time>
-                <a href="{{ route('categories.show', $post->category->slug) }}"
-                   class="text-base font-semibold leading-7 text-indigo-600 hover:text-indigo-800">
-                    {{ $post->category->title }}
-                </a>
-                @foreach($post->tags as $tag)
-                    <a href="{{ route('tags.show', $tag->slug) }}"
-                       class="text-base font-semibold leading-7 text-red-600 hover:text-red-800">
-                        #{{ $tag->title }}
+                @if($post->category?->slug)
+                    <a href="{{ route('categories.show', $post->category->slug) }}"
+                       class="font-semibold leading-7 text-indigo-600 hover:text-indigo-800">
+                        {{ $post->category->title }}
                     </a>
-                @endforeach
+                @endif
+                @if($post->tags->isNotEmpty())
+                    @foreach($post->tags as $tag)
+                        <a href="{{ route('tags.show', $tag->slug) }}"
+                           class="font-semibold leading-7 text-red-600 hover:text-red-800">
+                            #{{ $tag->title }}
+                        </a>
+                    @endforeach
+                @endif
             </div>
             <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 {{ $post->title }}

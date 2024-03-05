@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ShowCategoryController;
+use App\Http\Controllers\ShowEditionController;
 use App\Http\Controllers\ShowPostController;
 use App\Http\Controllers\ShowTagController;
 use Illuminate\Support\Facades\Route;
@@ -31,6 +32,10 @@ Route::get('/articles/{slug}', ShowPostController::class)->name('posts.show');
 Route::get('/categories', fn() => view('categories.index'))->name('categories.index');
 
 Route::get('/categories/{slug}', ShowCategoryController::class)->name('categories.show');
+
+Route::get('/editions', fn() => view('editions.index'))->name('editions.index');
+
+Route::get('/editions/{slug}', ShowEditionController::class)->name('editions.show');
 
 Route::get('/tags', fn() => view('tags.index'))->name('tags.index');
 

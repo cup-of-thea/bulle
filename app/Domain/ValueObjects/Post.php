@@ -4,7 +4,6 @@ namespace App\Domain\ValueObjects;
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
-use Thea\MarkdownBlog\Domain\ValueObjects\Category;
 
 readonly class Post
 {

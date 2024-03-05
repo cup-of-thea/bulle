@@ -13,9 +13,9 @@ readonly class Edition implements Wireable
     ) {
     }
 
-    public static function from(EditionId $editionId, string $string, string $string1): self
+    public static function from(EditionId $editionId, string $title, string $slug): self
     {
-        return new self($editionId, $string, $string1);
+        return new self($editionId, $title, $slug);
     }
 
     public static function fromLivewire($value): self
