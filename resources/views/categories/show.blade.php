@@ -1,3 +1,3 @@
 <x-layout>
-    <livewire:category-component :category="$category" />
+    <livewire:show-category-component :category="$category" />
 </x-layout>

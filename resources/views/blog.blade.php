@@ -1,3 +1,3 @@
 <x-layout>
-    <livewire:last-posts />
+    <livewire:get-last-posts-component />
 </x-layout>

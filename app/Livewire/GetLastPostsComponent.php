@@ -3,12 +3,11 @@
 namespace App\Livewire;
 
 use App\Domain\UseCases\Queries\LastPostsQuery;
-use Illuminate\Contracts\View\View;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
-class LastPosts extends Component
+class GetLastPostsComponent extends Component
 {
     private LastPostsQuery $lastPostsQuery;
 
@@ -21,10 +20,5 @@ class LastPosts extends Component
     public function posts(): Collection
     {
         return $this->lastPostsQuery->get();
-    }
-
-    public function render(): View
-    {
-        return view('livewire.last-posts');
     }
 }

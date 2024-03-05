@@ -1,3 +1,3 @@
 <x-layout>
-    <livewire:authors />
+    <livewire:list-authors-component />
 </x-layout>

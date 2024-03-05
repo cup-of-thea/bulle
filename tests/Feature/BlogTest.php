@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\GetLastPostsComponent;
+
 it('shows the blog page', function () {
     $this->get(route('blog'))->assertStatus(200);
 });
@@ -12,5 +14,5 @@ it('displays taxonomies', function () {
 
 it('displays posts', function () {
     $this->get(route('blog'))
-        ->assertSeeLivewire(\App\Livewire\LastPosts::class);
+        ->assertSeeLivewire(GetLastPostsComponent::class);
 });

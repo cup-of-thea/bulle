@@ -19,9 +19,9 @@ readonly class Category implements Wireable
         return new self(CategoryId::from($value->categoryId), $value->title, $value->slug);
     }
 
-    public static function from(CategoryId $from, string $title, string $slug): self
+    public static function from(CategoryId $categoryId, string $title, string $slug): self
     {
-        return new self($from, $title, $slug);
+        return new self($categoryId, $title, $slug);
     }
 
     public function toLivewire(): array

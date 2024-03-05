@@ -1,3 +1,3 @@
 <x-layout>
-    <livewire:categories />
+    <livewire:list-categories-component />
 </x-layout>
