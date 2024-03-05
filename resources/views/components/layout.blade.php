@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ $meta ?? '' }}
 
-    <title>{{ config('app.name') }}</title>
+    <title>{{ isset($metaTitle) ? "$metaTitle | " : '' }}{{ config('app.name') }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

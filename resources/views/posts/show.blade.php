@@ -1,5 +1,15 @@
 <x-layout>
     @php /** @var App\Domain\ValueObjects\Post $post */ @endphp
+    <x-slot:meta>
+        <meta name="author" content="{{ $post->authors->implode('name', ', ') }}"/>
+        <meta name="description" content="{{ $post->description }}"/>
+        <meta name="keywords" content="{{ $post->tags->implode('title', ', ') }}"/>
+        <meta property="og:article:published_time" content="{{ $post->date->format('Y-m-d') }}"/>
+        <meta property="og:article:author" content="{{ $post->authors->implode('name', ', ') }}"/>
+        <meta property="og:article:section" content="{{ $post->category->title }}"/>
+        <meta property="og:article:tag" content="{{ $post->tags->implode('title', ', ') }}"/>
+    </x-slot:meta>
+    <x-slot:metaTitle>{{ $post->title }}</x-slot:metaTitle>
     <div class="bg-white px-6 py-32 lg:px-8">
         <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
             <div class="flex flex-wrap items-center gap-x-4 text-xs">
@@ -143,5 +153,4 @@
             </ul>
         </div>
     </div>
-
 </x-layout>

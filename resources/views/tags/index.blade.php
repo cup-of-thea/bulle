@@ -1,3 +1,4 @@
 <x-layout>
-    <livewire:list-tags-component />
+    <x-slot name="metaTitle">Tags</x-slot>
+    <livewire:list-tags-component/>
 </x-layout>
