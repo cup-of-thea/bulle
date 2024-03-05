@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
-class ListTagsComponents extends Component
+class ListTagsComponent extends Component
 {
     private ListTagsQuery $tagsQuery;
 

@@ -2,7 +2,7 @@
 
 use App\Domain\Repositories\ITagsRepository;
 use App\Domain\ValueObjects\TagItem;
-use App\Livewire\ListTagsComponents;
+use App\Livewire\ListTagsComponent;
 use Illuminate\Support\Collection;
 use function Pest\Livewire\livewire;
 
@@ -35,5 +35,5 @@ it('should return a list of categories', function () {
             ),
         ]));
 
-    livewire(ListTagsComponents::class)->assertSeeInOrder(['Tag B', 'Tag C']);
+    livewire(ListTagsComponent::class)->assertSeeInOrder(['Tag B', 'Tag C']);
 });

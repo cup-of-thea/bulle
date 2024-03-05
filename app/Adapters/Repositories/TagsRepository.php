@@ -3,6 +3,8 @@
 namespace App\Adapters\Repositories;
 
 use App\Domain\Repositories\ITagsRepository;
+use App\Domain\ValueObjects\Tag;
+use App\Domain\ValueObjects\TagId;
 use App\Domain\ValueObjects\TagItem;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -48,5 +50,15 @@ class TagsRepository implements ITagsRepository
                 );
             })
             ->collect();
+    }
+
+    public function getTagFromSlug(string $slug): ?Tag
+    {
+        $data = DB::table('tags as t')
+            ->select('t.id',  't.title', 't.slug')
+            ->where('t.slug', $slug)
+            ->first();
+
+        return $data ? Tag::from(TagId::from($data->id), $data->title, $data->slug) : null;
     }
 }

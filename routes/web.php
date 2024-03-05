@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ShowCategoryController;
+use App\Http\Controllers\ShowTagController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +33,6 @@ Route::get('/categories/{slug}', ShowCategoryController::class)->name('categorie
 
 Route::get('/tags', fn() => view('tags.index'))->name('tags.index');
 
-Route::get('/tags/{slug}', fn() => view('tags.show'))->name('tags.show');
+Route::get('/tags/{slug}', ShowTagController::class)->name('tags.show');
 
 Route::get('/auteur·rice·x·s/{slug}', fn() => view('authors.show'))->name('authors.show');
