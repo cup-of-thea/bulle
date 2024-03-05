@@ -16,6 +16,7 @@ class CategoriesRepository implements ICategoriesRepository
     {
         return DB::table('categories as c')
             ->select('c.id', 'c.title', 'c.slug')
+            ->limit(500)
             ->get()
             ->map(function ($category) {
                 $lastPost = DB::table('posts')

@@ -14,7 +14,7 @@ class AuthorsRepository implements IAuthorsRepository
     {
         return DB::table('authors as t')
             ->select('t.id', 't.name', 't.slug')
-            ->limit(100)
+            ->limit(500)
             ->get()
             ->map(function ($author) {
                 $lastPost = DB::table('posts as p')

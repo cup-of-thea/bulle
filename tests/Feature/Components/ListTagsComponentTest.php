@@ -1,14 +1,14 @@
 <?php
 
-use App\Domain\UseCases\Queries\TagsQuery;
+use App\Domain\Repositories\ITagsRepository;
 use App\Domain\ValueObjects\TagItem;
 use App\Livewire\ListTagsComponents;
 use Illuminate\Support\Collection;
 use function Pest\Livewire\livewire;
 
 it('should return a list of categories', function () {
-    $this->mock(TagsQuery::class)
-        ->shouldReceive('get')
+    $this->mock(ITagsRepository::class)
+        ->shouldReceive('all')
         ->andReturn(Collection::make([
             TagItem::from(
                 'Tag B',

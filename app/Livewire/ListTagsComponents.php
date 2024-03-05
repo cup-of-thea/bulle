@@ -19,6 +19,6 @@ class ListTagsComponents extends Component
     #[Computed]
     public function tags(): Collection
     {
-        return $this->tagsQuery->get();
+        return $this->tagsQuery->all();
     }
 }
