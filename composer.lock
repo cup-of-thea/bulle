@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c20abe1921bde6ffbe65a5f69687283a",
+    "content-hash": "e99969356040f35d6bf53f935b22d6e7",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -4100,16 +4100,16 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v6.4.4",
+            "version": "v6.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "7a186f64a7f02787c04e8476538624d6aa888e42"
+                "reference": "f6947cb939d8efee137797382cb4db1af653ef75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/7a186f64a7f02787c04e8476538624d6aa888e42",
-                "reference": "7a186f64a7f02787c04e8476538624d6aa888e42",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/f6947cb939d8efee137797382cb4db1af653ef75",
+                "reference": "f6947cb939d8efee137797382cb4db1af653ef75",
                 "shasum": ""
             },
             "require": {
@@ -4193,7 +4193,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v6.4.4"
+                "source": "https://github.com/symfony/http-kernel/tree/v6.4.5"
             },
             "funding": [
                 {
@@ -4209,7 +4209,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-27T06:32:13+00:00"
+            "time": "2024-03-04T21:00:47+00:00"
         },
         {
             "name": "symfony/mailer",
@@ -5149,16 +5149,16 @@
         },
         {
             "name": "symfony/routing",
-            "version": "v6.4.3",
+            "version": "v6.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "3b2957ad54902f0f544df83e3d58b38d7e8e5842"
+                "reference": "7fe30068e207d9c31c0138501ab40358eb2d49a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/3b2957ad54902f0f544df83e3d58b38d7e8e5842",
-                "reference": "3b2957ad54902f0f544df83e3d58b38d7e8e5842",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/7fe30068e207d9c31c0138501ab40358eb2d49a4",
+                "reference": "7fe30068e207d9c31c0138501ab40358eb2d49a4",
                 "shasum": ""
             },
             "require": {
@@ -5212,7 +5212,7 @@
                 "url"
             ],
             "support": {
-                "source": "https://github.com/symfony/routing/tree/v6.4.3"
+                "source": "https://github.com/symfony/routing/tree/v6.4.5"
             },
             "funding": [
                 {
@@ -5228,7 +5228,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-30T13:55:02+00:00"
+            "time": "2024-02-27T12:33:30+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -5803,16 +5803,16 @@
         },
         {
             "name": "thea/markdown-blog",
-            "version": "1.5.3",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cup-of-thea/markdown-blog.git",
-                "reference": "3fa28b8861b19f6f6e9149f4ba5044cc1fdedbaa"
+                "reference": "2b409630be615e967df0c97d0de818db8bef82f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cup-of-thea/markdown-blog/zipball/3fa28b8861b19f6f6e9149f4ba5044cc1fdedbaa",
-                "reference": "3fa28b8861b19f6f6e9149f4ba5044cc1fdedbaa",
+                "url": "https://api.github.com/repos/cup-of-thea/markdown-blog/zipball/2b409630be615e967df0c97d0de818db8bef82f1",
+                "reference": "2b409630be615e967df0c97d0de818db8bef82f1",
                 "shasum": ""
             },
             "require": {
@@ -5853,9 +5853,9 @@
             "description": "Laravel package dedicated to manage a blog in markdown",
             "support": {
                 "issues": "https://github.com/cup-of-thea/markdown-blog/issues",
-                "source": "https://github.com/cup-of-thea/markdown-blog/tree/1.5.3"
+                "source": "https://github.com/cup-of-thea/markdown-blog/tree/1.6.1"
             },
-            "time": "2024-03-03T13:02:31+00:00"
+            "time": "2024-03-05T12:49:08+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
