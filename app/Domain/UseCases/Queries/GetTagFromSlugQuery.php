@@ -13,6 +13,6 @@ readonly class GetTagFromSlugQuery
 
     public function get(string $slug): ?Tag
     {
-        return $this->tagsRepository->getTagFromSlug($slug);
+        return $this->tagsRepository->getBySlug($slug);
     }
 }

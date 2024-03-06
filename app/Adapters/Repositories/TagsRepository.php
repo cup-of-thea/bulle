@@ -3,6 +3,7 @@
 namespace App\Adapters\Repositories;
 
 use App\Domain\Repositories\ITagsRepository;
+use App\Domain\ValueObjects\Author;
 use App\Domain\ValueObjects\Tag;
 use App\Domain\ValueObjects\TagId;
 use App\Domain\ValueObjects\TagItem;
@@ -52,13 +53,26 @@ class TagsRepository implements ITagsRepository
             ->collect();
     }
 
-    public function getTagFromSlug(string $slug): ?Tag
+    public function getBySlug(string $slug): ?Tag
     {
         $data = DB::table('tags as t')
-            ->select('t.id',  't.title', 't.slug')
+            ->select('t.id', 't.title', 't.slug')
             ->where('t.slug', $slug)
             ->first();
 
         return $data ? Tag::from(TagId::from($data->id), $data->title, $data->slug) : null;
+    }
+
+    public function getByAuthor(Author $author): Collection
+    {
+        return DB::table('tags as t')
+            ->select('t.id', 't.title', 't.slug')
+            ->join('post_tag as pt', 't.id', '=', 'pt.tag_id')
+            ->join('posts as p', 'pt.post_id', '=', 'p.id')
+            ->join('post_author as pa', 'p.id', '=', 'pa.post_id')
+            ->where('pa.author_id', $author->authorId->value())
+            ->limit(500)
+            ->get()
+            ->map(fn($tag) => Tag::from(TagId::from($tag->id), $tag->title, $tag->slug));
     }
 }
