@@ -108,7 +108,12 @@ annonçant publiquement qu’elle a Asperger, elle a aussi permis de faire chang
 
 ### **Denna Lambert**
 
-### En faisant mes recherches sur les femmes handicapées, je suis tombée sur [Denna Lambert](https://aphconnectcenter.org/diversity/national-disability-employment-awareness-month-denna-lamberts-19-years-at-nasa/) (EN). Denna Lambert est aveugle et fait carrière à la NASA depuis 19 ans. Rien que ça, c’est super impressionnant. Décidément à la NASA, on a des femmes incroyables comme Margaret Hamilton, qui a développé le logiciel embarqué d’Apollo ou Katherine Johnson comme calculatrice qui a calculé les trajectoires d’approche pour le module lunaire et le module de commande. On a malheureusement reconnu le travail de Margaret et de Katherine que des décennies après.
+En faisant mes recherches sur les femmes handicapées, je suis tombée
+sur [Denna Lambert](https://aphconnectcenter.org/diversity/national-disability-employment-awareness-month-denna-lamberts-19-years-at-nasa/) (
+EN). Denna Lambert est aveugle et fait carrière à la NASA depuis 19 ans. Rien que ça, c’est super impressionnant.
+Décidément à la NASA, on a des femmes incroyables comme Margaret Hamilton, qui a développé le logiciel embarqué d’Apollo
+ou Katherine Johnson comme calculatrice qui a calculé les trajectoires d’approche pour le module lunaire et le module de
+commande. On a malheureusement reconnu le travail de Margaret et de Katherine que des décennies après.
 
 Aux dernières nouvelles, Denna travaille en tant que “Diversity, Equity and Inclusion Manager” au sein de la Nasa. Vous
 pouvez découvrir le parcours de
@@ -215,18 +220,18 @@ Emmanuelle ABOAF, développeuse et sourde.
 
 Autres sources :
 
-https://francedyslexia.com/personnalites-inspirantes/
+[Dyslexie : 10 exemples de personnalités inspirantes](https://francedyslexia.com/personnalites-inspirantes/)
 
-https://www.afb.org/research-and-initiatives/employment/meet-denna-lambert
+[Ces personnalités féminines engagées et talentueuses de la Handitech ! | Paris&Co](https://www.parisandco.paris/a-la-une/actualites/ces-personnalites-feminines-engagees-et-talentueuses-de-la-handitech)
 
-https://www.gigx.com/blog/empowerment-women-disabilities-tech-industry
+[Meet Denna Lambert, Program Manager at NASA](https://www.afb.org/research-and-initiatives/employment/meet-denna-lambert) (
+EN)
 
-https://anitab.org/blog/events/challenging-ableism-empowering-women-with-disabilities-in-tech-for-a-more-inclusive-future/
+[The Empowerment of Women with Disabilities in the Tech Industry](https://www.gigx.com/blog/empowerment-women-disabilities-tech-industry) (
+EN)
 
-**https://www.parisandco.paris/a-la-une/actualites/ces-personnalites-feminines-engagees-et-talentueuses-de-la-handitech
-**
+[Challenging Ableism: Empowering Women with Disabilities in Tech for a More Inclusive Future - AnitaB.org](https://anitab.org/blog/events/challenging-ableism-empowering-women-with-disabilities-in-tech-for-a-more-inclusive-future/) ****(
+EN)
 
-*
-
-*https://www.forbes.com/sites/brendadwilkerson/2021/11/22/making-tech-accessible-for-disabled-and-nondisabled-people-in-conversation-with-haben-girma-and-rachel-arfa/
-**
+[Making Tech Accessible For Disabled And Nondisabled People In Conversation With Haben Girma And Rachel Arfa](https://www.forbes.com/sites/brendadwilkerson/2021/11/22/making-tech-accessible-for-disabled-and-nondisabled-people-in-conversation-with-haben-girma-and-rachel-arfa/) (
+EN)
