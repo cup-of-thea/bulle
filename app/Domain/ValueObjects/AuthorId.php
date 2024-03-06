@@ -2,7 +2,7 @@
 
 namespace App\Domain\ValueObjects;
 
-class TagId
+readonly class AuthorId
 {
     use Traits\HasIdBehaviour;
 }

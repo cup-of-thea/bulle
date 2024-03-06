@@ -30,47 +30,47 @@ readonly class PostItemAuthor
 
     public function twitter(): ?string
     {
-        return config("authors.{$this->slug}.twitter") ?: null;
+        return config("authors.{$this->slug}.links.twitter") ?: null;
     }
 
     public function linkedin(): ?string
     {
-        return config("authors.{$this->slug}.linkedin") ?: null;
+        return config("authors.{$this->slug}.links.linkedin") ?: null;
     }
 
     public function github(): ?string
     {
-        return config("authors.{$this->slug}.github") ?: null;
+        return config("authors.{$this->slug}.links.github") ?: null;
     }
 
     public function mastodon(): ?string
     {
-        return config("authors.{$this->slug}.mastodon") ?: null;
+        return config("authors.{$this->slug}.links.mastodon") ?: null;
     }
 
     public function tiktok(): ?string
     {
-        return config("authors.{$this->slug}.tiktok") ?: null;
+        return config("authors.{$this->slug}.links.tiktok") ?: null;
     }
 
     public function instagram(): ?string
     {
-        return config("authors.{$this->slug}.instagram") ?: null;
+        return config("authors.{$this->slug}.links.instagram") ?: null;
     }
 
     public function youtube(): ?string
     {
-        return config("authors.{$this->slug}.youtube") ?: null;
+        return config("authors.{$this->slug}.links.youtube") ?: null;
     }
 
     public function threads(): ?string
     {
-        return config("authors.{$this->slug}.threads") ?: null;
+        return config("authors.{$this->slug}.links.threads") ?: null;
     }
 
     public function website(): ?string
     {
-        return config("authors.{$this->slug}.website") ?: null;
+        return config("authors.{$this->slug}.links.website") ?: null;
     }
 
     public function title(): ?string

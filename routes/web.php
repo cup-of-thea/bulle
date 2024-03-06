@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ShowAuthorController;
 use App\Http\Controllers\ShowCategoryController;
 use App\Http\Controllers\ShowEditionController;
 use App\Http\Controllers\ShowPostController;
@@ -41,4 +42,4 @@ Route::get('/tags', fn() => view('tags.index'))->name('tags.index');
 
 Route::get('/tags/{slug}', ShowTagController::class)->name('tags.show');
 
-Route::get('/auteur·rice·x·s/{slug}', fn() => view('authors.show'))->name('authors.show');
+Route::get('/auteur·rice·x·s/{slug}', ShowAuthorController::class)->name('authors.show');

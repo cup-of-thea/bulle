@@ -93,7 +93,7 @@ fracture de la génération Z (18-30 ans), les femmes sont de plus en plus progr
 de plus en plus conservateurs. Et cela se constate dans les comportements, les valeurs, les représentations... Et le
 langage.
 
-<insérer image>
+![La croissance de l'écart patriarcal](/img/posts/2024-03-03-se-servir-de-sa-langue/gap.png)
 
 Et l'inquiétude n'est pas uniquement internationale, « Le sexisme gagne du
 terrain »: https://www.vie-publique.fr/en-bref/292747-egalite-femmes-hommes-quels-sont-les-incubateurs-du-sexisme

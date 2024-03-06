@@ -3,12 +3,14 @@
 namespace App\Adapters\Repositories;
 
 use App\Domain\Repositories\IAuthorsRepository;
+use App\Domain\ValueObjects\Author;
+use App\Domain\ValueObjects\AuthorId;
 use App\Domain\ValueObjects\AuthorItem;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 
-class AuthorsRepository implements IAuthorsRepository
+readonly class AuthorsRepository implements IAuthorsRepository
 {
     public function all(): Collection
     {
@@ -38,5 +40,23 @@ class AuthorsRepository implements IAuthorsRepository
                 );
             })
             ->collect();
+    }
+
+    public function getAuthorFromSlug(string $slug): ?Author
+    {
+        $author = DB::table('authors as t')
+            ->select('t.id', 't.name', 't.slug')
+            ->where('t.slug', $slug)
+            ->first();
+
+        return Author::from(
+            AuthorId::from($author->id),
+            $author->name,
+            $author->slug,
+            config("authors.$author->slug.title") ?? '',
+            config("authors.$author->slug.bio") ?? '',
+            config("authors.$author->slug.image") ?? '',
+            collect(config("authors.$author->slug.links")) ?? collect(),
+        );
     }
 }

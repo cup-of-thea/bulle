@@ -8,27 +8,25 @@ use Illuminate\Support\Collection;
 readonly class CategoryItem
 {
     public function __construct(
-        public string      $title,
-        public string      $slug,
-        public int         $postsCount,
-        public string      $lastPostTitle,
-        public string      $lastPostSlug,
-        public Carbon      $lastPostDate,
+        public string $title,
+        public string $slug,
+        public int $postsCount,
+        public string $lastPostTitle,
+        public string $lastPostSlug,
+        public Carbon $lastPostDate,
         public ?Collection $authors,
-    )
-    {
+    ) {
     }
 
     public static function from(
         string $title,
         string $slug,
-        int    $postsCount,
+        int $postsCount,
         string $lastPostTitle,
         string $lastPostSlug,
         Carbon $lastPostDate,
         ?array $authors,
-    ): self
-    {
+    ): self {
         return new self(
             $title,
             $slug,
