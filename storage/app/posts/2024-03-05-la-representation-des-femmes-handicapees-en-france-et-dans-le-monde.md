@@ -224,14 +224,14 @@ Autres sources :
 
 [Ces personnalités féminines engagées et talentueuses de la Handitech ! | Paris&Co](https://www.parisandco.paris/a-la-une/actualites/ces-personnalites-feminines-engagees-et-talentueuses-de-la-handitech)
 
-[Meet Denna Lambert, Program Manager at NASA](https://www.afb.org/research-and-initiatives/employment/meet-denna-lambert) (
-EN)
+[Meet Denna Lambert, Program Manager at NASA](https://www.afb.org/research-and-initiatives/employment/meet-denna-lambert)
+(EN)
 
-[The Empowerment of Women with Disabilities in the Tech Industry](https://www.gigx.com/blog/empowerment-women-disabilities-tech-industry) (
-EN)
+[The Empowerment of Women with Disabilities in the Tech Industry](https://www.gigx.com/blog/empowerment-women-disabilities-tech-industry)
+(EN)
 
-[Challenging Ableism: Empowering Women with Disabilities in Tech for a More Inclusive Future - AnitaB.org](https://anitab.org/blog/events/challenging-ableism-empowering-women-with-disabilities-in-tech-for-a-more-inclusive-future/) ****(
-EN)
+[Challenging Ableism: Empowering Women with Disabilities in Tech for a More Inclusive Future - AnitaB.org](https://anitab.org/blog/events/challenging-ableism-empowering-women-with-disabilities-in-tech-for-a-more-inclusive-future/)
+(EN)
 
-[Making Tech Accessible For Disabled And Nondisabled People In Conversation With Haben Girma And Rachel Arfa](https://www.forbes.com/sites/brendadwilkerson/2021/11/22/making-tech-accessible-for-disabled-and-nondisabled-people-in-conversation-with-haben-girma-and-rachel-arfa/) (
-EN)
+[Making Tech Accessible For Disabled And Nondisabled People In Conversation With Haben Girma And Rachel Arfa](https://www.forbes.com/sites/brendadwilkerson/2021/11/22/making-tech-accessible-for-disabled-and-nondisabled-people-in-conversation-with-haben-girma-and-rachel-arfa/)
+(EN)

@@ -88,10 +88,10 @@ Et le guide ne parle pas uniquement de la langue, il parle aussi de la culture, 
 des hommes dans *cette* culture, et de **la nécessité de diversifier ces représentations**.
 
 Et depuis 2015, on a pu constater que loin de se réduire, l'écart patriarcal se creuse, il y a à peine un mois,
-une [étude du financial times](https://www.ft.com/content/29fd9b5c-2f35-41bf-9d4c-994db4e12998) a mis en exergue une
-fracture de la génération Z (18-30 ans), les femmes sont de plus en plus progressistes, tandis que les hommes, eux, sont
-de plus en plus conservateurs. Et cela se constate dans les comportements, les valeurs, les représentations... Et le
-langage.
+une [étude du financial times](https://www.ft.com/content/29fd9b5c-2f35-41bf-9d4c-994db4e12998) (EN) a mis en exergue
+une fracture de la génération Z (18-30 ans), les femmes sont de plus en plus progressistes, tandis que les hommes, eux,
+sont de plus en plus conservateurs. Et cela se constate dans les comportements, les valeurs, les représentations... Et
+le langage.
 
 ![La croissance de l'écart patriarcal](/img/posts/2024-03-03-se-servir-de-sa-langue/gap.png)
 
