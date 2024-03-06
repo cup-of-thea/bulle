@@ -3,6 +3,7 @@
 namespace App\Adapters\Repositories;
 
 use App\Domain\Repositories\IPostsRepository;
+use App\Domain\ValueObjects\Author;
 use App\Domain\ValueObjects\Category;
 use App\Domain\ValueObjects\CategoryId;
 use App\Domain\ValueObjects\Edition;
@@ -15,24 +16,26 @@ use Illuminate\Support\Facades\DB;
 
 class PostsRepository implements IPostsRepository
 {
+    private const COLUMNS = [
+        'p.id',
+        'p.title',
+        'p.slug',
+        'p.date',
+        'p.description',
+        'p.content',
+        'p.canonical',
+        'c.id as categoryId',
+        'c.title as categoryTitle',
+        'c.slug as categorySlug',
+        'e.id as editionId',
+        'e.title as editionTitle',
+        'e.slug as editionSlug',
+    ];
+
     public function getLastPosts(): Collection
     {
         return DB::table('posts as p')
-            ->select(
-                'p.id',
-                'p.title',
-                'p.slug',
-                'p.date',
-                'p.description',
-                'p.content',
-                'p.canonical',
-                'c.id as categoryId',
-                'c.title as categoryTitle',
-                'c.slug as categorySlug',
-                'e.id as editionId',
-                'e.title as editionTitle',
-                'e.slug as editionSlug',
-            )
+            ->select(...self::COLUMNS)
             ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
             ->leftJoin('editions as e', 'p.edition_id', '=', 'e.id')
             ->orderBy('date', 'desc')
@@ -44,21 +47,7 @@ class PostsRepository implements IPostsRepository
     public function getPostsFromCategory(Category $category): Collection
     {
         return DB::table('posts as p')
-            ->select(
-                'p.id',
-                'p.title',
-                'p.slug',
-                'p.date',
-                'p.description',
-                'p.content',
-                'p.canonical',
-                'c.id as categoryId',
-                'c.title as categoryTitle',
-                'c.slug as categorySlug',
-                'e.id as editionId',
-                'e.title as editionTitle',
-                'e.slug as editionSlug',
-            )
+            ->select(...self::COLUMNS)
             ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
             ->leftJoin('editions as e', 'p.edition_id', '=', 'e.id')
             ->where('c.id', $category->categoryId->value())
@@ -71,21 +60,7 @@ class PostsRepository implements IPostsRepository
     public function getPostsFromEdition(Edition $edition): Collection
     {
         return DB::table('posts as p')
-            ->select(
-                'p.id',
-                'p.title',
-                'p.slug',
-                'p.date',
-                'p.description',
-                'p.content',
-                'p.canonical',
-                'c.id as categoryId',
-                'c.title as categoryTitle',
-                'c.slug as categorySlug',
-                'e.id as editionId',
-                'e.title as editionTitle',
-                'e.slug as editionSlug',
-            )
+            ->select(...self::COLUMNS)
             ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
             ->leftJoin('editions as e', 'p.edition_id', '=', 'e.id')
             ->where('e.id', $edition->editionId->value())
@@ -98,21 +73,7 @@ class PostsRepository implements IPostsRepository
     public function getPostsFromTag(Tag $tag): Collection
     {
         return DB::table('posts as p')
-            ->select(
-                'p.id',
-                'p.title',
-                'p.slug',
-                'p.date',
-                'p.description',
-                'p.content',
-                'p.canonical',
-                'c.id as categoryId',
-                'c.title as categoryTitle',
-                'c.slug as categorySlug',
-                'e.id as editionId',
-                'e.title as editionTitle',
-                'e.slug as editionSlug',
-            )
+            ->select(...self::COLUMNS)
             ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
             ->leftJoin('editions as e', 'p.edition_id', '=', 'e.id')
             ->join('post_tag as pt', 'p.id', '=', 'pt.post_id')
@@ -127,27 +88,28 @@ class PostsRepository implements IPostsRepository
     public function getPostFromSlug(string $slug): Post
     {
         $post = DB::table('posts as p')
-            ->select(
-                'p.id',
-                'p.title',
-                'p.slug',
-                'p.date',
-                'p.description',
-                'p.content',
-                'p.canonical',
-                'c.id as categoryId',
-                'c.title as categoryTitle',
-                'c.slug as categorySlug',
-                'e.id as editionId',
-                'e.title as editionTitle',
-                'e.slug as editionSlug',
-            )
+            ->select(...self::COLUMNS)
             ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
             ->leftJoin('editions as e', 'p.edition_id', '=', 'e.id')
             ->where('p.slug', $slug)
             ->first();
 
         return $this->hydratePostItem($post);
+    }
+
+    public function getPostsByAuthor(Author $author): Collection
+    {
+        return DB::table('posts as p')
+            ->select(...self::COLUMNS)
+            ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
+            ->leftJoin('editions as e', 'p.edition_id', '=', 'e.id')
+            ->join('post_author as pa', 'p.id', '=', 'pa.post_id')
+            ->join('authors as a', 'pa.author_id', '=', 'a.id')
+            ->where('a.id', $author->authorId->value())
+            ->orderBy('date', 'desc')
+            ->limit(500)
+            ->get()
+            ->map(fn($post) => $this->hydratePostItem($post))->collect();
     }
 
     protected function hydratePostItem($post): Post
