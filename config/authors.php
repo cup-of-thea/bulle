@@ -12,5 +12,6 @@ return [
         'instagram' => 'https://www.instagram.com/thea_cupcake/',
         'youtube' => 'https://www.youtube.com/channel/UCZi02AEjNKmTJVBq3f3w8LQ',
         'title' => 'Senior Software Engineer',
+        'image' => '/img/authors/thea.jpg',
     ]
 ];
