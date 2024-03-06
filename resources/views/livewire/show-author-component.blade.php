@@ -30,9 +30,11 @@
                     </div>
                 </div>
 
-                <p class="mt-6 text-gray-500">
-                    {{ $author->bio }}
-                </p>
+                @if($author->bio)
+                    <p class="mt-6 text-gray-500">
+                        {{ $author->bio }}
+                    </p>
+                @endif
 
                 @if($author->links->isNotEmpty())
                     <div class="mt-10 border-t border-gray-200 pt-10">
@@ -56,24 +58,22 @@
                     </div>
                 @endif
 
-                @if($this->editions)
-                    <x-authors.relations :title="'Éditions'" :elements="$this->editions"/>
+                @if($this->editions->isNotEmpty())
+                    <x-authors.relations :resource="'editions'" :title="'Éditions'" :elements="$this->editions"/>
                 @endif
 
-                @if($this->categories)
-                    <x-authors.relations :title="'Catégories'" :elements="$this->categories"/>
+                @if($this->categories->isNotEmpty())
+                    <x-authors.relations :resource="'categories'" :title="'Catégories'" :elements="$this->categories"/>
                 @endif
 
-                @if(false)
-                    <div class="mt-10 border-t border-gray-200 pt-10">
-                        <h3 class="text-sm font-medium text-gray-900">Tags</h3>
+                @if($this->tags->isNotEmpty())
+                    <x-authors.relations :resource="'tags'" :title="'Tags'" :elements="$this->tags"/>
+                @endif
 
-                    </div>
-
-                    <div class="mt-10 border-t border-gray-200 pt-10">
-                        <h3 class="text-sm font-medium text-gray-900">Co-auteur·ice·s·x</h3>
-
-                    </div>
+                @if($this->coAuthors->isNotEmpty())
+                    <x-authors.co-authors :resource="'authors'"
+                                          :title="'Co-auteur·ice·s·x'"
+                                          :elements="$this->coAuthors"/>
                 @endif
 
             </div>

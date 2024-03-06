@@ -10,4 +10,6 @@ interface IAuthorsRepository
     public function all(): Collection;
 
     public function getAuthorFromSlug(string $slug): ?Author;
+
+    public function getCoAuthors(Author $author): Collection;
 }

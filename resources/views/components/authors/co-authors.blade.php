@@ -4,9 +4,9 @@
         <ul role="list">
             @foreach($elements as $element)
                 <li>
-                    <a href="{{ route("$resource.show", $element->slug) }}"
+                    <a href="{{ route('editions.show', $element->slug) }}"
                        class="text-indigo-600 hover:text-indigo-500">
-                        {{ $element->title }}
+                        {{ $element->name }}
                     </a>
                 </li>
             @endforeach
