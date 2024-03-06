@@ -55,7 +55,9 @@ readonly class AuthorsRepository implements IAuthorsRepository
             $author->slug,
             config("authors.$author->slug.title") ?? '',
             config("authors.$author->slug.bio") ?? '',
-            config("authors.$author->slug.image") ?? '',
+            config(
+                "authors.$author->slug.image"
+            ) ?? "https://ui-avatars.com/api/?name={$author->name}&color=7F9CF5&background=EBF4FF&size=256&bold=true&font-size=0.40",
             collect(config("authors.$author->slug.links")) ?? collect(),
         );
     }
