@@ -20,7 +20,7 @@ readonly class PostItemAuthor
     public function image(): string
     {
         return config("authors.{$this->slug}.image")
-            ?: "/img/authors/{$this->slug}.jpg";
+            ?: "https://ui-avatars.com/api/?name={$this->name}&color=7F9CF5&background=EBF4FF&size=256&rounded=true&bold=true&font-size=0.40";
     }
 
     public function bio(): ?string
@@ -67,7 +67,7 @@ readonly class PostItemAuthor
     {
         return config("authors.{$this->slug}.threads") ?: null;
     }
-    
+
     public function website(): ?string
     {
         return config("authors.{$this->slug}.website") ?: null;
