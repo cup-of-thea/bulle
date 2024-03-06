@@ -3,6 +3,7 @@
 namespace App\Adapters\Repositories;
 
 use App\Domain\Repositories\IEditionsRepository;
+use App\Domain\ValueObjects\Author;
 use App\Domain\ValueObjects\Edition;
 use App\Domain\ValueObjects\EditionId;
 use App\Domain\ValueObjects\EditionItem;
@@ -49,7 +50,7 @@ class EditionsRepository implements IEditionsRepository
             ->collect();
     }
 
-    public function getEditionFromSlug(string $slug): ?Edition
+    public function getBySlug(string $slug): ?Edition
     {
         $data = DB::table('editions as c')
             ->select('c.id', 'c.title', 'c.slug')
@@ -57,5 +58,18 @@ class EditionsRepository implements IEditionsRepository
             ->first();
 
         return $data ? Edition::from(EditionId::from($data->id), $data->title, $data->slug) : null;
+    }
+
+    public function getByAuthor(Author $author): Collection
+    {
+        return DB::table('editions as e')
+            ->select('e.id', 'e.title', 'e.slug')
+            ->join('posts as p', 'e.id', '=', 'p.edition_id')
+            ->join('post_author as pa', 'p.id', '=', 'pa.post_id')
+            ->join('authors as a', 'pa.author_id', '=', 'a.id')
+            ->where('a.id', $author->authorId->value())
+            ->limit(500)
+            ->get()
+            ->map(fn($edition) => Edition::from(EditionId::from($edition->id), $edition->title, $edition->slug));
     }
 }

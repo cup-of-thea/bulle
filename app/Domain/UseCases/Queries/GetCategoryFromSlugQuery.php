@@ -13,6 +13,6 @@ readonly class GetCategoryFromSlugQuery
 
     public function get(string $slug): ?Category
     {
-        return $this->categoriesRepository->getCategoryFromSlug($slug);
+        return $this->categoriesRepository->getBySlug($slug);
     }
 }
