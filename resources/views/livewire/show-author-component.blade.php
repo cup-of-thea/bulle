@@ -34,48 +34,37 @@
                     {{ $author->bio }}
                 </p>
 
-                <div class="mt-10 border-t border-gray-200 pt-10">
-                    <h3 class="text-sm font-medium text-gray-900">Liens</h3>
-                    <div class="mt-4 text-gray-500">
-                        <ul role="list">
-                            @foreach($author->links as $icon => $link)
-                                <li class="my-3">
-                                    <a href="{{ $link }}" class="flex items-center gap-2">
-                                        <p>
-                                            {{ svg("iconoir-$icon", 'w-6 h-6') }}
-                                        </p>
-                                        <p class="text-indigo-600 hover:text-indigo-500">
-                                            {{ $link }}
-                                        </p>
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-
-                @if(false)
+                @if($author->links->isNotEmpty())
                     <div class="mt-10 border-t border-gray-200 pt-10">
-                        <h3 class="text-sm font-medium text-gray-900">Éditions</h3>
-                        <div class="prose prose-sm mt-4 text-gray-500">
+                        <h3 class="text-sm font-medium text-gray-900">Liens</h3>
+                        <div class="mt-4 text-gray-500">
                             <ul role="list">
                                 @foreach($author->links as $icon => $link)
-                                    <li>
-                                        <a href="{{ $link }}" class="text-indigo-600 hover:text-indigo-500">
-                                            {{ $link }}
+                                    <li class="my-3">
+                                        <a href="{{ $link }}" class="flex items-center gap-2">
+                                            <p>
+                                                {{ svg("iconoir-$icon", 'w-6 h-6') }}
+                                            </p>
+                                            <p class="text-indigo-600 hover:text-indigo-500">
+                                                {{ $link }}
+                                            </p>
                                         </a>
                                     </li>
                                 @endforeach
                             </ul>
                         </div>
                     </div>
+                @endif
 
-                    <div class="mt-10 border-t border-gray-200 pt-10">
-                        <h3 class="text-sm font-medium text-gray-900">Catégories</h3>
+                @if($this->editions)
+                    <x-authors.relations :title="'Éditions'" :elements="$this->editions"/>
+                @endif
 
-                    </div>
+                @if($this->categories)
+                    <x-authors.relations :title="'Catégories'" :elements="$this->categories"/>
+                @endif
 
-
+                @if(false)
                     <div class="mt-10 border-t border-gray-200 pt-10">
                         <h3 class="text-sm font-medium text-gray-900">Tags</h3>
 

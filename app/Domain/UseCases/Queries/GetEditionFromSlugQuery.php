@@ -13,6 +13,6 @@ readonly class GetEditionFromSlugQuery
 
     public function get(string $slug): ?Edition
     {
-        return $this->editionsRepository->getEditionFromSlug($slug);
+        return $this->editionsRepository->getBySlug($slug);
     }
 }
