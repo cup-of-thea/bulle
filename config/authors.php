@@ -20,5 +20,16 @@ return [
         'image' => '/img/authors/thea.jpg',
         'bio' => "Développeuse · Affiliée Twitch · Autrice de contenus · Féministe Intersectionnelle & Lesbienne et fière de l'être 🌸
                   Je poste sur mes lectures, l’inclusion et ma transidentité sur mon blog ☕️",
-    ]
+    ],
+    'emmanuelle-aboaf' => [
+        'links' => [
+            'globe' => 'https://emmanuelle-aboaf.netlify.app/',
+        ],
+        'title' => 'Développeuse',
+        'image' => '/img/authors/emmanuelle.jpg',
+        'bio' => "Sourde de naissance et bionique (deux implants cochléaires) et surtout développeuse. Je lutte chaque jour pour l’accessibilité et l’inclusion dans la tech.",
+    ],
+    'solene-garda-krebs' => [
+        'title' => 'Linter PHP/SQL',
+    ],
 ];
