@@ -7,28 +7,29 @@ use Carbon\Carbon;
 class AuthorItem
 {
     public function __construct(
-        public string      $name,
-        public string      $slug,
-        public int         $postsCount,
-        public string      $lastPostTitle,
-        public string      $lastPostSlug,
-        public Carbon      $lastPostDate
-    )
-    {
+        public string $name,
+        public string $slug,
+        public string $image,
+        public int $postsCount,
+        public string $lastPostTitle,
+        public string $lastPostSlug,
+        public Carbon $lastPostDate
+    ) {
     }
 
     public static function from(
         string $name,
         string $slug,
-        int    $postsCount,
+        string $image,
+        int $postsCount,
         string $lastPostTitle,
         string $lastPostSlug,
         Carbon $lastPostDate
-    ): self
-    {
+    ): self {
         return new self(
             $name,
             $slug,
+            $image,
             $postsCount,
             $lastPostTitle,
             $lastPostSlug,

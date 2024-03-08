@@ -65,7 +65,7 @@
                     <li>
                         <a href="{{ route('authors.show', $author->slug) }}">
                             <img class="mx-auto h-56 w-56 rounded-full object-cover bg-gray-50"
-                                 src="{{ $author->image() }}"
+                                 src="{{ $author->image }}"
                                  alt="{{ $author->name }}">
                             <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
                                 {{ $author->name }}

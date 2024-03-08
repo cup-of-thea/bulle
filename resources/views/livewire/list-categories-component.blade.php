@@ -35,7 +35,7 @@
                                     @foreach($category->authors as $author)
                                         <dd>
                                             <img class="h-6 w-6 rounded-full bg-gray-50 ring-2 ring-white"
-                                                 src="/img/authors/{{ $author->slug }}.jpg" alt="{{ $author->image }}">
+                                                 src="{{ $author->image }}" alt="{{ $author->name }}">
                                         </dd>
                                     @endforeach
                                 </div>

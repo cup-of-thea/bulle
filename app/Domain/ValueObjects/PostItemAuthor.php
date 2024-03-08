@@ -7,20 +7,16 @@ readonly class PostItemAuthor
     private function __construct(
         public string $name,
         public string $slug,
+        public string $image,
     ) {
     }
 
     public static function from(
         string $name,
         string $slug,
+        string $image,
     ): self {
-        return new self($name, $slug);
-    }
-
-    public function image(): string
-    {
-        return config("authors.{$this->slug}.image")
-            ?: "https://ui-avatars.com/api/?name={$this->name}&color=7F9CF5&background=EBF4FF&size=256&rounded=true&bold=true&font-size=0.40";
+        return new self($name, $slug, $image);
     }
 
     public function bio(): ?string
