@@ -10,7 +10,7 @@
                             <div class="flex items-center gap-x-4">
                                 <a href="{{ route('authors.show', $author->slug)  }}">
                                     <img class="h-12 w-12 rounded-full bg-gray-50 aspect-square object-cover"
-                                         src="/img/authors/{{ $author->slug }}.jpg"
+                                         src="/img/authors/{{ $author->image }}.jpg"
                                          alt="{{ $author->name }}"/>
                                 </a>
                                 <div>
