@@ -49,8 +49,8 @@ it('displays author details with posts', function () {
         'A small bio',
         '/path/to/image.jpg',
         collect([
-            'globe' => 'https://author-1.com',
-            'twitter' => 'https://twitter.com/author-1',
+            'iconoir-globe' => 'https://author-1.com',
+            'iconoir-twitter' => 'https://twitter.com/author-1',
         ])
     );
 
@@ -75,7 +75,7 @@ it('displays author details with posts', function () {
             );
     });
 
-    livewire(ShowauthorComponent::class, ['author' => $author])
+    livewire(ShowAuthorComponent::class, ['author' => $author])
         ->assertSee('author 1')
         ->assertSee('Post 1')
         ->assertSee('A small bio')
