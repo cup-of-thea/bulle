@@ -5,16 +5,18 @@
  * - globe (personal website)
  * - twitter, github, linkedin, mastodon, tiktok, threads, instagram, youtube
  * - and any iconoir icon name (https://github.com/andreiio/blade-iconoir)
+ * - and any tabler icon name (https://github.com/ryangjchandler/blade-tabler-icons)
  */
 return [
     'thea' => [
         'links' => [
-            'globe' => 'https://cupof.coffee',
-            'twitter' => 'https://twitter.com/thea_cake',
-            'github' => 'https://github.com/cup-of-thea',
-            'tiktok' => 'https://www.tiktok.com/@thea_cake',
-            'threads' => 'https://www.threads.net/@thea_cupcake',
-            'instagram' => 'https://www.instagram.com/thea_cupcake/',
+            'iconoir-globe' => 'https://cupof.coffee',
+            'iconoir-twitter' => 'https://twitter.com/thea_cake',
+            'iconoir-github' => 'https://github.com/cup-of-thea',
+            'iconoir-tiktok' => 'https://www.tiktok.com/@thea_cake',
+            'iconoir-threads' => 'https://www.threads.net/@thea_cupcake',
+            'iconoir-instagram' => 'https://www.instagram.com/thea_cupcake/',
+            'tabler-brand-bluesky' => 'https://bsky.app/profile/cupof.coffee',
         ],
         'title' => 'Senior Software Engineer',
         'image' => '/img/authors/thea.jpg',
@@ -23,7 +25,7 @@ return [
     ],
     'emmanuelle-aboaf' => [
         'links' => [
-            'globe' => 'https://emmanuelle-aboaf.netlify.app/',
+            'iconoir-globe' => 'https://emmanuelle-aboaf.netlify.app/',
         ],
         'title' => 'Développeuse',
         'image' => '/img/authors/emmanuelle.jpg',

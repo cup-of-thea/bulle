@@ -45,7 +45,7 @@
                                     <li class="my-3">
                                         <a href="{{ $link }}" class="flex items-center gap-2">
                                             <p>
-                                                {{ svg("iconoir-$icon", 'w-6 h-6') }}
+                                                {{ svg("$icon", 'w-6 h-6') }}
                                             </p>
                                             <p class="text-indigo-600 hover:text-indigo-500">
                                                 {{ $link }}
