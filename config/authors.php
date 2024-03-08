@@ -8,6 +8,18 @@
  * - and any tabler icon name (https://github.com/ryangjchandler/blade-tabler-icons)
  */
 return [
+    'Magali' => [
+        'links' => [
+            'iconoir-globe' => 'https://magali-milbergue.com/',
+            'iconoir-send-mail' => 'https://magalimilbergue.substack.com/',
+            'tabler-brand-bluesky' => 'https://bsky.app/profile/thedaisymoon.me',
+            'iconoir-linkedin' => 'https://www.linkedin.com/in/magali-milbergue/',
+            'iconoir-puzzle' => 'https://compositech.org/',
+        ],
+        'title' => 'Créatrice de sites et inclusion advocate',
+        'image' => '/img/authors/magali.jpg',
+        'bio' => "Ancienne travailleuse sociale devenue dev, je suis féministe depuis le biberon et je travaille sur les sujets d'éthique, d'inclusion et de comment changer la société pour détruire les oppressions depuis plus de vingt ans. J'essaie de faire bouger les lignes à autant de niveaux possibles. 🌼🌛 Co-fondatrice et présidente de Compositech.",
+    ],
     'thea' => [
         'links' => [
             'iconoir-globe' => 'https://cupof.coffee',
