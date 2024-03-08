@@ -79,6 +79,9 @@ readonly class AuthorsRepository implements IAuthorsRepository
         return AuthorItem::from(
             $author->name,
             $author->slug,
+            config(
+                "authors.$author->slug.image"
+            ) ?? "https://ui-avatars.com/api/?name={$author->name}&color=7F9CF5&background=EBF4FF&size=256&bold=true&font-size=0.40",
             $postsCount,
             $lastPost->title,
             $lastPost->slug,
