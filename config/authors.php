@@ -8,7 +8,7 @@
  * - and any tabler icon name (https://github.com/ryangjchandler/blade-tabler-icons)
  */
 return [
-    'Magali' => [
+    'magali' => [
         'links' => [
             'iconoir-globe' => 'https://magali-milbergue.com/',
             'iconoir-send-mail' => 'https://magalimilbergue.substack.com/',
