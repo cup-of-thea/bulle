@@ -11,8 +11,11 @@ tags: [ "VSS", "Femmes et espace public", "Sociologie" ]
 Il y a quelques soirées de ça, je promenais mon chien aux alentours de 21h30 dans mon quartier quand j’ai entendu quelqu’un m’interpeler de l’autre côté de la route. Je me suis retournée et j’ai vu un homme dans un gros camion gris garé sur le trottoir d’en face. Il m’a souri et m’a demandé : « Je peux vous poser une question personnelle ? ». Quand j’ai acquiescé, il a continué : 
     
 « Est-ce que vous êtes célibataire ? ». 
+
 « Non, mariée. » j’ai répondu avec un sourire. 
+
 « Ah ! Bonne soirée à vous alors ! »
+
 « Bonne soirée ! »
 
 Et je suis rentrée chez moi. 
