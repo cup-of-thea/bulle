@@ -14,11 +14,11 @@
             <div
                 class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
                 <a href="https://compositech.org" target="_blank"><img class="max-h-12 w-full object-contain object-left"
-                     src="/img/partners/compositech.png" alt="Tuple" width="105" height="48"></a>
+                     src="/img/partners/compositech.png" alt="logo association compositech" width="105" height="auto"></a>
+                     <a href="https://lapdg.fr/a-propos/" target="_blank"><img class="max-h-12 w-full object-contain object-left"
+                     src="/img/partners/la-pdg.png" alt="Reform" width="105"
+                     height="auto"></a>
                 <!-- <img class="max-h-12 w-full object-contain object-left"
-                     src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg" alt="Reform" width="104"
-                     height="48">
-                <img class="max-h-12 w-full object-contain object-left"
                      src="https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg" alt="SavvyCal" width="140"
                      height="48">
                 <img class="max-h-12 w-full object-contain object-left"
