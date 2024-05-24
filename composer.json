@@ -7,7 +7,7 @@
     "framework"
   ],
   "license": "MIT",
-  "version": "1.10.8",
+  "version": "1.10.9",
   "require": {
     "php": "^8.2",
     "andreiio/blade-iconoir": "^4.1",

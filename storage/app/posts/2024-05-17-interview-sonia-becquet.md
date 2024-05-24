@@ -20,37 +20,37 @@ Même avant d'avoir des enfants, ce qui a été mon introduction sur le sujet, c
 
 Notamment parce que je viens d'une famille où l'homophobie et la transphobie sont très présentes. Depuis toute petite, j’ai entendu des discours affreux sur l'homosexualité, disant que c'est contre-nature. Du coup, j’ai dû faire tout un travail de déconstruction sur le sujet et cette série documentaire a vraiment été ma première entrée au sujet de la transidentité, surtout de sa totale normalité.
 
-Après, j'ai lu une BD qui s'appelle la [Transitions](https://www.editions-delcourt.fr/bd/series/serie-transitions/album-transitions-journal-d-anne-marbot) où une maman raconte son parcours à elle et son cheminement à elle face à la transidentité de son enfant. C'était intéressant parce qu'on voyait vraiment bien comment elle a mal vécu les choses au début et comment elle s'est renseignée, sensibilisée, qu'elle a été accompagnée... Et en même temps, c’était très pédagogique.
+Après, j'ai lu une BD qui s'appelle [Transitions](https://www.editions-delcourt.fr/bd/series/serie-transitions/album-transitions-journal-d-anne-marbot) où une maman raconte son parcours et son cheminement face à la transidentité de son enfant. C'était intéressant parce qu'on voit qu'elle vit mal les choses au début, et comment elle se renseigne, se sensibilise, qu'elle est accompagnée... En même temps, c’est très pédagogique.
 
 La troisième chose, c'est le documentaire Petite Fille.
 
 J’avais découvert la transition en tant avec Océan, le côté ado, jeune adulte avec la BD Transitions mais quand j'ai vu Petite Fille, j’ai réalisé que ça pouvait arriver beaucoup plus tôt. 
 
-Et, quand on a observé chez E. les premières étapes, vers l’âge de 3 ans et demi, j’ai tout de suite compris que quelque chose se passait. À cet âge, je pense, ce n’est jamais de but en blanc « Vous vous êtes trompés, je suis une fille. » Ça passe par plein de petites étapes.
+Pour revenir à notre expérience, quand on a observé chez E. les premières étapes, vers l’âge de 3 ans et demi, j’ai tout de suite compris que quelque chose se passait. À cet âge, je pense que ce n’est jamais de but en blanc « Vous vous êtes trompés, je suis une fille. » Ça passe par plein de petites étapes.
 
-Au début, dans les dessins animés, elle s'identifiait aux personnages féminins systématiquement. Alors que mon garçon, lui, s'identifiait aux personnages masculins. Après, c'était toujours la maman dans ses jeux. Puis, quand elle allait chez les copines, elle se déguisait en princesse. On lui a donc offert une robe de princesse. Je me rappelerai toujours la joie dans ses yeux et la façon dont elle tournait dedans en disant « Regarde comme je suis belle maman ! ». Et quand elle a commencé à nous demander à la présenter en fille aux personnes extérieures, on s'est dit qu’on avait passé quand même pas mal d'étapes et qu’il fallait qu’on soit accompagné dans ce chemin. On ne se sentait pas capable avec le peu de connaissances qu’on avait et notre transphobie intégrée (qu’on a toutes et tous vivant dans une société transphobe) l’accompagner correctement. 
+Au début, elle s'identifiait systématiquement aux personnages féminins des dessins animés. Alors que son frère, lui, s'identifiait aux personnages masculins. Après, E. était toujours la maman dans les jeux. Puis, quand elle allait chez les copines, elle se déguisait en princesse. On lui a donc offert une robe de princesse. Je me rappellerai toujours la joie dans ses yeux et la façon dont elle faisait tourner sa robe en disant « Regarde comme je suis belle maman ! ». Quand elle a commencé à nous demander de la présenter comme notre fille aux personnes extérieures, on s'est dit qu’on avait quand même passé pas mal d'étapes et qu'on devait être accompagné dans ce chemin. On ne se sentait pas capable, avec notre faible connaissance et notre transphobie intégrée (que nous avons toutes et tous, puisque vivant dans une société transphobe), de l’accompagner correctement.
 
-En parallèle de tout ça, sur Instagram, j'ai commencé à suivre pas mal de personnes trans, à continuer à me sensibiliser sur la question, à lire des choses, à regarder, à écouter. D'ailleurs, j'ai fait [une petite liste](https://bit.ly/ressourcesgenrestransidentite) de tout ce que j'ai pu lire parce qu'après, c'était plus simple pour les gens de leur dire : « On n'est pas au même niveau d'information, donc je te file ma liste, tu lis tout, tu écoutes tout et après, on en parle si tu veux. Mais tu fais le premier travail là-dessus. » 
+En parallèle, j'ai commencé à suivre pas mal de personnes trans sur Instagram. J'ai continuer à me sensibiliser sur la question, à lire des choses, à regarder, à écouter. D'ailleurs, j'ai fait [une petite liste](https://bit.ly/ressourcesgenrestransidentite) de tout ce que j'ai pu lire. C'est aussi plus simple pour moi, de dire à mes interlocuteurices : « On n'est pas au même niveau d'information, donc je te file ma liste, tu lis tout, tu écoutes tout et après, on en parle si tu veux. Mais tu fais ce premier travail là-dessus. »
 
 ##### **Magali**
 Justement, ça me fait me demander dans quelle mesure la transition de votre fille, et le fait que vous la souteniez, a été impactant socialement pour votre famille.
 
 ##### **Sonia**
-Quand elle a commencé à porter des robes, il s’est passé un incident à l’école, et des proches nous ont fait cette réflexion : « Vous devriez faire en sorte qu’elle ne s’habille en fille qu’à la maison. ». Ça m’a poussée à me rendre compte de la nécessité pour tout un chacun de faire respecter les normes sociales. C'était dit d’une bienveillante, un conseil pour éviter qu’elle souffre, une volonté de la protéger. Mais tout ce que cela servait à dire c’est qu’un garçon ne porte pas de robes.
+Quand elle a commencé à porter des robes, il s’est passé un incident à l’école, et des proches nous ont fait cette réflexion : « Vous devriez faire en sorte qu’elle ne s’habille en fille qu’à la maison. ». Je me suis rendu compte du rôle de tout un chacun de faire respecter les normes sociales dominantes. C'était dit avec bienveillance. Un conseil pour éviter qu’elle souffre. Une volonté de la protéger. Mais, cette bonne intention revenait aussi à dire que ça lui passerait, et qu'en attendant, un garçon ne porte pas de robes.
 
-Là où j'ai de la chance, c'est que j’habite dans une petite ville avec une communauté LGBTQIA+ bien implantée. J’ai donc la chance d'être entourée de personnes alliées, qui connaissent E. depuis qu'elle est toute petite et qui ont fait le travail à ma place aux personnes avec qui ça pouvait poser problème. 
+Là où j'ai de la chance, c'est que j’habite dans une ville avec une communauté LGBTQIA+ bien implantée. Je suis entourée de personnes alliées, qui connaissent E. depuis qu'elle est toute petite et qui ont fait une partie du travail de pédagogie à ma place avec certaines personnes.
 
 Donc, effectivement, quand tu es parent d'enfants trans si jeune, tu as quand même une grosse part de pédagogie, d'explication et toujours en avançant un peu masqué. 
 
 Après par contre, côté famille, ça ne s'est pas du tout bien passé et je ne suis plus en contact avec mes parents. J’ai essayé de faire ça en étapes mais quand j'ai commencé à dire : « Mon enfant va commencer à porter des robes » nous avons eu droit à des paroles horrible avec les reproches classiques : « Vous faites des choses affreuses pour votre enfant ! Elle va souffrir à cause de vous ! Et les taux de suicide… Les opérations... » 
 
-Côté de la famille de mon conjoint, par contre, ça a été accepté à bras ouverts. Ça, c'était trop cool. Il y a des gens qui me disent que c’est une question de génération. Dans notre cas, je dirais que ce n'est pas une question de génération, c'est une question d'ouverture d'esprit, de capacité à accepter l’autre comme il, elle est. Parce que la grand-mère de mon conjoint, qui a 91 ans, a directement dit : « Si c'est ce qui lui convient, mais tant mieux ! Je risque de me tromper, mais elle fait comme elle veut. » Et elle ne s'est jamais trompée.
+Du côté de la famille de mon conjoint, par contre, ça a été accepté à bras ouverts. Ça, c'était trop cool. Il y a des gens qui me disent que l'acceptation est une question de génération. Dans notre cas, je dirais que ce n'est pas une question de génération mais une question d'ouverture d'esprit. La capacité à accepter l’autre comme il ou elle est. La grand-mère de mon conjoint a 91 ans, et elle a directement dit : « Si c'est ce qui lui convient, tant mieux ! Je risque de me tromper, mais elle fait comme elle veut. » Et elle ne s'est jamais trompée.
 
 La rupture avec mes parents s'est faite sur le changement de prénom. C'était vraiment deux modes parentaux complètement différents et je pense que c’est le cœur du problème. Pour mes parents, ceux qui détiennent la vérité, ceux qui savent, ce sont les parents et les enfants se conforment, quelle que soit l’âge des enfants. 
 
 Nous, on considère qu’on accepte de base nos enfants, on les soutient du mieux qu’on peut, qu’on aime nos enfants indéfiniment de ce qu’il et elle. Quels que soient les chemins qu’ils prennent. 
 
-Par exemple, mon fils, qui est très garçon, qui adore le foot et dont le rêve est de devenir joueur de foot et militaire français, je l'accepte aussi tel qu’il est, même si ça ne correspond pas à mes valeurs (rires). 
+Par exemple, mon fils est très garçon. Il adore le foot et son rêve est de devenir joueur de foot et militaire français. Je l'accepte aussi tel qu’il est, même si ces rêves correspondent moins à mes valeurs (rires).
 
 **Magali**
 
@@ -69,15 +69,15 @@ La seule température que je prends, dans tout ça, c'est comment elle se sent. 
 C'est ça le curseur normalement… Est-ce qu'on pourrait parler des actualités spécifiques qui font qu'en ce moment, il y a une mobilisation des parents d'enfants trans ? 
 
 ##### **Sonia**
-Et des personnes trans… Et de la communauté LGBTQIA+… Et des féminismes…
+Et des personnes trans… Et de la communauté LGBTQIA+… Et des féministes…
 
 Il y a eu plus de 25 000 personnes qui ont manifesté pour les personnes trans dimanche 5 mai. Je pense que ça ne s’était jamais vu avant. C’est énorme ce qui se passe !
 
-Tout ça a commencé avec les paniques morales aux États-Unis et en Grande-Bretagne, [avec réduction des droits des personnes trans](https://www.leclubdesjuristes.com/international/la-remise-en-cause-de-lacces-au-soin-des-mineurs-transgenres-dans-les-etats-conservateurs-des-etats-unis-576/) très forte aux États-Unis. Des trucs horribles. Du genre les enfants trans doivent utiliser les toilettes par rapport à leur « sexe biologique », ce qui entraîne agressions multiples ou on va faire des enquêtes les parents qui soutiennent leurs enfants dans le processus de transition et faire en sorte que les enfants soient retirés de la garde des parents. 
+Tout ça a commencé avec les paniques morales aux États-Unis et en Grande-Bretagne, [avec la restriction des droits des personnes trans](https://www.leclubdesjuristes.com/international/la-remise-en-cause-de-lacces-au-soin-des-mineurs-transgenres-dans-les-etats-conservateurs-des-etats-unis-576/). Des trucs horribles du genre : les enfants trans doivent utiliser les toilettes attribuées à leur « sexe biologique », ce qui entraîne des agressions. Ou encore les services sociaux peuvent lancer des enquêtes sur les parents qui soutiennent la transition de leurs enfants. Ça pourrait aller jusqu'à faire placer leurs enfants dans des familles d'accueil.
 
-Et côté Grande-Bretagne, il y a une montée aussi sur les enfants trans, sur l'accompagnement et toujours cette question des bloqueurs de puberté, des hormones et des opérations, etc. 
+Côté Grande-Bretagne, il y a une recrudescence de transphobies visant les enfants trans. Une [enquête affreuse](https://www.instagram.com/p/C5n_CEQMsgU/) auprès des enfants trans a permis la remise en question des transitions médicales (accompagnement, bloqueurs de puberté, etc).
 
-En France, la sénatrice Jacqueline Eustache-Brinio qui n’est pas connue pour ses positions transfriendly\* (au moment du vote de l’interdiction des thérapies de conversion, [elle a déposé des amendements pour supprimer le mot « identité de genre » dans le texte](https://www.publicsenat.fr/actualites/non-classe/le-senat-adopte-la-loi-interdisant-les-therapies-de-conversion-191521), excluant de fait les personnes trans du texte) et reçoit les fémellistes transphobes Dora Moutot et Marguerite Stern a décidé de faire un rapport sur l’accompagnement des enfants trans, sous couvert de les protéger. Pour cela elle a diligenté l’ l'Observatoire de la Petite sirène, un organisme transphobe qui manipule les faits et utilisent désinformations et contre-vérités dans sa lutte pour interdire les transitions médicales et sociales des enfants trans.
+En France, la sénatrice Jacqueline Eustache-Brinio - qui n’est pas connue pour ses positions transfriendly* (au moment du vote de l’interdiction des thérapies de conversion, [elle a déposé des amendements pour supprimer le mot « identité de genre » dans le texte](https://www.publicsenat.fr/actualites/non-classe/le-senat-adopte-la-loi-interdisant-les-therapies-de-conversion-191521), excluant de fait les personnes trans du texte) et qui reçoit les fémellistes transphobes Dora Moutot et Marguerite Stern - a décidé de faire un rapport sur l’accompagnement des enfants trans, sous couvert de les protéger. Pour cela elle a diligenté l'Observatoire de la Petite sirène. Cet observatoire est un organisme qui manipule les faits et utilisent désinformations et contre-vérités dans sa lutte pour interdire les transitions médicales et sociales des enfants trans.
 
 Cette offensive sur les enfants trans ne date pas d’hier et est la résultante d’une stratégie dégueulasse de la part de ces collectifs transphobes tels qu’Ypomonie et la petite Sirène de s’attaquer aux droits des enfants trans pour commencer plutôt qu’à ceux des adultes trans (cf[ l'article de Médiapart](https://www.mediapart.fr/journal/france/050524/infiltration-harcelement-et-transphobie-dans-les-coulisses-d-un-collectif-hostile-aux-transitions-des-enfa?userid=b6744d0c-db12-4c40-be3f-375671cf5648)), avec l’idée que ça sera plus facile car les enfants n’ont pas de voix. On a vu des livres, des interviews des parents d’Ypomonie, des documentaires sur M6 tous plus transphobes les uns que les autres .
 
@@ -107,7 +107,7 @@ Mais dans les cas où ça se passe bien, c'est un super outil. Nous, ça nous a 
 
 Donc voilà d'où part la mobilisation actuelle, elle répond à ces attaques coordonnées. 
 
-Il y a eu un formidable soulèvement des coordinations, des associations, des influenceur·euses aussi pour se mobiliser. Et donc pour nous, parents d’enfants trans, on s'est dit que c’était super mais qu’il fallait aussi qu’on soit là, pour porter la voix de nos enfants. Et aussi pour donner un autre point de vue en disant : « Nos enfants vont bien quand on les soutient. » Je pense que c'est un peu la petite différence où les parents commencent aussi à se dire qu’il faut qu'on soit là, qu’il faut qu'on soit présents.
+Il y a eu un formidable soulèvement des coordinations, des associations, des influenceur·euses aussi pour se mobiliser. Pour nous, parents d’enfants trans, on s'est dit que c’était super mais qu’il fallait aussi qu’on soit là, pour porter la voix de nos enfants. Nous voulions aussi donner un autre point de vue en disant : « Nos enfants vont bien quand on les soutient. »
 
 ##### **Magali**
 Et donc, vous avez créé une association, si j'ai bien compris ?
@@ -117,7 +117,7 @@ Non, tout part de l'association Grandir Trans qui existe depuis 2021. Quand je m
 
 En complément de l’asso, il y a aussi un groupe Facebook privé qui a été créé pour tous les parents d'enfants en questionnement. Et pour nous, ça a vraiment été notre bouée de sauvetage. 
 
-En septembre dernier, on s'est fait infiltrer une énième fois par le collectif Ypomoni. Une de leur stratégie est d’infiltrer les groupes de soutien aux personnes trans et leurs proches, de lire tout ce qui s'y passe, de faire des captures d'écran et après de diffuser les captures d'écran sur leur propre compte pour alimenter l'offensive et la panique morale. Suite à ça, l’administratrice du groupe n’en pouvait plus et elle a fermé le groupe. Pour moi, ce n’était pas possible. J’avais trop besoin de pouvoir échanger avec d’autres parents. Et je n’étais pas la seule. Nous avons décidé de recréer un groupe et c’est ce qu’on a fait. Il y a moins de monde que maintenant, mais on est quand même une centaine et les parents continuent à arriver. 
+En septembre dernier, ce groupe s'est fait infiltrer une énième fois par le collectif Ypomoni. Une de leur stratégie est d’infiltrer les groupes de soutien aux personnes trans, de lire tout ce qui s'y passe, de faire des captures d'écran et après de diffuser les captures d'écran sur leur propre compte pour alimenter l'offensive et la panique morale. Suite à ça, l’administratrice du groupe n’en pouvait plus et elle a fermé le groupe. Pour moi, ce n’était pas possible. J’avais tellement besoin de pouvoir échanger avec d’autres parents. Et je n’étais pas la seule. Nous avons décidé de recréer un groupe et c’est ce qu’on a fait. Il y a moins de monde qu'auparavant, mais on est quand même une centaine et les parents continuent à arriver. 
 
 Dans ce nouveau groupe, je me suis rapprochée de 2 membres qui avaient aussi envie d’agir, de militer, de parler, de témoigner…  
 
@@ -125,7 +125,7 @@ Et donc, en parallèle de Grandir trans, on a créé un compte Instagram qui s'a
 
 Ce compte est d’abord en réaction à ce qui se passe, mais je pense qu'on aimerait bien y développer plein de sujets, notamment des témoignages, mais aussi, qu'est-ce que c'est la transidentité chez les enfants ? Comment on a accompagné nos enfants ? Les différences entre une transition jeune et une transition ado ? De quoi nos enfants ont vraiment besoin ? C'est un petit terreau où on a toute liberté pour porter les sujets qu'on veut. 
 
-Mais le réseau d'entraide et de pair-aidance entre parents, c’est via Grandir Trans et c’est tellement. 
+Mais le réseau d'entraide et de pair-aidance entre parents, c’est via Grandir Trans et c’est tellement précieux. 
 
 En tant que parent, je remercie vraiment les parents qui s’y trouvent. Parce qu’on peut vraiment poser toutes les questions qu’on se pose. Et certaines qui peuvent paraître très bêtes pour les personnes trans. Mais on se soutient mutuellement dans les coups durs quand les enfants ne vont pas bien mais aussi dans les moments heureux. Quand on est confrontée à cette situation dans une société transphobe, c’est un soulagement de bénéficier de cet espace-là.
 
@@ -133,9 +133,9 @@ En tant que parent, je remercie vraiment les parents qui s’y trouvent. Parce q
 Justement, j’avais une question sur l’accompagnement des parents d’enfants trans. Votre rôle en tant que parent est d’accompagner votre enfant sur son cheminement, mais en tant que personnes cis dans une société cis-normée, ça n’est pas quelque chose qui va de soi. Comment vous avez fait pour trouver de l’aide pour savoir comment bien soutenir ? 
 
 ##### **Sonia**
-En plus des groupes, ce qui nous a beaucoup aidés, c'est d’être accompagnés par quelqu'un, un thérapeute, une personne concernée. C'est [Morgan Noam](https://www.instagram.com/morgan.noam/), qui est aussi présent et très pédagogue sur la transidentité et le genre sur Instagram. Dans les discours transphobes, on entend souvent dire que les personnes trans « veulent absolument que vos enfants deviennent trans ». Et en fait la première chose qu'il nous a dit, c’est : « OK, elle questionne son genre et il y a plusieurs chemins possibles. Potentiellement, soit elle sera non-binaire, soit elle va revenir sur son genre assigné, soit effectivement, elle sera trans. L’important c’est qu’elle puisse expérimenter et qu’elle se sente soutenue dans cette exploration* »
+En plus des groupes, ce qui nous a beaucoup aidé, c'est d’être accompagnés par un thérapeute, une personne concernée. C'est [Morgan Noam](https://www.instagram.com/morgan.noam/), qui est très actif et très pédagogue sur la transidentité et le genre sur Instagram. Dans les discours transphobes, on entend souvent dire que les personnes trans « veulent absolument que vos enfants deviennent trans ». Et en fait la première chose qu'il nous a dit, c’est : « OK, elle questionne son genre et il y a plusieurs chemins possibles. Potentiellement, soit elle sera non-binaire, soit elle va revenir à son genre assigné, soit effectivement, elle sera trans. L’important c’est qu’elle puisse expérimenter et qu’elle se sente soutenue dans cette exploration* »
 
-Et tout du long, Il a toujours pris des précautions pour dire que ça pouvait bouger, ça pouvait changer.
+Il a toujours pris des précautions pour dire que ça pouvait bouger, que ça pouvait changer.
 
 ##### **Magali**
 Il ne faut pas pousser non plus dans une direction spécifique.
@@ -145,9 +145,9 @@ Oui et on le dit aussi dans le groupe Facebook, de faire en fonction de l'enfant
 
 Donc, le curseur c’est de poser régulièrement des questions à son enfant, du genre : Comment tu te sens ? Est-ce que ça, c'est OK ? Comment on fait ? De quoi tu as besoin ? Nous on a commencé à lui acheter des robes ou des habits un peu féminins à partir du moment où elle a commencé à prendre des T-shirts à moi et de faire des robes avec mes T-shirts. Je ne suis pas allée tout de suite acheter des robes au premier signe. On a attendu que le besoin soit clairement exprimé.
 
-Je pense quand même que se faire accompagner par Morgan Noam ça a été la meilleure chose qu'on ait faite, la meilleure chose qu'on se soit offerte et qu'on ait offerte à E. Parce qu'effectivement, il n'avait pas du tout ce discours de genre : « Il faut faire ci, il faut faire ça. » Non, c'est plutôt toujours : « Comment elle se sent ? Comment elle vit la chose ? » Ça, c'est un enseignement que même sur d’autres sujets en tant que parents on va garder toute notre vie. 
+Je pense quand même que se faire accompagner par Morgan Noam a été la meilleure chose qu'on ait faite, la meilleure chose qu'on se soit offerte et qu'on ait offerte à E. Parce qu'effectivement, il n'avait pas du tout ce discours de genre : « Il faut faire ci, il faut faire ça. » Non, c'est plutôt toujours : « Comment elle se sent ? Comment elle vit la chose ? » Ça, c'est un enseignement que même sur d’autres sujets, en tant que parents, on va garder toute notre vie.
 
-Et pareil sur le changement de prénom. En juillet 2022, elle lit le livre Je m'appelle Julie de Laurier The Fox, sur le changement de prénom.
+Et pareil sur le changement de prénom. En juillet 2022, elle lit le livre ["Je m'appelle Julie"](https://www.paspourdubeurre.com/product-page/je-m-appelle-julie) de Laurier The Fox, sur le changement de prénom.
 
 On a temporisé jusqu’au moment où ce n’était plus possible de la genrer au féminin à la maison et au masculin à l’école, où ça commençait à la faire souffrir. Et ensuite, ça s'est fait en trois jours. C'est-à-dire que jeudi soir, je lui dis qu’on était d’accord pour en discuter. Le vendredi midi, elle était au taquet en nous demandant : « Alors mon nouveau prénom ? »
 
@@ -155,7 +155,7 @@ On a temporisé jusqu’au moment où ce n’était plus possible de la genrer a
 Là, le besoin était affirmé.
 
 ##### **Sonia**
-Oui, le besoin était clairement identifié. C'est trop drôle sur le changement de prénom. Dès l’après-midi, je l'appelais avec son ancien prénom, elle ne répondait pas. Et puis après, je disais son nouveau prénom tout doucement et elle était là, au taquet, direct.
+Oui, le besoin était clairement identifié. Une anecdote drôle sur le changement de prénom : Dès l’après-midi, quand je l'appelais avec son ancien prénom, elle ne répondait plus. Et puis après, je disais son nouveau prénom tout doucement et elle était là, au taquet, direct.
 
 J’ai essayé de faire un truc en disant : « Est-ce qu'on peut faire comme le pronom ? On le garde un peu entre nous, on le teste et tout ça. »
 
