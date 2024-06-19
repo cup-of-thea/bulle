@@ -12,8 +12,7 @@ Commencer une transition, qu'elle soit administrative, sociale, hormonale et/ou 
 
 Cet article a hautement été inspiré par le thread d'EmmaSoso :
 
-[https://x.com/EmmaSoso3/status/1782070527009452265](Personnes trans 🏳️‍⚧️<br>Quel est votre meilleur conseil que vous auriez à donner a une personne s&#39;apercevant de sa transidentité ?)
-
+[Personnes trans 🏳️‍⚧️<br>Quel est votre meilleur conseil que vous auriez à donner a une personne s&#39;apercevant de sa transidentité ?](https://x.com/EmmaSoso3/status/1782070527009452265)
 
 ## 1. Le plus important, TOI
 
