@@ -65,14 +65,6 @@ Transitionner, c'est aussi être confronté·e à des personnes qui ne vont pas 
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2lDmxStrfjFc8yjusI2qmw?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-## 4. Tu n'es pas seul·e et on s'entraide
-
-Mais n'oublie pas, qu'on est là, on est là pour te soutenir, pour t'aider, pour te guider, pour te conseiller. Il existe des associations, des collectifs, des groupes de soutien, des personnes qui ont déjà vécu ce que tu vis, et qui peuvent t'aider à traverser tout ça.
-
-- On est là pour te soutenir 🤍❤️.
-- Va voir des personnes qui ont déjà vécu ce que tu vis, ça aide, vraiment, ça aide beaucoup.
-- Les réseaux sociaux, ça se coupe quand tu satures, et ce n'est pas plus mal.
-- Et nous ne sommes pas non plus seul·e·s, on a aussi des célébrités avec nous :
 
 ## 4. Tu n'es pas seul·e et on s'entraide
 
