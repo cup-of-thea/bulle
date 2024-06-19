@@ -78,7 +78,7 @@ De là, être un homme, viril, passe par la domination des femmes (et par extens
 
 C’est ainsi qu’un homme sera d’avantage admiré pour ses nombreuses relations sexuelles, alors qu’une femme se libérant sexuellement sera perçue négativement, normal, puisqu’elle s’approprie dès lors un privilège masculin. Dans les débats modernes, on le retrouve en ligne sous la forme du fameux “bodycount” :
 
-<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">vrai question ça change quoi enft 23 ou 50 ou 0 (a part votre insécurité masculine bien sûr)??? <a href="https://t.co/Ih0hdSiEmh">https://t.co/Ih0hdSiEmh</a></p>&mdash; rachoupinette (@rachou_pinette) <a href="https://twitter.com/rachou_pinette/status/1660726621098201088?ref_src=twsrc%5Etfw">May 22, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+[https://x.com/rachou_pinette/status/1660726621098201088](Post Twitter : vrai question ça change quoi enft 23 ou 50 ou 0 (a part votre insécurité masculine bien sûr)???)
 
 C’est une pièce à double facettes :
 
