@@ -8,9 +8,9 @@ edition: "Edition spéciale 17 mai 2024"
 tags: [ "lutte", "transidentité", "droit des personnes trans"]
 ---
 
-*Un matin est apparue sur mes réseaux sociaux [une tribune de parents d'enfants trans](https://www.change.org/p/non-nous-ne-cacherons-pas-nos-enfants-trans). J'ai tout de suite eu envie de soutenir cette lutte et je me suis dit qu'une interview de la personne qui signait cette tribune serait une bonne idée.C'est comme ça que j'ai contacté Sonia Becquet et lui ai proposé une interview où on parlerait des enfants trans, de ce que ça veut dire de les soutenir et accompagner en tant que parents, de comment on s'organisait pour lutter et des actualités du moment sur le sujet.
+_Un matin est apparue sur mes réseaux sociaux [une tribune de parents d'enfants trans](https://www.change.org/p/non-nous-ne-cacherons-pas-nos-enfants-trans). J'ai tout de suite eu envie de soutenir cette lutte et je me suis dit qu'une interview de la personne qui signait cette tribune serait une bonne idée.C'est comme ça que j'ai contacté Sonia Becquet et lui ai proposé une interview où on parlerait des enfants trans, de ce que ça veut dire de les soutenir et accompagner en tant que parents, de comment on s'organisait pour lutter et des actualités du moment sur le sujet._
 
-Cette interview était prévue pour la deuxième édition du magazine, courant juin. Mais Sonia m'a fait remarquer que ça serait mieux si on pouvait la publier avant que la proposition de loi de Les Républicains ne passe, le 28 mai. Alors avec les collègues du magazine on a trouvé que le 17 mai, journée mondiale contre l'homophobie, la transphobie et la biphobie, était la date parfaite pour ça.*
+_Cette interview était prévue pour la deuxième édition du magazine, courant juin. Mais Sonia m'a fait remarquer que ça serait mieux si on pouvait la publier avant que la proposition de loi de Les Républicains ne passe, le 28 mai. Alors avec les collègues du magazine on a trouvé que le 17 mai, journée mondiale contre l'homophobie, la transphobie et la biphobie, était la date parfaite pour ça._
 
 ##### **Magali**
 Pour commencer, est-ce que tu peux nous raconter comment tu es arrivée à t'intéresser à la question de la transition de genre chez les enfants ?
