@@ -5,7 +5,7 @@
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900">Un réseau d'associations qui font bouger les lignes</h2>
                 <p class="mt-6 text-lg leading-8 text-gray-600">Créer un maillage d'associations qui oeuvrent pour la fin du statu quo et pour l'amélioration de notre société est un des projets de La Première Ligne. Si vous avez une association qui pourrait faire partie de ce réseau, contactez nous !</p>
                 <div class="mt-8 flex items-center gap-x-6">
-                    <a href="mailto:lapremiereligne@magali-milbergue.com"
+                    <a href="mailto:contact@lapremiereligne.fr"
                        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Devenir partenaire</a>
                     <!-- <a href="#" class="text-sm font-semibold text-gray-900">Contact us <span
                             aria-hidden="true">&rarr;</span></a> -->
