@@ -17,6 +17,11 @@
                     Mentions légales
                 </a>
             </div>
+            <div class="pb-6">
+                <a href="mailto:contact@lapremiereligne.fr" class="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                    Nous contacter
+                </a>
+            </div>
         </nav>
         <div class="mt-10 flex justify-center space-x-10">
             <a href="https://bsky.app/profile/lapremiereligne.bsky.social" target="_blank"
