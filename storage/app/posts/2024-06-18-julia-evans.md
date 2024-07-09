@@ -3,7 +3,7 @@ title: "Julia Evans, une sorcière de l’informatique qui partage ses sorts"
 description: "Julie Evans est une informaticienne qui a un grand talent pour la vulgarisation de principes techniques sous forme de dessins et Solène nous présente son travail."
 date: 2024-06-19
 authors: [ "Solène Garda-Krebs" ]
-category: "Tech féministe"
+category: "Portraits"
 edition: "Juin 2024"
 tags: ["féminisme", "tech", "pédagogie"]
 ---

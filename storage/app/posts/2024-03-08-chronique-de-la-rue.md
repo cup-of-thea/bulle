@@ -3,7 +3,7 @@ title: "Chronique de la rue"
 description: "Quand une interaction positive permet de mettre en lumière tout ce qui ne va pas dans les interactions habituelles."
 date: 2024-03-08
 authors: [ "Magali" ]
-category: "Féminisme"
+category: "Anti-sexisme"
 edition: "Mars 2024"
 tags: [ "VSS", "Femmes et espace public", "Sociologie" ]
 ---

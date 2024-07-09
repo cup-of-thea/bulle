@@ -3,7 +3,7 @@ title: "Edito Edition Spéciale contre la transphobie"
 description: "La Première Ligne prend position contre la transphobie et en soutien aux personnes trans et à la lutte pour leurs droits."
 date: 2024-05-17
 authors: [ "Magali" ]
-category: "Edito"
+category: "Éditos"
 edition: "Edition spéciale 17 mai 2024"
 tags: [ "lutte", "transidentité", "droit des personnes trans" ]
 ---

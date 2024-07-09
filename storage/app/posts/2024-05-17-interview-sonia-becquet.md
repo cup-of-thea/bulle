@@ -3,7 +3,7 @@ title: "Interview de Sonia Becquet - Nos enfants trans"
 description: "Sonia Becquet, mère d'une enfant trans et militante pour les droits des personnes trans répond à nos questions sur l'actualité et sur les mobilisations en cours..."
 date: 2024-05-17
 authors: [ "Magali" ]
-category: "Interview"
+category: "Entretiens"
 edition: "Edition spéciale 17 mai 2024"
 tags: [ "lutte", "transidentité", "droit des personnes trans"]
 ---

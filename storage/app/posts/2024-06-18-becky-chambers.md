@@ -3,7 +3,7 @@ title: "Becky Chambers, ou des récits de science-fiction réconfortants"
 description: "Becky Chambers est une autrice de science-fiction qui écrit des oeuvres dans lesquelles on peut se plonger lorsqu'on a besoin de fiction cosy..."
 date: 2024-06-19
 authors: [ "Solène Garda-Krebs" ]
-category: "Féminisme et fiction"
+category: "Du côté de la fiction"
 edition: "Juin 2024"
 tags: ["féminisme", "fiction", "science-fiction"]
 ---

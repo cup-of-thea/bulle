@@ -3,7 +3,7 @@ title: "Sororité et décalage"
 description: "Camille a été invitée à participer à cette seconde édition de La Première Ligne et a choisi d'aborder le sujet de la sororité et de comment elle n'est pas acquise pour toutes."
 date: 2024-06-19
 authors: [ "Les invitées" ]
-category: "Sororité"
+category: "Témoignages"
 edition: "Juin 2024"
 tags: ["féminisme", "sororité", "Camille"]
 ---

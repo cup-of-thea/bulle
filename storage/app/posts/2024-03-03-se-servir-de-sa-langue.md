@@ -3,7 +3,7 @@ title: "Se servir de sa langue"
 description: "La langue est un croisement de saveurs, un point de rencontre entre plusieurs ingrédients : la linguistique, la sociologie, le féminisme, les intersections et les oppressions systémiques… Elle est un des vecteurs des représentations de genre."
 date: 2024-03-08
 authors: [ "Thea" ]
-category: "Féminisme"
+category: "Anti-sexisme"
 edition: "Mars 2024"
 tags: [ "Langue", "Genre", "Sociologie" ]
 ---

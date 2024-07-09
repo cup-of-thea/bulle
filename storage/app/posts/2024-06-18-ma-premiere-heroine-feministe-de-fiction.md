@@ -3,7 +3,7 @@ title: "Ma première héroïne féministe de fiction"
 description: "Magali se demande quelle a été sa première héroïne féministe dans la fiction et comment ça a contribué à créer la féministe qu'elle est aujourd'hui ? Elle en profite pour poser la même question à ses collègues... "
 date: 2024-06-19
 authors: [ "Magali" ]
-category: "Féminisme et fiction"
+category: "Du côté de la fiction"
 edition: "Juin 2024"
 tags: ["féminisme", "fiction", "héroïnes"]
 ---

@@ -3,7 +3,7 @@ title: "Se servir de sa langue II"
 description: "Parlons de la construction du masculin..."
 date: 2024-06-19
 authors: [ "Thea" ]
-category: "Féminisme"
+category: "Anti-sexisme"
 edition: "Juin 2024"
 tags: [ "Langue", "Genre", "Sociologie" ]
 ---
