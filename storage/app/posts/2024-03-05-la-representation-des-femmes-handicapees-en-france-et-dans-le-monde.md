@@ -3,7 +3,7 @@ title: "La représentation des femmes handicapées en France et dans le monde"
 description: "Un article pour mettre en valeur les femmes handicapées et leur redonner de la visibilité."
 date: 2024-03-08
 authors: [ "Emmanuelle ABOAF" ]
-category: "Féminisme"
+category: "Handicap, accessibilité"
 edition: "Mars 2024"
 tags: [ "Handicap", "Inclusion", "Sociologie" ]
 ---

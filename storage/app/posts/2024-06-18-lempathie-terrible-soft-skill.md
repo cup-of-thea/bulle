@@ -3,7 +3,7 @@ title: "L’empathie, cette terrible soft skill mangeuse de chair féminine"
 description: "Petite Loutre a été invitée à participer à cette seconde édition de La Première Ligne et a choisi d'aborder le sujet de l'empathie comme soft skill et comment ça impacte particulièrement les femmes"
 date: 2024-06-19
 authors: [ "Les invitées" ]
-category: "Féminisme et travail"
+category: "Monde du travail"
 edition: "Juin 2024"
 tags: ["féminisme", "travail", "petite loutre", "recrutement"]
 ---

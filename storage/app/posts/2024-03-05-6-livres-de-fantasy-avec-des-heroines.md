@@ -3,7 +3,7 @@ title: "6 livres de fantasy avec des héroïnes"
 description: "Decouvrez six livres de fantasy avec des héroïnes qui sortent des codes habituels du genre."
 date: 2024-03-08
 authors: [ "Solène Garda-Krebs" ]
-category: "Féminisme"
+category: "Du côté de la fiction"
 edition: "Mars 2024"
 tags: [ "Lectures", "Découvertes", "Fantasy" ]
 canonical: "https://lapdg.fr/2022/07/20/6-livres-de-fantasy-avec-des-heroines/"

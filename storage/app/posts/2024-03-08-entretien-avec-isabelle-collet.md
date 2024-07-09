@@ -3,7 +3,7 @@ title: "Entretien avec Isabelle Collet"
 description: "Isabelle collet sociologue spécialiste de la question des inégalités de genre dans l'informatique a accepté de répondre à mes questions."
 date: 2024-03-08
 authors: [ "Magali" ]
-category: "Féminisme"
+category: "Entretiens"
 edition: "Mars 2024"
 tags: [ "entretien", "femmes de la tech", "Sociologie" ]
 ---

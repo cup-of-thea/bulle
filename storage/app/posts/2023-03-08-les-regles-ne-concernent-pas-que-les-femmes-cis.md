@@ -3,7 +3,7 @@ title: "Les règles ne concernent pas que les femmes cis"
 description: "Je suis une femme trans hormonée, et cela surprend toujours mes adelphes cis et transfem (non-hormoné·es) lorsque je leur parle de mon SPM (syndrôme pré-menstruel), alors j’ai eu envie d’en faire un article ici."
 date: 2024-03-08
 authors: [ "Thea" ]
-category: "Féminisme"
+category: "LGBTQIA+"
 edition: "Mars 2024"
 tags: [ "Biologie", "Genre", "Sociologie" ]
 ---
