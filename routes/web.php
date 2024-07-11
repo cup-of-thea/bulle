@@ -26,7 +26,7 @@ Route::get('/mentions-legales', fn() => view('legals'))->name('legals');
 
 Route::get('/auteur·rice·x·s', fn() => view('authors.index'))->name('authors.index');
 
-Route::get('/magasine', fn() => view('blog'))->name('blog');
+Route::get('/magazine', fn() => view('blog'))->name('blog');
 
 Route::get('/articles/{slug}', ShowPostController::class)->name('posts.show');
 
