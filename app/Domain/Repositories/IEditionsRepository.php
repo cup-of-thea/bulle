@@ -13,4 +13,6 @@ interface IEditionsRepository
     public function getBySlug(string $slug): ?Edition;
 
     public function getByAuthor(Author $author): Collection;
+
+    public function getLastEditionSlug(): ?string;
 }

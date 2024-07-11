@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LastEditionController;
 use App\Http\Controllers\ShowAuthorController;
 use App\Http\Controllers\ShowCategoryController;
 use App\Http\Controllers\ShowEditionController;
@@ -35,6 +36,8 @@ Route::get('/categories', fn() => view('categories.index'))->name('categories.in
 Route::get('/categories/{slug}', ShowCategoryController::class)->name('categories.show');
 
 Route::get('/editions', fn() => view('editions.index'))->name('editions.index');
+
+Route::get('/editions/last', LastEditionController::class)->name('editions.last');
 
 Route::get('/editions/{slug}', ShowEditionController::class)->name('editions.show');
 

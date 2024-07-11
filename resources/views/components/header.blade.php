@@ -13,6 +13,9 @@
             <a href="{{ route('association') }}" class="text-sm font-semibold leading-6 text-gray-900">
                 L'Association
             </a>
+            <a href="{{ route('editions.last') }}" class="text-sm font-semibold leading-6 text-gray-900">
+                Dernière édition
+            </a>
         </div>
     </nav>
 </header>
