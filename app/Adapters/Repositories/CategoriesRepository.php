@@ -33,9 +33,9 @@ class CategoriesRepository implements ICategoriesRepository
                     $category->title,
                     $category->slug,
                     $postsCount,
-                    $lastPost->title,
-                    $lastPost->slug,
-                    new Carbon($lastPost->date),
+                    $lastPost->title ?? '',
+                    $lastPost->slug ?? '',
+                    new Carbon($lastPost->date ?? ''),
                     DB::table('post_author as pa')
                         ->select('a.name', 'a.slug')
                         ->join('authors as a', 'pa.author_id', '=', 'a.id')
@@ -47,6 +47,7 @@ class CategoriesRepository implements ICategoriesRepository
                         ->toArray(),
                 );
             })
+            ->filter(fn($category) => $category->postsCount > 0)
             ->collect();
     }
 

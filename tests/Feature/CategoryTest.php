@@ -4,6 +4,7 @@ use App\Domain\ValueObjects\Category;
 use App\Domain\ValueObjects\CategoryId;
 use App\Livewire\ShowCategoryComponent;
 use Illuminate\Support\Facades\DB;
+
 use function Pest\Livewire\livewire;
 
 it('displays categories page', function () {
@@ -13,8 +14,35 @@ it('displays categories page', function () {
 it('lists all categories', function () {
     DB::table('categories')->insert([
         ['title' => 'Category 1', 'slug' => 'category-1'],
-        ['title' => 'Category 3', 'slug' => 'category-3'],
         ['title' => 'Category 2', 'slug' => 'category-2'],
+        ['title' => 'Category 3', 'slug' => 'category-3'],
+    ]);
+
+    DB::table('posts')->insert([
+        [
+            'title' => 'Post 1',
+            'slug' => 'post-1',
+            'content' => 'Content 1',
+            'date' => now(),
+            'category_id' => 1,
+            'filePath' => 'file-path-1'
+        ],
+        [
+            'title' => 'Post 2',
+            'slug' => 'post-2',
+            'content' => 'Content 2',
+            'date' => now(),
+            'category_id' => 2,
+            'filePath' => 'file-path-2'
+        ],
+        [
+            'title' => 'Post 3',
+            'slug' => 'post-3',
+            'content' => 'Content 3',
+            'date' => now(),
+            'category_id' => 3,
+            'filePath' => 'file-path-3'
+        ],
     ]);
 
     $this->get(route('categories.index'))
@@ -33,8 +61,22 @@ it('displays category details with posts', function () {
     $id = DB::table('categories')->insertGetId(['title' => 'Category 1', 'slug' => 'category-1']);
 
     DB::table('posts')->insert([
-        ['title' => 'Post 1', 'slug' => 'post-1', 'content' => 'Content 1', 'date' => now(), 'category_id' => $id, 'filePath' => 'file-path-1'],
-        ['title' => 'Post 2', 'slug' => 'post-2', 'content' => 'Content 2', 'date' => now(), 'category_id' => $id, 'filePath' => 'file-path-2'],
+        [
+            'title' => 'Post 1',
+            'slug' => 'post-1',
+            'content' => 'Content 1',
+            'date' => now(),
+            'category_id' => $id,
+            'filePath' => 'file-path-1'
+        ],
+        [
+            'title' => 'Post 2',
+            'slug' => 'post-2',
+            'content' => 'Content 2',
+            'date' => now(),
+            'category_id' => $id,
+            'filePath' => 'file-path-2'
+        ],
     ]);
 
     livewire(
