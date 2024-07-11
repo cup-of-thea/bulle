@@ -17,6 +17,22 @@ it('should return category posts', function () {
         ->andReturn(
             Collection::make([
                 Post::from(
+                    'Another from category A',
+                    'another-from-category-a',
+                    'Category A',
+                    'category-a',
+                    now(),
+                    Category::from(CategoryId::from(1), 'Category A', 'category-a'),
+                    Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
+                    [
+                        (object)['name' => 'Jane Doe', 'slug' => 'jane-doe'],
+                    ],
+                    [
+                        (object)['title' => 'TagB', 'slug' => 'tagb'],
+                    ],
+                    null,
+                ),
+                Post::from(
                     'Post from category A',
                     'post-from-category-a',
                     'Category A',
@@ -34,22 +50,6 @@ it('should return category posts', function () {
                     ],
                     null,
                 ),
-                Post::from(
-                    'Another from category A',
-                    'another-from-category-a',
-                    'Category A',
-                    'category-a',
-                    now(),
-                    Category::from(CategoryId::from(1), 'Category A', 'category-a'),
-                    Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-                    [
-                        (object)['name' => 'Jane Doe', 'slug' => 'jane-doe'],
-                    ],
-                    [
-                        (object)['title' => 'TagB', 'slug' => 'tagb'],
-                    ],
-                    null,
-                ),
             ])
         );
 
@@ -57,5 +57,8 @@ it('should return category posts', function () {
         ShowCategoryComponent::class,
         ['category' => Category::from(CategoryId::from(1), 'Category A', 'category-a')]
     )
-        ->assertSeeInOrder(['Category A', 'Post from category A', 'Another from category A']);
+        ->assertSeeInOrder([
+            'Another from category A',
+            'Post from category A',
+        ]);
 });
