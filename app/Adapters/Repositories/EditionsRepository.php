@@ -73,4 +73,12 @@ class EditionsRepository implements IEditionsRepository
             ->get()
             ->map(fn($edition) => Edition::from(EditionId::from($edition->id), $edition->title, $edition->slug));
     }
+
+    public function getLastEditionSlug(): ?string
+    {
+        return DB::table('editions')
+            ->select('slug')
+            ->orderBy('id', 'desc')
+            ->first()?->slug;
+    }
 }
