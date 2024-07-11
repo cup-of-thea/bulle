@@ -17,6 +17,7 @@ readonly class AuthorsRepository implements IAuthorsRepository
         return DB::table('authors as t')
             ->select('t.id', 't.name', 't.slug')
             ->limit(500)
+            ->orderBy('t.name')
             ->get()
             ->map(fn($author) => $this->hydrateAuthor($author))
             ->collect();
