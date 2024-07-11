@@ -18,6 +18,7 @@ class EditionsRepository implements IEditionsRepository
         return DB::table('editions as c')
             ->select('c.id', 'c.title', 'c.slug')
             ->limit(500)
+            ->orderBy('c.id', 'desc')
             ->get()
             ->map(function ($edition) {
                 $lastPost = DB::table('posts')
