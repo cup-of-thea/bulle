@@ -43,7 +43,7 @@ return [
         'image' => '/img/authors/emmanuelle.jpg',
         'bio' => "Sourde de naissance et bionique (deux implants cochléaires) et surtout développeuse. Je lutte chaque jour pour l’accessibilité et l’inclusion dans la tech.",
     ],
-    'solene-garda-krebs' => [
+    'solen-krebs' => [
         'title' => 'Dev web back',
         'bio' => " Côté pro, je fais du PHP et du SQL. Côté perso, j'aime lire, la science-fiction, la linguistique, les chats, l'informatique, les jeux vidéo, le féminisme, les théories queer, entre autre.",
         'image' => '/img/authors/solene.jpg',
