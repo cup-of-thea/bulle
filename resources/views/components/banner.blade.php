@@ -16,7 +16,7 @@
             <svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
                 <circle cx="1" cy="1" r="1"/>
             </svg>
-            La seconde édition du magazine est disponible &nbsp;!
+            La troisième édition du magazine est disponible &nbsp;!
         </p>
     </div>
     <div class="flex flex-1 justify-end">
