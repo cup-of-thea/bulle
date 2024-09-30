@@ -36,7 +36,7 @@ Par exemple, à plusieurs reprises, j'avais demandé à Midjourney de me donner 
 
 Le handicap est très mal représenté dans les IA parce que celles-ci ont une vision très étriquée du handicap. Nous le savons, elles sont le reflet de la société. Ce que la société perçoit, l'IA le reproduit aussi. Enfin, ça dépend qui la conçoit. Si la personne qui programme l'IA n'est pas sensibilisée au handicap, vous pouvez être sûr qu'elle y mettra que sa propre vision du handicap.
 
-Souvenez vous de l'IA [Tay] de Microsoft (https://www.lemonde.fr/pixels/article/2016/03/24/a-peine-lancee-une-intelligence-artificielle-de-microsoft-derape-sur-twitter_4889661_4408996.html) qui est devenue raciste au bout de quelques heures sur Twitter il y a quelques années.
+Souvenez vous de l'IA [Tay](https://www.lemonde.fr/pixels/article/2016/03/24/a-peine-lancee-une-intelligence-artificielle-de-microsoft-derape-sur-twitter_4889661_4408996.html) de Microsoft  qui est devenue raciste au bout de quelques heures sur Twitter il y a quelques années.
 
 *Si l'équipe qui crée une IA est diversifiée, nous pouvons avoir une IA inclusive*. Si elle ne l'est pas, vous pouvez être sûre qu'elle est biaisée. Nous le voyons à travers la campagne [Jamais sans elles](https://www.jamaissanselles.fr/) où les hommes sont des CEO et les femmes des secrétaires. Pourquoi ? Parce que les algorithmes étaient majoritairement créés par des *hommes blancs valides et cisgenres*.
 
