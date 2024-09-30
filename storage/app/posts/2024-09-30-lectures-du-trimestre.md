@@ -2,7 +2,7 @@
 title: "Les lectures du trimestre : Grossophobie"
 description: "A chaque édition, nous vous parlons de livres que nous avons aimés. Ici, Solène nous parle d'un livre sur la grossophobie."
 date: 2024-09-30
-authors: [ "Solène Garda-Krebs" ]
+authors: [ "Solen Krebs" ]
 category: "lectures du trimestre"
 edition: "Septembre 2024"
 tags: ["grossophobie", "lecture", "théorie"]

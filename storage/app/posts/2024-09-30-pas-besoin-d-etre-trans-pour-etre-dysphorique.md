@@ -4,7 +4,7 @@ description: "La dysphorie de genre, le décalage entre le genre d'une personne 
 date: 2024-09-30
 authors: [ "Solen Krebs" ]
 category: "Resis'Trans"
-edition: "Septemble 2024"
+edition: "Septembre 2024"
 tags: ["genre", "dysphorie",]
 ---
 
