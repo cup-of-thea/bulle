@@ -72,14 +72,14 @@ La communauté bi et pan existe dans des petites poches d’air, partout où des
 
 Et une fois qu’on aura goûté à cette bouffée d’air frais, j’espère qu’on s’organisera pour s’attaquer aux violences faites aux bi et pan, et au manque de soins adaptés aux besoins spécifiques de notre communauté. Je veux que les services dédiés aux violences conjugales soient formés aux spécificités des victimes bisexuelles. Je veux que l’éducation sexuelle enseigne ce qu’est la bisexualité spécifiquement. Je veux que les demandeurs et demandeuses d’asile bisexuel·les bénéficient des mêmes chances que les autres demandeurs d’asile. Je veux que la santé mentale, physique et sexuelle des bi soit accompagnée correctement. Je veux que la prévention contre l’homophobie dans la société s’attaque également à la biphobie. Je veux me voir dans des représentations non stigmatisantes au cinéma. Je veux que les livres sur la bisexualité ne soient pas classés dans la section "lesbianisme", mais dans la section "bisexualité". Je ne milite absolument pas pour l’accueil des bi dans la communauté lesbienne. Je ne veux pas être accueillie, hébergée, acceptée. Je veux être chez moi. Les bisexuelles ont construit la maison des LGBT et n’ont pas eu le droit d’y habiter, il est temps qu’elles construisent leur propre maison.
 
-[1] https://legacyprojectchicago.org/person/brenda-howard 
-[2] https://shantiprojects.com/shanti-profiles/cynthiaslater/ 
-[3] https://leatherhalloffame.com/inductees-list/21-cynthia-slater 
-[4] https://www.thenation.com/article/archive/stonewall-bisexuality-lgbtq-exclusion/ 
-[5] https://blurredbylines.com/articles/lani-kaahumanu-bisexual-activism-san-francisco-lgbtq/ 
-[6] https://www.patreon.com/posts/comment-naviguer-96797897 
-[7] Bermea, A. M., van Eeden-Moorefield, B., & Khaw, L. (2018). A systematic review of research on intimate partner violence among bisexual women. Journal of Bisexuality, 18(4), 399-424.
-[8] https://www.pewresearch.org/short-reads/2019/06/18/bisexual-adults-are-far-less-likely-than-gay-men-and-lesbians-to-be-out-to-the-people-in-their-lives/ 
-[9] https://www.hsph.harvard.edu/news/hsph-in-the-news/bisexual-lesbian-women-die-earlier-than-heterosexual-women/ 
-[10] Bermea, A. M., van Eeden-Moorefield, B., & Khaw, L. (2018). A systematic review of research on intimate partner violence among bisexual women. Journal of Bisexuality, 18(4), 399-424.
-[11] https://tomcatbipan.fr/manifeste-pour-un-reveil-bi/ 
+[^1]: https://legacyprojectchicago.org/person/brenda-howard 
+[^2]: https://shantiprojects.com/shanti-profiles/cynthiaslater/ 
+[^3]: https://leatherhalloffame.com/inductees-list/21-cynthia-slater 
+[^4]: https://www.thenation.com/article/archive/stonewall-bisexuality-lgbtq-exclusion/ 
+[^5]: https://blurredbylines.com/articles/lani-kaahumanu-bisexual-activism-san-francisco-lgbtq/ 
+[^6]: https://www.patreon.com/posts/comment-naviguer-96797897 
+[^7]: Bermea, A. M., van Eeden-Moorefield, B., & Khaw, L. (2018). A systematic review of research on intimate partner violence among bisexual women. Journal of Bisexuality, 18(4), 399-424.
+[^8]: https://www.pewresearch.org/short-reads/2019/06/18/bisexual-adults-are-far-less-likely-than-gay-men-and-lesbians-to-be-out-to-the-people-in-their-lives/ 
+[^9]: https://www.hsph.harvard.edu/news/hsph-in-the-news/bisexual-lesbian-women-die-earlier-than-heterosexual-women/ 
+[^10]: Bermea, A. M., van Eeden-Moorefield, B., & Khaw, L. (2018). A systematic review of research on intimate partner violence among bisexual women. Journal of Bisexuality, 18(4), 399-424.
+[^11]: https://tomcatbipan.fr/manifeste-pour-un-reveil-bi/ 
