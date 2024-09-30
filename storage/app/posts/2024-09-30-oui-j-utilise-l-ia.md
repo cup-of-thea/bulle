@@ -105,10 +105,10 @@ Avec l'intelligence artificielle, créons des outils inclusifs qui aident la com
 
 ### Notes :
     
- [1] J'ai donné une conférence sur la reconnaissance vocale en 2022 à Paris Web [Speech-to-Text : quels sont ses avantages et ses limites ?](https://www.paris-web.fr/2022/conference/speech-to-text-quelles-sont-ses-avantages-et-ses-limites)
+ [^1]: J'ai donné une conférence sur la reconnaissance vocale en 2022 à Paris Web [Speech-to-Text : quels sont ses avantages et ses limites ?](https://www.paris-web.fr/2022/conference/speech-to-text-quelles-sont-ses-avantages-et-ses-limites)
  
- [2] Thanh Lan et moi avons donné cette conférence à plusieurs reprises dont à [Paris Web](https://www.paris-web.fr/2023/conference/lia-et-le-handicap-progres-ou-exclusion), à [Devoxx](https://www.youtube.com/watch?v=v5r6KNlToN4) et [MiXiT](https://mixitconf.org/2024/l-ia-et-le-handicap-progres-ou-exclusion-). Nous évoluons à chaque fois au fur à mesure de l'actualité.
+ [^2]: Thanh Lan et moi avons donné cette conférence à plusieurs reprises dont à [Paris Web](https://www.paris-web.fr/2023/conference/lia-et-le-handicap-progres-ou-exclusion), à [Devoxx](https://www.youtube.com/watch?v=v5r6KNlToN4) et [MiXiT](https://mixitconf.org/2024/l-ia-et-le-handicap-progres-ou-exclusion-). Nous évoluons à chaque fois au fur à mesure de l'actualité.
  
- [3] La série "Black Mirror" et le film "Her" deviennent vraiment petit à petit réalité et c'est assez flippant. Je vous invite également à lire l'article [ChatGPT : ces personnes utilisent l’IA comme coach de vie même si « c’est un peu la honte »](https://www.huffingtonpost.fr/life/article/chatgpt-ces-personnes-utilisent-l-ia-comme-coach-de-vie-meme-si-c-est-un-peu-la-honte_238614.html?utm_source=pocket-newtab-fr-fr) et vous verrez que c'est réellement en train de se passer.
+ [^3]: La série "Black Mirror" et le film "Her" deviennent vraiment petit à petit réalité et c'est assez flippant. Je vous invite également à lire l'article [ChatGPT : ces personnes utilisent l’IA comme coach de vie même si « c’est un peu la honte »](https://www.huffingtonpost.fr/life/article/chatgpt-ces-personnes-utilisent-l-ia-comme-coach-de-vie-meme-si-c-est-un-peu-la-honte_238614.html?utm_source=pocket-newtab-fr-fr) et vous verrez que c'est réellement en train de se passer.
  
- [4] Lire l'article ["J'aimerais te voir mort": Eliza, l'IA accusée d'avoir conduit un homme au suicide](https://www.bfmtv.com/tech/intelligence-artificielle/j-aimerais-te-voir-mort-eliza-l-ia-qui-aurait-conduit-un-homme-au-suicide_AV-202303300439.html). Quand j'ai lu cet article, ça m'a fait flippé.
+ [^4]: Lire l'article ["J'aimerais te voir mort": Eliza, l'IA accusée d'avoir conduit un homme au suicide](https://www.bfmtv.com/tech/intelligence-artificielle/j-aimerais-te-voir-mort-eliza-l-ia-qui-aurait-conduit-un-homme-au-suicide_AV-202303300439.html). Quand j'ai lu cet article, ça m'a fait flippé.
