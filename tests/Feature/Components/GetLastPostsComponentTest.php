@@ -1,74 +1,44 @@
 <?php
 
 use App\Domain\Repositories\IPostsRepository;
-use App\Domain\ValueObjects\Category;
-use App\Domain\ValueObjects\CategoryId;
-use App\Domain\ValueObjects\Edition;
-use App\Domain\ValueObjects\EditionId;
-use App\Domain\ValueObjects\Post;
 use App\Livewire\GetLastPostsComponent;
 use App\Models\Author;
+use App\Models\Category;
+use App\Models\Edition;
+use App\Models\Post;
+use App\Models\Tag;
 use Carbon\Carbon;
 
 use function Pest\Livewire\livewire;
 
 it('displays last posts', function () {
-    $this->mock(IPostsRepository::class)->shouldReceive('getLastPosts')->andReturn(collect([
-        Post::from(
-            'Post 3',
-            'post-3',
-            'Content 3',
-            'file-path-3',
-            new Carbon('2021-01-03'),
-            Category::from(CategoryId::from(3), 'Category 3', 'category-3'),
-            Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-            collect([
-                Author::factory()->make(['name' => 'Author 5', 'slug' => 'author-5']),
-                Author::factory()->make(['name' => 'Author 6', 'slug' => 'author-6']),
-            ]),
-            [
-                (object)['title' => 'Tag 5', 'slug' => 'tag-5'],
-                (object)['title' => 'Tag 6', 'slug' => 'tag-6'],
-            ],
-            null,
-        ),
-        Post::from(
-            'Post 2',
-            'post-2',
-            'Content 2',
-            'file-path-2',
-            new Carbon('2021-01-02'),
-            Category::from(categoryId::from(2), 'Category 2', 'category-2'),
-            Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-            collect([
-                Author::factory()->make(['name' => 'Author 3', 'slug' => 'author-3']),
-                Author::factory()->make(['name' => 'Author 4', 'slug' => 'author-4']),
-            ]),
-            [
-                (object)['title' => 'Tag 3', 'slug' => 'tag-3'],
-                (object)['title' => 'Tag 4', 'slug' => 'tag-4'],
-            ],
-            null,
-        ),
-        Post::from(
-            'Post 1',
-            'post-1',
-            'This is sparta',
-            'This is sparta',
-            new Carbon('2021-01-01'),
-            Category::from(CategoryId::from(1), 'Category 1', 'category-1'),
-            Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-            collect([
-                Author::factory()->make(['name' => 'Author 1', 'slug' => 'author-1']),
-                Author::factory()->make(['name' => 'Author 2', 'slug' => 'author-2']),
-            ]),
-            [
-                (object)['title' => 'Tag 1', 'slug' => 'tag-1'],
-                (object)['title' => 'Tag 2', 'slug' => 'tag-2'],
-            ],
-            null,
-        ),
-    ]));
+    $post1 = Post::factory()->create([
+        'title' => 'Post 1',
+        'slug' => 'post-1',
+        'description' => 'This is sparta',
+        'edition_id' => Edition::factory()->create(['title' => 'Edition 1', 'slug' => 'edition-1'])->id,
+        'category_id' => Category::factory()->create(['title' => 'Category 1', 'slug' => 'category-1'])->id,
+        'date' => new Carbon('2021-01-01'),
+    ]);
+    Post::factory()->create([
+        'title' => 'Post 2',
+        'date' => new Carbon('2021-01-02'),
+    ]);
+    Post::factory()->create([
+        'title' => 'Post 3',
+        'date' => new Carbon('2021-01-03'),
+    ]);
+
+    $tags = collect([
+        Tag::factory()->create(['title' => 'Tag 1', 'slug' => 'tag-1']),
+        Tag::factory()->create(['title' => 'Tag 2', 'slug' => 'tag-2']),
+    ])->pluck('id');
+    $post1->tags()->attach($tags);
+    $authors = collect([
+        Author::factory()->create(['name' => 'Author 1', 'slug' => 'author-1']),
+        Author::factory()->create(['name' => 'Author 2', 'slug' => 'author-2']),
+    ])->pluck('id');
+    $post1->authors()->attach($authors);
 
     livewire(GetLastPostsComponent::class)
         ->assertSeeInOrder(['Post 3', 'Post 2', 'Post 1'])

@@ -1,8 +1,7 @@
 <?php
 
-use App\Domain\ValueObjects\Category;
-use App\Domain\ValueObjects\CategoryId;
 use App\Livewire\ShowCategoryComponent;
+use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 
 use function Pest\Livewire\livewire;
@@ -12,35 +11,13 @@ it('displays categories page', function () {
 });
 
 it('lists all categories', function () {
-    DB::table('categories')->insert([
-        ['title' => 'Category 1', 'slug' => 'category-1'],
-        ['title' => 'Category 2', 'slug' => 'category-2'],
-        ['title' => 'Category 3', 'slug' => 'category-3'],
-    ]);
+    $category1 = Category::factory()->create(['title' => 'Category 1', 'slug' => 'category-1']);
+    $category2 = Category::factory()->create(['title' => 'Category 2', 'slug' => 'category-2']);
+    $category3 = Category::factory()->create(['title' => 'Category 3', 'slug' => 'category-3']);
 
-    DB::table('posts')->insert([
-        [
-            'title' => 'Post 1',
-            'slug' => 'post-1',
-            'content' => 'Content 1',
-            'date' => now(),
-            'category_id' => 1,
-        ],
-        [
-            'title' => 'Post 2',
-            'slug' => 'post-2',
-            'content' => 'Content 2',
-            'date' => now(),
-            'category_id' => 2,
-        ],
-        [
-            'title' => 'Post 3',
-            'slug' => 'post-3',
-            'content' => 'Content 3',
-            'date' => now(),
-            'category_id' => 3,
-        ],
-    ]);
+    $category1->posts()->create(['title' => 'Post 1', 'slug' => 'post-1', 'content' => 'Content 1', 'date' => now()]);
+    $category2->posts()->create(['title' => 'Post 2', 'slug' => 'post-2', 'content' => 'Content 2', 'date' => now()]);
+    $category3->posts()->create(['title' => 'Post 3', 'slug' => 'post-3', 'content' => 'Content 3', 'date' => now()]);
 
     $this->get(route('categories.index'))
         ->assertSeeInOrder(['Category 1', 'Category 2', 'Category 3']);
@@ -76,7 +53,7 @@ it('displays category details with posts', function () {
 
     livewire(
         ShowCategoryComponent::class,
-        ['category' => Category::from(CategoryId::from($id), 'Category 1', 'category-1')]
+        ['category' => Category::find($id)]
     )
         ->assertSee('Category 1')
         ->assertSee('Post 1')

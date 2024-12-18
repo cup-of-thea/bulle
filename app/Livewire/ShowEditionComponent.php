@@ -2,8 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Domain\UseCases\Queries\GetPostsFromEditionQuery;
-use App\Domain\ValueObjects\Edition;
+use App\Models\Edition;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Attributes\Locked;
@@ -14,16 +13,9 @@ class ShowEditionComponent extends Component
     #[Locked]
     public Edition $edition;
 
-    private GetPostsFromEditionQuery $getPostsFromEditionQuery;
-
-    public function boot(GetPostsFromEditionQuery $getPostsFromEditionQuery): void
-    {
-        $this->getPostsFromEditionQuery = $getPostsFromEditionQuery;
-    }
-
     #[Computed]
     public function posts(): Collection
     {
-        return $this->getPostsFromEditionQuery->get($this->edition);
+        return $this->edition->posts()->orderBy('date', 'desc')->limit(500)->get();
     }
 }

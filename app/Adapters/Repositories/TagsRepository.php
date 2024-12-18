@@ -47,16 +47,6 @@ class TagsRepository implements ITagsRepository
             ->collect();
     }
 
-    public function getBySlug(string $slug): ?Tag
-    {
-        $data = DB::table('tags as t')
-            ->select('t.id', 't.title', 't.slug')
-            ->where('t.slug', $slug)
-            ->first();
-
-        return $data ? Tag::from(TagId::from($data->id), $data->title, $data->slug) : null;
-    }
-
     public function getByAuthor(Author $author): Collection
     {
         return DB::table('tags as t')

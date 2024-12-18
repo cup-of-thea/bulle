@@ -62,4 +62,9 @@ class Author extends Model
     {
         return $this->hasManyThrough(Tag::class, Post::class);
     }
+
+    public function categories(): BelongsToMany
+    {
+        return $this->posts()->with('category')->distinct();
+    }
 }
