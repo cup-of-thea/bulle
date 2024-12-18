@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Domain\UseCases\Queries\ListEditionsQuery;
+use App\Models\Edition;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
@@ -19,6 +20,6 @@ class ListEditionsComponent extends Component
     #[Computed]
     public function editions(): Collection
     {
-        return $this->editionsQuery->all();
+        return Edition::limit(500)->orderBy('title')->get();
     }
 }

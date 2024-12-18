@@ -2,24 +2,16 @@
 
 namespace App\Livewire;
 
-use App\Domain\UseCases\Queries\ListAuthorsQuery;
+use App\Models\Author;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
 class ListAuthorsComponent extends Component
 {
-    private ListAuthorsQuery $authorsQuery;
-
-    public function boot(ListAuthorsQuery $authorsQuery): void
-    {
-        $this->authorsQuery = $authorsQuery;
-    }
-
     #[Computed]
     public function authors(): Collection
     {
-        $authors = $this->authorsQuery->all();
-        return $this->authorsQuery->all();
+        return Author::limit(500)->orderBy('name')->get();
     }
 }
