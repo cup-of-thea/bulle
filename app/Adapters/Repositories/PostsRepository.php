@@ -51,7 +51,7 @@ class PostsRepository implements IPostsRepository
             ->leftJoin('categories as c', 'p.category_id', '=', 'c.id')
             ->leftJoin('editions as e', 'p.edition_id', '=', 'e.id')
             ->where('c.id', $category->categoryId->value())
-            ->orderBy('title')
+            ->orderBy('p.title')
             ->limit(500)
             ->get()
             ->map(fn($post) => $this->hydratePostItem($post))->collect();
