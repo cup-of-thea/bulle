@@ -1,40 +1,32 @@
 <?php
 
-use App\Domain\Repositories\IPostsRepository;
-use App\Domain\ValueObjects\Category;
-use App\Domain\ValueObjects\CategoryId;
-use App\Domain\ValueObjects\Edition;
-use App\Domain\ValueObjects\EditionId;
-use App\Domain\ValueObjects\Post;
 use App\Models\Author;
+use App\Models\Category;
+use App\Models\Edition;
+use App\Models\Post;
+use App\Models\Tag;
 use Carbon\Carbon;
 
 it('displays post page', function () {
-    $this->mock(IPostsRepository::class)
-        ->shouldReceive('getPostFromSlug')
-        ->with('my-first-post')
-        ->andReturn(
-            Post::from(
-                'My first post',
-                'my-first-post',
-                'This is my first post',
-                'loremp ipsum',
-                new Carbon('2021-01-01'),
-                Category::from(CategoryId::from(1), 'Category 1', 'category-1'),
-                Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-                collect(
-                    [
-                        Author::factory()->make(['name' => 'Author 1', 'slug' => 'author-1']),
-                        Author::factory()->make(['name' => 'Author 2', 'slug' => 'author-2']),
-                    ]
-                ),
-                [
-                    (object)['title' => 'Tag 1', 'slug' => 'tag-1'],
-                    (object)['title' => 'Tag 2', 'slug' => 'tag-2'],
-                ],
-                'https://canonical.com/my-first-post'
-            )
-        );
+    $post = Post::factory()->create([
+        'slug' => 'my-first-post',
+        'title' => 'My first post',
+        'content' => 'loremp ipsum',
+        'description' => 'This is my first post',
+        'date' => Carbon::parse('2021-01-01'),
+        'category_id' => Category::factory()->create(['title' => 'Category 1', 'slug' => 'category-1'])->id,
+        'edition_id' => Edition::factory()->create(['title' => 'Edition 1', 'slug' => 'edition-1'])->id
+    ]);
+
+    $post->authors()->attach([
+        Author::factory()->create(['name' => 'Author 1', 'slug' => 'author-1'])->id,
+        Author::factory()->create(['name' => 'Author 2', 'slug' => 'author-2'])->id
+    ]);
+
+    $post->tags()->attach([
+        Tag::factory()->create(['title' => 'Tag 1', 'slug' => 'tag-1'])->id,
+        Tag::factory()->create(['title' => 'Tag 2', 'slug' => 'tag-2'])->id
+    ]);
 
     $this->get(route('posts.show', ['slug' => 'my-first-post']))
         ->assertStatus(200)

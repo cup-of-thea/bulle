@@ -1,17 +1,7 @@
 <?php
 
-use App\Domain\Repositories\IPostsRepository;
-use App\Domain\ValueObjects\Category;
-use App\Domain\ValueObjects\CategoryId;
-use App\Domain\ValueObjects\Edition;
-use App\Domain\ValueObjects\EditionId;
-use App\Domain\ValueObjects\Post;
-use App\Domain\ValueObjects\Tag;
-use App\Domain\ValueObjects\TagId;
 use App\Livewire\ShowAuthorComponent;
 use App\Models\Author;
-use App\Models\AuthorLink;
-use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 
 use function Pest\Livewire\livewire;
@@ -40,48 +30,25 @@ it('displays author details', function () {
 });
 
 it('displays author details with posts', function () {
-    $id = Author::factory()
+    $author = Author::factory()
         ->create([
             'name' => 'author 1',
             'slug' => 'author-1',
             'bio' => 'A small bio',
             'title' => 'Software Engineer'
-        ])->id;
+        ]);
 
-    AuthorLink::factory()->create([
-        'author_id' => $id,
-        'icon' => 'iconoir-twitter',
-        'url' => 'https://twitter.com/author-1',
+    $author->links()->createMany([
+        ['icon' => 'iconoir-twitter', 'url' => 'https://twitter.com/author-1'],
+        ['icon' => 'iconoir-globe', 'url' => 'https://author-1.com'],
     ]);
 
-    AuthorLink::factory()->create([
-        'author_id' => $id,
-        'icon' => 'iconoir-globe',
-        'url' => 'https://author-1.com',
+    $author->posts()->create([
+        'title' => 'Post 1',
+        'slug' => 'post-1',
+        'content' => 'Post 1 content',
+        'date' => now(),
     ]);
-
-    $author = Author::find($id);
-
-    $this->mock(IPostsRepository::class, function ($mock) use ($author) {
-        $mock->shouldReceive('getPostsByAuthor')
-            ->with($author)
-            ->andReturn(
-                collect([
-                    Post::from(
-                        'Post 1',
-                        'post-1',
-                        'Post 1 description',
-                        'Post 1 content',
-                        new Carbon('2021-01-01'),
-                        Category::from(CategoryId::from(1), 'category 1', 'category-1'),
-                        Edition::from(EditionId::from(1), 'edition 1', 'edition-1'),
-                        collect([$author]),
-                        [Tag::from(TagId::from(1), 'tag 1', 'tag-1')],
-                        'https://category-1.com',
-                    ),
-                ])
-            );
-    });
 
     livewire(ShowAuthorComponent::class, ['author' => $author])
         ->assertSee('author 1')

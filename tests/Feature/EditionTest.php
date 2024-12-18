@@ -1,8 +1,7 @@
 <?php
 
-use App\Domain\ValueObjects\Edition;
-use App\Domain\ValueObjects\EditionId;
 use App\Livewire\ShowEditionComponent;
+use App\Models\Edition;
 use Illuminate\Support\Facades\DB;
 
 use function Pest\Livewire\livewire;
@@ -31,29 +30,14 @@ it('displays edition details', function () {
 });
 
 it('displays edition details with posts', function () {
-    $id = DB::table('editions')->insertGetId(['title' => 'Edition 1', 'slug' => 'edition-1']);
+    $edition = Edition::factory()->create(['title' => 'Edition 1', 'slug' => 'edition-1']);
 
-    DB::table('posts')->insert([
-        [
-            'title' => 'Post 1',
-            'slug' => 'post-1',
-            'content' => 'Content 1',
-            'date' => now(),
-            'edition_id' => $id,
-        ],
-        [
-            'title' => 'Post 2',
-            'slug' => 'post-2',
-            'content' => 'Content 2',
-            'date' => now(),
-            'edition_id' => $id,
-        ],
+    $edition->posts()->createMany([
+        ['title' => 'Post 1', 'slug' => 'post-1', 'content' => 'Content 1', 'date' => now()],
+        ['title' => 'Post 2', 'slug' => 'post-2', 'content' => 'Content 2', 'date' => now()],
     ]);
 
-    livewire(
-        ShowEditionComponent::class,
-        ['edition' => Edition::from(EditionId::from($id), 'Edition 1', 'edition-1')]
-    )
+    livewire(ShowEditionComponent::class, ['edition' => $edition])
         ->assertSee('Edition 1')
         ->assertSee('Post 1')
         ->assertSee('Post 2');

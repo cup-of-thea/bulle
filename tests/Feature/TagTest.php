@@ -1,8 +1,7 @@
 <?php
 
-use App\Domain\ValueObjects\Tag;
-use App\Domain\ValueObjects\TagId;
 use App\Livewire\ShowTagComponent;
+use App\Models\Tag;
 use Illuminate\Support\Facades\DB;
 
 use function Pest\Livewire\livewire;
@@ -45,10 +44,7 @@ it('displays tag details with posts', function () {
         ['post_id' => $postIds[1], 'tag_id' => $id],
     ]);
 
-    livewire(
-        ShowTagComponent::class,
-        ['tag' => Tag::from(TagId::from($id), 'Tag 1', 'tag-1')]
-    )
+    livewire(ShowTagComponent::class, ['tag' => Tag::find($id)])
         ->assertSee('Tag 1')
         ->assertSee('Post 1')
         ->assertSee('Post 2');

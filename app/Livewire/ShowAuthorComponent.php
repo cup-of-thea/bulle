@@ -5,7 +5,6 @@ namespace App\Livewire;
 use App\Domain\UseCases\Queries\GetCategoriesFromAuthorQuery;
 use App\Domain\UseCases\Queries\GetCoAuthorsFromAuthorQuery;
 use App\Domain\UseCases\Queries\GetEditionsFromAuthorQuery;
-use App\Domain\UseCases\Queries\GetPostsFromAuthorQuery;
 use App\Domain\UseCases\Queries\GetTagsFromAuthorQuery;
 use App\Models\Author;
 use Illuminate\Support\Collection;
@@ -18,20 +17,17 @@ class ShowAuthorComponent extends Component
     #[Locked]
     public Author $author;
 
-    private GetPostsFromAuthorQuery $getPostsFromAuthorQuery;
     private GetEditionsFromAuthorQuery $getEditionsFromAuthorQuery;
     private GetCategoriesFromAuthorQuery $getCategoriesFromAuthorQuery;
     private GetTagsFromAuthorQuery $getTagsFromAuthorQuery;
     private GetCoAuthorsFromAuthorQuery $getCoAuthorsFromAuthorQuery;
 
     public function boot(
-        GetPostsFromAuthorQuery $getPostsFromAuthorQuery,
         GetEditionsFromAuthorQuery $getEditionsFromAuthorQuery,
         GetCategoriesFromAuthorQuery $getCategoriesFromAuthorQuery,
         GetTagsFromAuthorQuery $getTagsFromAuthorQuery,
         GetCoAuthorsFromAuthorQuery $getCoAuthorsFromAuthorQuery,
     ): void {
-        $this->getPostsFromAuthorQuery = $getPostsFromAuthorQuery;
         $this->getEditionsFromAuthorQuery = $getEditionsFromAuthorQuery;
         $this->getCategoriesFromAuthorQuery = $getCategoriesFromAuthorQuery;
         $this->getTagsFromAuthorQuery = $getTagsFromAuthorQuery;
@@ -41,7 +37,7 @@ class ShowAuthorComponent extends Component
     #[Computed]
     public function posts(): Collection
     {
-        return $this->getPostsFromAuthorQuery->get($this->author);
+        return $this->author->posts;
     }
 
     #[Computed]
@@ -53,7 +49,7 @@ class ShowAuthorComponent extends Component
     #[Computed]
     public function categories(): Collection
     {
-        return $this->getCategoriesFromAuthorQuery->get($this->author);
+        return $this->author->categories()->limit(500)->orderBy('title')->get();
     }
 
     #[Computed]
