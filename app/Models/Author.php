@@ -74,4 +74,9 @@ class Author extends Model
     {
         return $this->posts()->with('category')->distinct();
     }
+
+    public function editions(): BelongsToMany
+    {
+        return $this->posts()->with('editions')->distinct();
+    }
 }
