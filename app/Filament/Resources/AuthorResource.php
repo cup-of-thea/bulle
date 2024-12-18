@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class AuthorResource extends Resource
 {
@@ -26,12 +24,14 @@ class AuthorResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                    ->label('Nom')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('slug')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('title')
+                    ->label('Titre')
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('image')
                     ->image(),
@@ -45,10 +45,12 @@ class AuthorResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                    ->label('Nom')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('title')
+                    ->label('Titre')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('created_at')
@@ -76,6 +78,7 @@ class AuthorResource extends Resource
     public static function getRelations(): array
     {
         return [
+            RelationManagers\PostsRelationManager::class,
             RelationManagers\LinksRelationManager::class,
         ];
     }

@@ -34,7 +34,7 @@
             @foreach($post->authors as $author)
                 <a href="{{ route('authors.show', $author->slug) }}">
                     <img class="h-10 w-10 rounded-full bg-gray-50 object-cover"
-                         src="{{ $author->image }}"
+                         src="{{ $author->avatar }}"
                          alt="{{ $author->slug }}">
                 </a>
             @endforeach

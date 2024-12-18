@@ -3,6 +3,7 @@
 use App\Domain\Repositories\IEditionsRepository;
 use App\Domain\ValueObjects\EditionItem;
 use App\Livewire\ListEditionsComponent;
+use App\Models\Author;
 use Illuminate\Support\Collection;
 
 use function Pest\Livewire\livewire;
@@ -19,9 +20,7 @@ it('should return a list of editions', function () {
                     'Last post from edition B',
                     'last-post-from-edition-b',
                     now(),
-                    [
-                        (object)['name' => 'Jane Doe', 'slug' => 'jane-doe'],
-                    ],
+                    Author::factory(1)->create()
                 ),
                 EditionItem::from(
                     'Edition C',
@@ -30,10 +29,7 @@ it('should return a list of editions', function () {
                     'Last post from edition C',
                     'last-post-from-edition-c',
                     now(),
-                    [
-                        (object)['name' => 'Jane Doe', 'slug' => 'jane-doe'],
-                        (object)['name' => 'John Doe', 'slug' => 'john-doe'],
-                    ],
+                    Author::factory(2)->create()
                 ),
             ])
         );
