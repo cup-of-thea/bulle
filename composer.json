@@ -8,14 +8,15 @@
     "require": {
         "php": "^8.2",
         "andreiio/blade-iconoir": "^4.1",
+        "andreiio/blade-remix-icon": "^3.6",
         "blade-ui-kit/blade-icons": "^1.6",
+        "codeat3/blade-simple-icons": "^5.20",
         "filament/filament": "^3.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.4",
-        "ryangjchandler/blade-tabler-icons": "^2.2",
         "spatie/laravel-sluggable": "^3.7",
         "thea/markdown-blog": "^1.4"
     },
