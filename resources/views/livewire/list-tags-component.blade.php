@@ -35,7 +35,7 @@
                                     @foreach($tag->authors as $author)
                                         <dd>
                                             <img class="h-6 w-6 rounded-full bg-gray-50 ring-2 ring-white"
-                                                 src="{{ $author->image }}" alt="{{ $author->name }}">
+                                                 src="{{ $author->avatar }}" alt="{{ $author->name }}">
                                         </dd>
                                     @endforeach
                                 </div>

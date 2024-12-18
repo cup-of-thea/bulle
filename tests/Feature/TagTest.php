@@ -4,6 +4,7 @@ use App\Domain\ValueObjects\Tag;
 use App\Domain\ValueObjects\TagId;
 use App\Livewire\ShowTagComponent;
 use Illuminate\Support\Facades\DB;
+
 use function Pest\Livewire\livewire;
 
 it('displays tags page', function () {
@@ -33,8 +34,8 @@ it('displays tag details with posts', function () {
     $id = DB::table('tags')->insertGetId(['title' => 'Tag 1', 'slug' => 'tag-1']);
 
     DB::table('posts')->insert([
-        ['title' => 'Post 1', 'slug' => 'post-1', 'content' => 'Content 1', 'date' => now(), 'filePath' => 'file-path-1'],
-        ['title' => 'Post 2', 'slug' => 'post-2', 'content' => 'Content 2', 'date' => now(), 'filePath' => 'file-path-2'],
+        ['title' => 'Post 1', 'slug' => 'post-1', 'content' => 'Content 1', 'date' => now()],
+        ['title' => 'Post 2', 'slug' => 'post-2', 'content' => 'Content 2', 'date' => now()],
     ]);
 
     $postIds = DB::table('posts')->pluck('id')->toArray();

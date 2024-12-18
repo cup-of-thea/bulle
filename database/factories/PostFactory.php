@@ -2,13 +2,15 @@
 
 namespace Database\Factories;
 
-use App\Models\Author;
+use App\Models\Category;
+use App\Models\Edition;
+use App\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Author>
+ * @extends Factory<Post>
  */
-class AuthorFactory extends Factory
+class PostFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,9 +20,11 @@ class AuthorFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name,
+            'title' => $this->faker->sentence,
             'slug' => $this->faker->slug,
-            'image' => $this->faker->imageUrl,
+            'category_id' => Category::factory(),
+            'edition_id' => Edition::factory(),
+            'date' => $this->faker->dateTime,
         ];
     }
 }

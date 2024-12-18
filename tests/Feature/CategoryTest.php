@@ -25,7 +25,6 @@ it('lists all categories', function () {
             'content' => 'Content 1',
             'date' => now(),
             'category_id' => 1,
-            'filePath' => 'file-path-1'
         ],
         [
             'title' => 'Post 2',
@@ -33,7 +32,6 @@ it('lists all categories', function () {
             'content' => 'Content 2',
             'date' => now(),
             'category_id' => 2,
-            'filePath' => 'file-path-2'
         ],
         [
             'title' => 'Post 3',
@@ -41,7 +39,6 @@ it('lists all categories', function () {
             'content' => 'Content 3',
             'date' => now(),
             'category_id' => 3,
-            'filePath' => 'file-path-3'
         ],
     ]);
 
@@ -67,7 +64,6 @@ it('displays category details with posts', function () {
             'content' => 'Content 1',
             'date' => now(),
             'category_id' => $id,
-            'filePath' => 'file-path-1'
         ],
         [
             'title' => 'Post 2',
@@ -75,7 +71,6 @@ it('displays category details with posts', function () {
             'content' => 'Content 2',
             'date' => now(),
             'category_id' => $id,
-            'filePath' => 'file-path-2'
         ],
     ]);
 

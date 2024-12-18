@@ -19,6 +19,7 @@ class ListAuthorsComponent extends Component
     #[Computed]
     public function authors(): Collection
     {
+        $authors = $this->authorsQuery->all();
         return $this->authorsQuery->all();
     }
 }

@@ -40,7 +40,6 @@ it('displays edition details with posts', function () {
             'content' => 'Content 1',
             'date' => now(),
             'edition_id' => $id,
-            'filePath' => 'file-path-1'
         ],
         [
             'title' => 'Post 2',
@@ -48,7 +47,6 @@ it('displays edition details with posts', function () {
             'content' => 'Content 2',
             'date' => now(),
             'edition_id' => $id,
-            'filePath' => 'file-path-2'
         ],
     ]);
 

@@ -6,7 +6,7 @@
             <!-- Author image -->
             <div class="lg:col-span-4 lg:row-end-1">
                 <div class="aspect-h-3 aspect-w-4 overflow-hidden rounded-lg bg-gray-100">
-                    <img src="{{ $author->image }}" alt="" class="object-cover object-center">
+                    <img src="{{ $author->avatar }}" alt="" class="object-cover object-center">
                 </div>
             </div>
 

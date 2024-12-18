@@ -2,25 +2,26 @@
 
 namespace App\Filament\Resources\AuthorResource\RelationManagers;
 
-use App\Models\AuthorLink;
-use Closure;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class LinksRelationManager extends RelationManager
 {
     protected static string $relationship = 'links';
+
+    protected static ?string $label = 'Liens';
+
+    protected static ?string $title = 'Liens';
 
     public function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\Select::make('icon')
+                    ->label('Icône')
                     ->options([
                         'iconoir-globe' => 'Site personnel',
                         'iconoir-send-mail' => 'Substack',
@@ -44,9 +45,10 @@ class LinksRelationManager extends RelationManager
             ->recordTitleAttribute('icon')
             ->columns([
                 Tables\Columns\IconColumn::make('icon')
-                    ->icon(fn ($record) => $record->icon),
+                    ->label('Icône')
+                    ->icon(fn($record) => $record->icon),
                 Tables\Columns\TextColumn::make('url')
-                    ->url(fn ($record) => $record->url),
+                    ->url(fn($record) => $record->url),
             ])
             ->filters([
                 //

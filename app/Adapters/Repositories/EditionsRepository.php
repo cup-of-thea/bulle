@@ -37,15 +37,7 @@ class EditionsRepository implements IEditionsRepository
                     $lastPost->title,
                     $lastPost->slug,
                     new Carbon($lastPost->date),
-                    DB::table('post_author as pa')
-                        ->select('a.name', 'a.slug')
-                        ->join('authors as a', 'pa.author_id', '=', 'a.id')
-                        ->join('posts as p', 'pa.post_id', '=', 'p.id')
-                        ->where('p.edition_id', $edition->id)
-                        ->orderBy('p.date', 'desc')
-                        ->limit(5)
-                        ->get()
-                        ->toArray(),
+                    Edition::find($edition->id)->authors()->limit(5)->get(),
                 );
             })
             ->collect();
