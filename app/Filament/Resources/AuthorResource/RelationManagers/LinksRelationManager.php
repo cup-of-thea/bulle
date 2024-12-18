@@ -25,7 +25,7 @@ class LinksRelationManager extends RelationManager
                     ->options([
                         'iconoir-globe' => 'Site personnel',
                         'iconoir-send-mail' => 'Substack',
-                        'tabler-brand-bluesky' => 'BlueSky',
+                        'ri-bluesky-line' => 'BlueSky',
                         'iconoir-linkedin' => 'Linkedin',
                         'iconoir-puzzle' => 'Compositech',
                         'iconoir-twitter' => 'Twitter',
@@ -33,6 +33,8 @@ class LinksRelationManager extends RelationManager
                         'iconoir-tiktok' => 'TikTok',
                         'iconoir-threads' => 'Threads',
                         'iconoir-instagram' => 'Instagram',
+                        'si-bento' => 'Bento',
+                        'iconoir-shop' => 'Boutique',
                     ])
                     ->required(),
                 Forms\Components\TextInput::make('url')->activeUrl(),

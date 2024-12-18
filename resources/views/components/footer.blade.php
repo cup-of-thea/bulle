@@ -27,7 +27,7 @@
             <a href="https://bsky.app/profile/lapremiereligne.bsky.social" target="_blank"
                class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">BlueSky</span>
-                <x-tabler-brand-bluesky class="h-6 w-6"/>
+                <x-ri-bluesky-line class="h-6 w-6"/>
             </a>
             <a href="https://hachyderm.io/@lapremiereligne" target="_blank" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Mastodon</span>

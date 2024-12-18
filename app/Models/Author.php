@@ -44,6 +44,13 @@ class Author extends Model
         );
     }
 
+    public function lastPost(): Attribute
+    {
+        return Attribute::make(
+            fn() => $this->posts->sortByDesc('date')->first()
+        );
+    }
+
     public function lastPostDate(): Attribute
     {
         return Attribute::make(
