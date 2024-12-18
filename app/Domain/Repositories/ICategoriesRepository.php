@@ -2,8 +2,8 @@
 
 namespace App\Domain\Repositories;
 
-use App\Domain\ValueObjects\Author;
 use App\Domain\ValueObjects\Category;
+use App\Models\Author;
 use Illuminate\Support\Collection;
 
 interface ICategoriesRepository

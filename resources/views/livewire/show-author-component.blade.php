@@ -1,5 +1,6 @@
+@php use App\Models\Author; @endphp
 <div class="bg-white">
-    @php /** @var App\Domain\ValueObjects\Author $author */ @endphp
+    @php /** @var Author $author */ @endphp
     <div class="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div class="lg:grid lg:grid-cols-7 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
             <!-- Author image -->
@@ -41,14 +42,14 @@
                         <h3 class="text-sm font-medium text-gray-900">Liens</h3>
                         <div class="mt-4 text-gray-500">
                             <ul role="list">
-                                @foreach($author->links as $icon => $link)
+                                @foreach($author->links as $link)
                                     <li class="my-3">
-                                        <a href="{{ $link }}" class="flex items-center gap-2">
+                                        <a href="{{ $link->url }}" class="flex items-center gap-2">
                                             <p>
-                                                {{ svg("$icon", 'w-6 h-6') }}
+                                                {{ svg("$link->icon", 'w-6 h-6') }}
                                             </p>
                                             <p class="text-indigo-600 hover:text-indigo-500">
-                                                {{ $link }}
+                                                {{ $link->url }}
                                             </p>
                                         </a>
                                     </li>

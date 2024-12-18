@@ -3,13 +3,14 @@
 namespace App\Adapters\Repositories;
 
 use App\Domain\Repositories\IPostsRepository;
-use App\Domain\ValueObjects\Author;
 use App\Domain\ValueObjects\Category;
 use App\Domain\ValueObjects\CategoryId;
 use App\Domain\ValueObjects\Edition;
 use App\Domain\ValueObjects\EditionId;
+use App\Domain\ValueObjects\Link;
 use App\Domain\ValueObjects\Post;
 use App\Domain\ValueObjects\Tag;
+use App\Models\Author;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -105,7 +106,7 @@ class PostsRepository implements IPostsRepository
             ->leftJoin('editions as e', 'p.edition_id', '=', 'e.id')
             ->join('post_author as pa', 'p.id', '=', 'pa.post_id')
             ->join('authors as a', 'pa.author_id', '=', 'a.id')
-            ->where('a.id', $author->authorId->value())
+            ->where('a.id', $author->id)
             ->orderBy('date', 'desc')
             ->limit(500)
             ->get()
@@ -126,12 +127,7 @@ class PostsRepository implements IPostsRepository
             $post->editionSlug
                 ? Edition::from(EditionId::from($post->editionId), $post->editionTitle, $post->editionSlug)
                 : null,
-            DB::table('post_author as pa')
-                ->select('a.name', 'a.slug')
-                ->join('authors as a', 'pa.author_id', '=', 'a.id')
-                ->where('pa.post_id', $post->id)
-                ->get()
-                ->toArray(),
+            \App\Models\Post::find($post->id)->authors,
             DB::table('post_tag as pt')
                 ->select('t.title', 't.slug')
                 ->join('tags as t', 'pt.tag_id', '=', 't.id')
