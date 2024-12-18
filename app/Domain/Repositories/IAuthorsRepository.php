@@ -2,14 +2,12 @@
 
 namespace App\Domain\Repositories;
 
-use App\Domain\ValueObjects\Author;
+use App\Models\Author;
 use Illuminate\Support\Collection;
 
 interface IAuthorsRepository
 {
     public function all(): Collection;
-
-    public function getAuthorFromSlug(string $slug): ?Author;
 
     public function getCoAuthors(Author $author): Collection;
 }

@@ -7,6 +7,7 @@ use App\Domain\ValueObjects\Edition;
 use App\Domain\ValueObjects\EditionId;
 use App\Domain\ValueObjects\Post;
 use App\Livewire\GetLastPostsComponent;
+use App\Models\Author;
 use Carbon\Carbon;
 
 use function Pest\Livewire\livewire;
@@ -21,10 +22,10 @@ it('displays last posts', function () {
             new Carbon('2021-01-03'),
             Category::from(CategoryId::from(3), 'Category 3', 'category-3'),
             Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-            [
-                (object)['name' => 'Author 5', 'slug' => 'author-5'],
-                (object)['name' => 'Author 6', 'slug' => 'author-6'],
-            ],
+            collect([
+                Author::factory()->make(['name' => 'Author 5', 'slug' => 'author-5']),
+                Author::factory()->make(['name' => 'Author 6', 'slug' => 'author-6']),
+            ]),
             [
                 (object)['title' => 'Tag 5', 'slug' => 'tag-5'],
                 (object)['title' => 'Tag 6', 'slug' => 'tag-6'],
@@ -39,10 +40,10 @@ it('displays last posts', function () {
             new Carbon('2021-01-02'),
             Category::from(categoryId::from(2), 'Category 2', 'category-2'),
             Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-            [
-                (object)['name' => 'Author 3', 'slug' => 'author-3'],
-                (object)['name' => 'Author 4', 'slug' => 'author-4'],
-            ],
+            collect([
+                Author::factory()->make(['name' => 'Author 3', 'slug' => 'author-3']),
+                Author::factory()->make(['name' => 'Author 4', 'slug' => 'author-4']),
+            ]),
             [
                 (object)['title' => 'Tag 3', 'slug' => 'tag-3'],
                 (object)['title' => 'Tag 4', 'slug' => 'tag-4'],
@@ -57,10 +58,10 @@ it('displays last posts', function () {
             new Carbon('2021-01-01'),
             Category::from(CategoryId::from(1), 'Category 1', 'category-1'),
             Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-            [
-                (object)['name' => 'Author 1', 'slug' => 'author-1'],
-                (object)['name' => 'Author 2', 'slug' => 'author-2'],
-            ],
+            collect([
+                Author::factory()->make(['name' => 'Author 1', 'slug' => 'author-1']),
+                Author::factory()->make(['name' => 'Author 2', 'slug' => 'author-2']),
+            ]),
             [
                 (object)['title' => 'Tag 1', 'slug' => 'tag-1'],
                 (object)['title' => 'Tag 2', 'slug' => 'tag-2'],

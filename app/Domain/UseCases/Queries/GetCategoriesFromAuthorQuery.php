@@ -3,7 +3,7 @@
 namespace App\Domain\UseCases\Queries;
 
 use App\Domain\Repositories\ICategoriesRepository;
-use App\Domain\ValueObjects\Author;
+use App\Models\Author;
 use Illuminate\Support\Collection;
 
 readonly final class GetCategoriesFromAuthorQuery

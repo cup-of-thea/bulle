@@ -9,6 +9,7 @@ use App\Domain\ValueObjects\Post;
 use App\Domain\ValueObjects\Tag;
 use App\Domain\ValueObjects\TagId;
 use App\Livewire\ShowTagComponent;
+use App\Models\Author;
 use Illuminate\Support\Collection;
 
 use function Pest\Livewire\livewire;
@@ -26,10 +27,12 @@ it('should return tag posts', function () {
                     now(),
                     Category::from(CategoryId::from(1), 'Category A', 'category-a'),
                     Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-                    [
-                        (object)['name' => 'Jane Doe', 'slug' => 'jane-doe'],
-                        (object)['name' => 'John Doe', 'slug' => 'john-doe'],
-                    ],
+                    collect(
+                        [
+                            Author::factory()->make(['name' => 'Author 1', 'slug' => 'author-1']),
+                            Author::factory()->make(['name' => 'Author 2', 'slug' => 'author-2']),
+                        ]
+                    ),
                     [
                         (object)['title' => 'TagA', 'slug' => 'taga'],
                         (object)['title' => 'TagB', 'slug' => 'tagb'],
@@ -44,9 +47,7 @@ it('should return tag posts', function () {
                     now(),
                     Category::from(CategoryId::from(2), 'Category B', 'category-b'),
                     Edition::from(EditionId::from(1), 'Edition 1', 'edition-1'),
-                    [
-                        (object)['name' => 'Jane Doe', 'slug' => 'jane-doe'],
-                    ],
+                    Author::factory(1)->make(['name' => 'Jane Doe', 'slug' => 'jane-doe']),
                     [
                         (object)['title' => 'TagA', 'slug' => 'taga'],
                     ],

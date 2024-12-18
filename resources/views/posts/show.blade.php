@@ -1,3 +1,4 @@
+@php use App\Models\Author; @endphp
 <x-layout>
     @php /** @var App\Domain\ValueObjects\Post $post */ @endphp
     <x-slot:meta>
@@ -60,7 +61,7 @@
             </div>
             <ul role="list"
                 class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                @php /** @var App\Domain\ValueObjects\PostItemAuthor $author */ @endphp
+                @php /** @var Author $author */ @endphp
                 @foreach($post->authors as $author)
                     <li>
                         <a href="{{ route('authors.show', $author->slug) }}">
@@ -71,83 +72,19 @@
                                 {{ $author->name }}
                             </h3>
                             <p class="text-sm leading-6 text-gray-600">
-                                {{ $author->title() }}
+                                {{ $author->title }}
                             </p>
                         </a>
 
                         <ul role="list" class="mt-6 flex justify-center flex-wrap gap-6">
-                            @if($author->twitter())
+                            @foreach($author->links as $link)
                                 <li>
-                                    <a href="{{ $author->twitter() }}" class="text-gray-400 hover:text-gray-500">
-                                        <span class="sr-only">Twitter</span>
-                                        <x-iconoir-twitter class="h-6 w-6"/>
+                                    <a href="{{ $link->url }}" class="text-gray-400 hover:text-gray-500">
+                                        <span class="sr-only">{{ $link->icon }}</span>
+                                        {{ svg("$link->icon", 'w-6 h-6') }}
                                     </a>
                                 </li>
-                            @endif
-                            @if($author->linkedin())
-                                <li>
-                                    <a href="{{ $author->linkedin() }}" class="text-gray-400 hover:text-gray-500">
-                                        <span class="sr-only">LinkedIn</span>
-                                        <x-iconoir-linkedin class="h-6 w-6"/>
-                                    </a>
-                                </li>
-                            @endif
-                            @if($author->github())
-                                <li>
-                                    <a href="{{ $author->github() }}" class="text-gray-400 hover:text-gray-500">
-                                        <span class="sr-only">GitHub</span>
-                                        <x-iconoir-github class="h-6 w-6"/>
-                                    </a>
-                                </li>
-                            @endif
-                            @if($author->mastodon())
-                                <li>
-                                    <a href="{{ $author->mastodon() }}" class="text-gray-400 hover:text-gray-500">
-                                        <span class="sr-only">Mastodon</span>
-                                        <x-iconoir-mastodon class="h-6 w-6"/>
-                                    </a>
-                                </li>
-                            @endif
-                            @if($author->threads())
-                                <li>
-                                    <a href="{{ $author->threads() }}" class="text-gray-400 hover:text-gray-500">
-                                        <span class="sr-only">Threads</span>
-                                        <x-iconoir-threads class="h-6 w-6"/>
-                                    </a>
-                                </li>
-                            @endif
-                            @if($author->tiktok())
-                                <li>
-                                    <a href="{{ $author->tiktok() }}" class="text-gray-400 hover:text-gray-500">
-                                        <span class="sr-only">TikTok</span>
-                                        <x-iconoir-tiktok class="h-6 w-6"/>
-                                    </a>
-                                </li>
-                            @endif
-                            @if($author->instagram())
-                                <li>
-                                    <a href="{{ $author->instagram() }}" class="text-gray-400 hover:text-gray-500">
-                                        <span class="sr-only">Instagram</span>
-                                        <x-iconoir-instagram class="h-6 w-6"/>
-                                    </a>
-                                </li>
-                            @endif
-                            @if($author->youtube())
-                                <li>
-                                    <a href="{{ $author->youtube() }}" class="text-gray-400 hover:text-gray-500">
-                                        <span class="sr-only">YouTube</span>
-                                        <x-iconoir-youtube class="h-6 w-6"/>
-                                    </a>
-                                </li>
-                            @endif
-                            @if($author->website())
-                                <li>
-                                    <a href="{{ $author->website() }}" class="text-gray-400 hover:text-gray-500">
-                                        <span class="sr-only">Site web</span>
-                                        <x-iconoir-globe class="h-6 w-6"/>
-                                    </a>
-                                </li>
-                            @endif
+                            @endforeach
                         </ul>
                     </li>
                 @endforeach

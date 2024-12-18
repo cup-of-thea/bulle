@@ -2,11 +2,11 @@
 
 namespace App\Domain\Repositories;
 
-use App\Domain\ValueObjects\Author;
 use App\Domain\ValueObjects\Category;
 use App\Domain\ValueObjects\Edition;
 use App\Domain\ValueObjects\Post;
 use App\Domain\ValueObjects\Tag;
+use App\Models\Author;
 use Illuminate\Support\Collection;
 
 interface IPostsRepository

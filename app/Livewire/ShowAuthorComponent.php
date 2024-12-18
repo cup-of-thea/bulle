@@ -7,7 +7,7 @@ use App\Domain\UseCases\Queries\GetCoAuthorsFromAuthorQuery;
 use App\Domain\UseCases\Queries\GetEditionsFromAuthorQuery;
 use App\Domain\UseCases\Queries\GetPostsFromAuthorQuery;
 use App\Domain\UseCases\Queries\GetTagsFromAuthorQuery;
-use App\Domain\ValueObjects\Author;
+use App\Models\Author;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Attributes\Locked;

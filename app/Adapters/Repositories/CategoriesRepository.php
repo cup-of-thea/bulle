@@ -3,10 +3,10 @@
 namespace App\Adapters\Repositories;
 
 use App\Domain\Repositories\ICategoriesRepository;
-use App\Domain\ValueObjects\Author;
 use App\Domain\ValueObjects\Category;
 use App\Domain\ValueObjects\CategoryId;
 use App\Domain\ValueObjects\CategoryItem;
+use App\Models\Author;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -68,7 +68,7 @@ class CategoriesRepository implements ICategoriesRepository
             ->join('posts as p', 'c.id', '=', 'p.category_id')
             ->join('post_author as pa', 'p.id', '=', 'pa.post_id')
             ->join('authors as a', 'pa.author_id', '=', 'a.id')
-            ->where('a.id', $author->authorId->value())
+            ->where('a.id', $author->id)
             ->limit(500)
             ->get()
             ->map(fn($category) => Category::from(CategoryId::from($category->id), $category->title, $category->slug));
