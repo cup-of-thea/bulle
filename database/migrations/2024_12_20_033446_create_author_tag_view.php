@@ -9,8 +9,9 @@ return new class extends Migration {
      */
     public function up(): void
     {
+        DB::statement('drop view if exists author_tag');
         DB::statement(
-            "create or replace view author_tag as (select distinct pa.author_id AS author_id, pt.tag_id AS tag_id
+            "create view author_tag as (select distinct pa.author_id AS author_id, pt.tag_id AS tag_id
             from (tags t join (((posts join post_author pa
                                  on ((posts.id = pa.post_id))) join authors a
                                 on ((a.id = pa.author_id))) join post_tag pt
@@ -23,6 +24,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        DB::statement('drop view author_tag');
+        DB::statement('drop view if exists author_tag');
     }
 };
