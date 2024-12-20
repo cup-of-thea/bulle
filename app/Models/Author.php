@@ -2,12 +2,12 @@
 
 namespace App\Models;
 
+use App\Models\Traits\HasLastPost;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Support\Carbon;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
@@ -16,6 +16,7 @@ class Author extends Model
 {
     use HasFactory;
     use HasSlug;
+    use HasLastPost;
 
     public function getSlugOptions(): SlugOptions
     {
@@ -44,13 +45,6 @@ class Author extends Model
         );
     }
 
-    public function lastPost(): Attribute
-    {
-        return Attribute::make(
-            fn() => $this->posts->sortByDesc('date')->first()
-        );
-    }
-
     public function lastPostDate(): Attribute
     {
         return Attribute::make(
@@ -65,18 +59,18 @@ class Author extends Model
         return $this->belongsToMany(Post::class, 'post_author');
     }
 
-    public function tags(): HasManyThrough
+    public function tags(): BelongsToMany
     {
-        return $this->hasManyThrough(Tag::class, Post::class);
+        return $this->belongsToMany(Tag::class, 'author_tag');
     }
 
     public function categories(): BelongsToMany
     {
-        return $this->posts()->with('category')->distinct();
+        return $this->belongsToMany(Category::class, 'author_category');
     }
 
     public function editions(): BelongsToMany
     {
-        return $this->posts()->with('editions')->distinct();
+        return $this->belongsToMany(Edition::class, 'author_edition');
     }
 }

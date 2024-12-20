@@ -20,20 +20,8 @@ class ShowAuthorComponent extends Component
     }
 
     #[Computed]
-    public function editions(): Collection
-    {
-        return $this->author->editions()->limit(500)->orderBy('title')->get();
-    }
-
-    #[Computed]
     public function categories(): Collection
     {
         return $this->author->categories()->limit(500)->orderBy('title')->get();
-    }
-
-    #[Computed]
-    public function tags(): Collection
-    {
-        return $this->author->tags()->limit(500)->orderBy('title')->get();
     }
 }
