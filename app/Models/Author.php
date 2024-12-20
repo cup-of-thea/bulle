@@ -73,4 +73,14 @@ class Author extends Model
     {
         return $this->belongsToMany(Edition::class, 'author_edition');
     }
+
+    public function scopePermanent($query)
+    {
+        return $query->where('permanent', true);
+    }
+
+    public function scopeGuest($query)
+    {
+        return $query->where('permanent', false);
+    }
 }

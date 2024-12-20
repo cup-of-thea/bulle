@@ -37,6 +37,9 @@ class AuthorResource extends Resource
                     ->image(),
                 Forms\Components\Textarea::make('bio')
                     ->columnSpanFull(),
+                Forms\Components\Toggle::make('permanent')
+                    ->label('Permanent·e')
+                    ->columnSpanFull(),
             ]);
     }
 
@@ -53,6 +56,8 @@ class AuthorResource extends Resource
                     ->label('Titre')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ToggleColumn::make('permanent')
+                    ->label('Permanent·e'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

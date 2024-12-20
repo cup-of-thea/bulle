@@ -23,11 +23,8 @@ class AuthorsRelationManager extends RelationManager
 
     public function table(Table $table): Table
     {
-        return $table
+        return AuthorResource::table($table)
             ->recordTitleAttribute('name')
-            ->columns([
-                Tables\Columns\TextColumn::make('name')->label('Nom'),
-            ])
             ->filters([
                 //
             ])
