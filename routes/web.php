@@ -19,29 +19,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', fn() => view('welcome'))->name('home');
+Route::get('/', fn () => view('welcome'))->name('home');
 
-Route::get('/association', fn() => view('association'))->name('association');
+Route::get('/association', fn () => view('association'))->name('association');
 
-Route::get('/mentions-legales', fn() => view('legals'))->name('legals');
+Route::get('/mentions-legales', fn () => view('legals'))->name('legals');
 
-Route::get('/auteur·rice·x·s', fn() => view('authors.index'))->name('authors.index');
+Route::get('/auteur·rice·x·s', fn () => view('authors.index'))->name('authors.index');
 
-Route::get('/magazine', fn() => view('blog'))->name('blog');
+Route::get('/magazine', fn () => view('blog'))->name('blog');
 
 Route::get('/articles/{slug}', ShowPostController::class)->name('posts.show');
 
-Route::get('/categories', fn() => view('categories.index'))->name('categories.index');
+Route::get('/categories', fn () => view('categories.index'))->name('categories.index');
 
 Route::get('/categories/{slug}', ShowCategoryController::class)->name('categories.show');
 
-Route::get('/editions', fn() => view('editions.index'))->name('editions.index');
+Route::get('/editions', fn () => view('editions.index'))->name('editions.index');
 
 Route::get('/editions/last', LastEditionController::class)->name('editions.last');
 
 Route::get('/editions/{slug}', ShowEditionController::class)->name('editions.show');
 
-Route::get('/tags', fn() => view('tags.index'))->name('tags.index');
+Route::get('/tags', fn () => view('tags.index'))->name('tags.index');
 
 Route::get('/tags/{slug}', ShowTagController::class)->name('tags.show');
 

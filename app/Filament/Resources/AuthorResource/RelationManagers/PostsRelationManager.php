@@ -36,11 +36,11 @@ class PostsRelationManager extends RelationManager
                     ->modalWidth('4xl'),
             ])
             ->actions([
-                Tables\Actions\DetachAction::make()
+                Tables\Actions\DetachAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DetachBulkAction::make()
+                    Tables\Actions\DetachBulkAction::make(),
                 ]),
             ]);
     }

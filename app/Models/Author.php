@@ -15,8 +15,8 @@ use Spatie\Sluggable\SlugOptions;
 class Author extends Model
 {
     use HasFactory;
-    use HasSlug;
     use HasLastPost;
+    use HasSlug;
 
     public function getSlugOptions(): SlugOptions
     {
@@ -39,7 +39,7 @@ class Author extends Model
     public function avatar(): Attribute
     {
         return Attribute::make(
-            fn() => $this->image
+            fn () => $this->image
                 ? "/storage/$this->image"
                 : "https://ui-avatars.com/api/?name={$this->name}&color=7F9CF5&background=EBF4FF&size=256&bold=true&font-size=0.40"
         );
@@ -48,7 +48,7 @@ class Author extends Model
     public function lastPostDate(): Attribute
     {
         return Attribute::make(
-            fn() => $this->posts->sortByDesc('date')->first()?->date ? Carbon::parse(
+            fn () => $this->posts->sortByDesc('date')->first()?->date ? Carbon::parse(
                 $this->posts->sortByDesc('date')->first()->date
             ) : null
         );

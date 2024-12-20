@@ -96,12 +96,12 @@ class PostResource extends Resource
                 Tables\Grouping\Group::make('category.title')
                     ->label('Catégorie')
                     ->titlePrefixedWithLabel(false)
-                    ->getTitleFromRecordUsing(fn(Post $post) => $post->category?->title)
+                    ->getTitleFromRecordUsing(fn (Post $post) => $post->category?->title)
                     ->collapsible(),
                 Tables\Grouping\Group::make('edition.title')
                     ->label('Édition')
                     ->titlePrefixedWithLabel(false)
-                    ->getTitleFromRecordUsing(fn(Post $post) => $post->edition?->title)
+                    ->getTitleFromRecordUsing(fn (Post $post) => $post->edition?->title)
                     ->collapsible(),
             ])
             ->defaultSort('date', 'desc')

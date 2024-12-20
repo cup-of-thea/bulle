@@ -15,17 +15,17 @@ it('displays post page', function () {
         'description' => 'This is my first post',
         'date' => Carbon::parse('2021-01-01'),
         'category_id' => Category::factory()->create(['title' => 'Category 1', 'slug' => 'category-1'])->id,
-        'edition_id' => Edition::factory()->create(['title' => 'Edition 1', 'slug' => 'edition-1'])->id
+        'edition_id' => Edition::factory()->create(['title' => 'Edition 1', 'slug' => 'edition-1'])->id,
     ]);
 
     $post->authors()->attach([
         Author::factory()->create(['name' => 'Author 1', 'slug' => 'author-1'])->id,
-        Author::factory()->create(['name' => 'Author 2', 'slug' => 'author-2'])->id
+        Author::factory()->create(['name' => 'Author 2', 'slug' => 'author-2'])->id,
     ]);
 
     $post->tags()->attach([
         Tag::factory()->create(['title' => 'Tag 1', 'slug' => 'tag-1'])->id,
-        Tag::factory()->create(['title' => 'Tag 2', 'slug' => 'tag-2'])->id
+        Tag::factory()->create(['title' => 'Tag 2', 'slug' => 'tag-2'])->id,
     ]);
 
     $this->get(route('posts.show', ['slug' => 'my-first-post']))

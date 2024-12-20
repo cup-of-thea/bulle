@@ -11,6 +11,6 @@ class GenerateSlugAction extends Action
     {
         return parent::make($name ?? 'Generate slug')
             ->icon('iconoir-link')
-            ->action(fn(Set $set, $state) => $set('slug', str($state)->slug));
+            ->action(fn (Set $set, $state) => $set('slug', str($state)->slug));
     }
 }

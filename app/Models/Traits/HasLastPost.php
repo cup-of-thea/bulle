@@ -9,7 +9,7 @@ trait HasLastPost
     public function lastPost(): Attribute
     {
         return Attribute::make(
-            fn() => $this->posts->sortByDesc('date')->first()
+            fn () => $this->posts->sortByDesc('date')->first()
         );
     }
 }

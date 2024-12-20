@@ -1,6 +1,5 @@
 <?php
 
-use App\Domain\Repositories\IPostsRepository;
 use App\Livewire\GetLastPostsComponent;
 use App\Models\Author;
 use App\Models\Category;

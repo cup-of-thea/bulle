@@ -12,8 +12,8 @@ use Spatie\Sluggable\SlugOptions;
 class Tag extends Model
 {
     use HasFactory;
-    use HasSlug;
     use HasLastPost;
+    use HasSlug;
 
     public function getSlugOptions(): SlugOptions
     {
