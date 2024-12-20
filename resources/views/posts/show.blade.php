@@ -1,6 +1,6 @@
 @php use App\Models\Author; @endphp
 <x-layout>
-    @php /** @var App\Domain\ValueObjects\Post $post */ @endphp
+    @php /** @var App\Models\Post $post */ @endphp
     <x-slot:meta>
         <meta name="author" content="{{ $post->authors->implode('name', ', ') }}"/>
         <meta name="description" content="{{ $post->description }}"/>
