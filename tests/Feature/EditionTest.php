@@ -11,12 +11,9 @@ it('displays editions page', function () {
 });
 
 it('lists all editions', function () {
-    DB::table('editions')->insert([
-        ['title' => 'Edition 1', 'slug' => 'edition-1'],
-        ['title' => 'Edition 3', 'slug' => 'edition-3'],
-        ['title' => 'Edition 2', 'slug' => 'edition-2'],
-    ]);
-
+    Edition::factory()->create(['title' => 'Edition 1', 'slug' => 'edition-1', 'updated_at' => now()]);
+    Edition::factory()->create(['title' => 'Edition 3', 'slug' => 'edition-3', 'updated_at' => now()->subDays(2)]);
+    Edition::factory()->create(['title' => 'Edition 2', 'slug' => 'edition-2', 'updated_at' => now()->subDay()]);
     $this->get(route('editions.index'))
         ->assertSeeInOrder(['Edition 1', 'Edition 2', 'Edition 3']);
 });

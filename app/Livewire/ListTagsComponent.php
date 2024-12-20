@@ -12,6 +12,6 @@ class ListTagsComponent extends Component
     #[Computed]
     public function tags(): Collection
     {
-        return Tag::limit(500)->orderBy('name')->get();
+        return Tag::limit(500)->orderBy('title')->get();
     }
 }

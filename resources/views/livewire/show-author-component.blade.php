@@ -59,23 +59,23 @@
                     </div>
                 @endif
 
-                @if($this->editions->isNotEmpty())
-                    <x-authors.relations :resource="'editions'" :title="'Éditions'" :elements="$this->editions"/>
+                @if($author->editions->isNotEmpty())
+                    <x-authors.relations :resource="'editions'" :title="'Éditions'" :elements="$author->editions"/>
                 @endif
 
                 @if($this->categories->isNotEmpty())
                     <x-authors.relations :resource="'categories'" :title="'Catégories'" :elements="$this->categories"/>
                 @endif
 
-                @if($this->tags->isNotEmpty())
-                    <x-authors.relations :resource="'tags'" :title="'Tags'" :elements="$this->tags"/>
+                @if($author->tags->isNotEmpty())
+                    <x-authors.relations :resource="'tags'" :title="'Tags'" :elements="$author->tags"/>
                 @endif
 
-                @if($this->coAuthors->isNotEmpty())
-                    <x-authors.co-authors :resource="'authors'"
-                                          :title="'Co-auteur·ice·s·x'"
-                                          :elements="$this->coAuthors"/>
-                @endif
+{{--                @if($this->coAuthors->isNotEmpty())--}}
+{{--                    <x-authors.co-authors :resource="'authors'"--}}
+{{--                                          :title="'Co-auteur·ice·s·x'"--}}
+{{--                                          :elements="$this->coAuthors"/>--}}
+{{--                @endif--}}
 
             </div>
 

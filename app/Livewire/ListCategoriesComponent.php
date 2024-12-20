@@ -12,6 +12,6 @@ class ListCategoriesComponent extends Component
     #[Computed]
     public function categories(): Collection
     {
-        return Category::limit(500)->orderBy('name')->get();
+        return Category::limit(500)->orderBy('title')->get();
     }
 }

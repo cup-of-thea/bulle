@@ -2,10 +2,10 @@
 
 namespace App\Models;
 
+use App\Models\Traits\HasLastPost;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
@@ -13,6 +13,7 @@ class Tag extends Model
 {
     use HasFactory;
     use HasSlug;
+    use HasLastPost;
 
     public function getSlugOptions(): SlugOptions
     {
@@ -32,8 +33,8 @@ class Tag extends Model
         return $this->belongsToMany(Post::class);
     }
 
-    public function authors(): HasManyThrough
+    public function authors(): BelongsToMany
     {
-        return $this->hasManyThrough(Author::class, Post::class);
+        return $this->belongsToMany(Author::class, 'author_tag');
     }
 }
