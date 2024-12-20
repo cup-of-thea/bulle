@@ -13,8 +13,8 @@ use Spatie\Sluggable\SlugOptions;
 class Edition extends Model
 {
     use HasFactory;
-    use HasSlug;
     use HasLastPost;
+    use HasSlug;
 
     protected $withCount = ['posts'];
 

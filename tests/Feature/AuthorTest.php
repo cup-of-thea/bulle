@@ -35,7 +35,7 @@ it('displays author details with posts', function () {
             'name' => 'author 1',
             'slug' => 'author-1',
             'bio' => 'A small bio',
-            'title' => 'Software Engineer'
+            'title' => 'Software Engineer',
         ]);
 
     $author->links()->createMany([

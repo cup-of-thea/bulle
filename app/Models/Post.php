@@ -40,6 +40,6 @@ class Post extends Model
 
     public function date(): Attribute
     {
-        return Attribute::make(fn(string $date) => Carbon::parse($date));
+        return Attribute::make(fn (string $date) => Carbon::parse($date));
     }
 }

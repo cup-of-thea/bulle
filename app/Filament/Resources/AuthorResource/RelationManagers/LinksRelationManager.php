@@ -48,9 +48,9 @@ class LinksRelationManager extends RelationManager
             ->columns([
                 Tables\Columns\IconColumn::make('icon')
                     ->label('Icône')
-                    ->icon(fn($record) => $record->icon),
+                    ->icon(fn ($record) => $record->icon),
                 Tables\Columns\TextColumn::make('url')
-                    ->url(fn($record) => $record->url),
+                    ->url(fn ($record) => $record->url),
             ])
             ->filters([
                 //

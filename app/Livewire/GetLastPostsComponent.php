@@ -12,7 +12,6 @@ class GetLastPostsComponent extends Component
     #[Computed]
     public function posts(): Collection
     {
-        $posts = Post::orderBy('date', 'desc')->limit(500)->get();
         return Post::orderBy('date', 'desc')->limit(500)->get();
     }
 }

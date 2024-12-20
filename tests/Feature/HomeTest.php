@@ -10,7 +10,7 @@ it('displays the header nav', function () {
     $this->get(route('home'))->assertSeeInOrder([
         route('home'),
         route('blog'),
-        route('association')
+        route('association'),
     ]);
 });
 
