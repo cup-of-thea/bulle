@@ -9,8 +9,9 @@ return new class extends Migration {
      */
     public function up(): void
     {
+        DB::statement('drop view if exists author_category');
         DB::statement(
-            "create or replace view author_category as (select distinct `pa`.`author_id` AS `author_id`, `bulle`.`posts`.`category_id` AS `category_id`
+            "create view author_category as (select distinct `pa`.`author_id` AS `author_id`, `bulle`.`posts`.`category_id` AS `category_id`
                 from ((`bulle`.`posts` join `bulle`.`post_author` `pa`
                    on ((`bulle`.`posts`.`id` = `pa`.`post_id`))) join `bulle`.`authors` `a` on ((`pa`.`author_id` = `a`.`id`))))"
         );
@@ -22,6 +23,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        DB::statement('drop view author_category');
+        DB::statement('drop view if exists author_category');
     }
 };
