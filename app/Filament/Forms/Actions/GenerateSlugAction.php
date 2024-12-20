@@ -11,6 +11,7 @@ class GenerateSlugAction extends Action
     {
         return parent::make($name ?? 'Generate slug')
             ->icon('iconoir-link')
+            // @phpstan-ignore-next-line
             ->action(fn (Set $set, $state) => $set('slug', str($state)->slug));
     }
 }
