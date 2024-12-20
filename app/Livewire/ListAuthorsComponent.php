@@ -10,8 +10,14 @@ use Livewire\Component;
 class ListAuthorsComponent extends Component
 {
     #[Computed]
-    public function authors(): Collection
+    public function permanentAuthors(): Collection
     {
-        return Author::limit(500)->orderBy('name')->get();
+        return Author::permanent()->limit(500)->orderBy('name')->get();
+    }
+
+    #[Computed]
+    public function guestAuthors(): Collection
+    {
+        return Author::guest()->limit(500)->orderBy('name')->get();
     }
 }
