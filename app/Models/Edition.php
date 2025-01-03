@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
+use Illuminate\Database\Eloquent\Builder;
+
 
 /**
  * @property string $title
@@ -21,6 +23,16 @@ class Edition extends Model
     use HasSlug;
 
     protected $withCount = ['posts'];
+
+    protected static function booted(): void
+    {
+        static::addGlobalScope('published', function (Builder $builder) {
+            $builder
+                ->where('status', 'published')
+            ;
+        });
+    }
+
 
     public function getSlugOptions(): SlugOptions
     {

@@ -39,6 +39,12 @@ class PostResource extends Resource
                         Forms\Components\Textarea::make('description')
                             ->autosize()
                             ->maxLength(255),
+                        Forms\Components\Select::make('status')
+                            ->options([
+                                'draft' => 'Brouillon',
+                                'published' => 'Publié',
+                            ])
+                            ->default('draft'),
                         Forms\Components\MarkdownEditor::make('content')
                             ->label('Contenu')
                             ->columnSpanFull(),
@@ -124,6 +130,11 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\SelectColumn::make('status')
+                    ->options([
+                        'draft' => 'Brouillon',
+                        'published' => 'Publié',
+                    ]),
                 Tables\Columns\TextColumn::make('date')
                     ->date('d M Y')
                     ->sortable(),

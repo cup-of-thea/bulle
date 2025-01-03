@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Carbon;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\Log;
+use function Laravel\Prompts\warning;
 
 class Post extends Model
 {
@@ -16,6 +19,14 @@ class Post extends Model
     public function getRouteKeyName(): string
     {
         return 'slug';
+    }
+
+    protected static function booted(): void
+    {
+        // scope to only show published posts and from published editions
+        static::addGlobalScope('published', function (Builder $builder) {
+            $builder->where('status', 'published');
+        });
     }
 
     public function authors(): BelongsToMany
