@@ -15,9 +15,9 @@ it('lists all categories', function () {
     $category2 = Category::factory()->create(['title' => 'Category 2', 'slug' => 'category-2']);
     $category3 = Category::factory()->create(['title' => 'Category 3', 'slug' => 'category-3']);
 
-    $category1->posts()->create(['title' => 'Post 1', 'slug' => 'post-1', 'content' => 'Content 1', 'date' => now()]);
-    $category2->posts()->create(['title' => 'Post 2', 'slug' => 'post-2', 'content' => 'Content 2', 'date' => now()]);
-    $category3->posts()->create(['title' => 'Post 3', 'slug' => 'post-3', 'content' => 'Content 3', 'date' => now()]);
+    $category1->posts()->create(['title' => 'Post 1', 'slug' => 'post-1', 'content' => 'Content 1', 'date' => now(), 'status' => 'published']);
+    $category2->posts()->create(['title' => 'Post 2', 'slug' => 'post-2', 'content' => 'Content 2', 'date' => now(), 'status' => 'published']);
+    $category3->posts()->create(['title' => 'Post 3', 'slug' => 'post-3', 'content' => 'Content 3', 'date' => now(), 'status' => 'published']);
 
     $this->get(route('categories.index'))
         ->assertSeeInOrder(['Category 1', 'Category 2', 'Category 3']);
@@ -41,6 +41,7 @@ it('displays category details with posts', function () {
             'content' => 'Content 1',
             'date' => now(),
             'category_id' => $id,
+            'status' => 'published',
         ],
         [
             'title' => 'Post 2',
@@ -48,6 +49,7 @@ it('displays category details with posts', function () {
             'content' => 'Content 2',
             'date' => now(),
             'category_id' => $id,
+            'status' => 'published',
         ],
     ]);
 

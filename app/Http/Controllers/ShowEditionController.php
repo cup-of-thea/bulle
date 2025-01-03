@@ -9,6 +9,6 @@ readonly class ShowEditionController
 {
     public function __invoke(string $slug): View
     {
-        return view('editions.show', ['edition' => Edition::where('slug', $slug)->first()]);
+        return view('editions.show', ['edition' => Edition::where('slug', $slug)->firstOrFail()]);
     }
 }

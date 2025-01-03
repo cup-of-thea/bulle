@@ -9,8 +9,8 @@ it('should return tag posts', function () {
     $tag = Tag::factory()->create(['title' => 'Tag A', 'slug' => 'tag-a']);
 
     $tag->posts()->createMany([
-        ['title' => 'Post from tag A', 'slug' => 'post-from-tag-a', 'date' => '2021-01-01'],
-        ['title' => 'Another from tag A', 'slug' => 'another-from-tag-a', 'date' => '2021-01-02'],
+        ['title' => 'Post from tag A', 'slug' => 'post-from-tag-a', 'date' => '2021-01-01', 'status' => 'published'],
+        ['title' => 'Another from tag A', 'slug' => 'another-from-tag-a', 'date' => '2021-01-02', 'status' => 'published'],
     ]);
 
     livewire(ShowTagComponent::class, ['tag' => $tag])

@@ -33,8 +33,8 @@ it('displays tag details with posts', function () {
     $id = DB::table('tags')->insertGetId(['title' => 'Tag 1', 'slug' => 'tag-1']);
 
     DB::table('posts')->insert([
-        ['title' => 'Post 1', 'slug' => 'post-1', 'content' => 'Content 1', 'date' => now()],
-        ['title' => 'Post 2', 'slug' => 'post-2', 'content' => 'Content 2', 'date' => now()],
+        ['title' => 'Post 1', 'slug' => 'post-1', 'content' => 'Content 1', 'date' => now(), 'status' => 'published'],
+        ['title' => 'Post 2', 'slug' => 'post-2', 'content' => 'Content 2', 'date' => now(), 'status' => 'published'],
     ]);
 
     $postIds = DB::table('posts')->pluck('id')->toArray();

@@ -11,7 +11,6 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class EditionResource extends Resource
 {
@@ -21,6 +20,10 @@ class EditionResource extends Resource
 
     protected static ?string $navigationIcon = 'iconoir-journal-page';
 
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()->withoutGlobalScopes();
+    }
     public static function form(Form $form): Form
     {
         return $form
