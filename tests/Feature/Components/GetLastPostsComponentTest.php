@@ -15,17 +15,20 @@ it('displays last posts', function () {
         'title' => 'Post 1',
         'slug' => 'post-1',
         'description' => 'This is sparta',
-        'edition_id' => Edition::factory()->create(['title' => 'Edition 1', 'slug' => 'edition-1'])->id,
+        'edition_id' => Edition::factory()->create(['title' => 'Edition 1', 'slug' => 'edition-1', 'status' => 'published'])->id,
         'category_id' => Category::factory()->create(['title' => 'Category 1', 'slug' => 'category-1'])->id,
         'date' => new Carbon('2021-01-01'),
+        'status' => 'published',
     ]);
     Post::factory()->create([
         'title' => 'Post 2',
         'date' => new Carbon('2021-01-02'),
+        'status' => 'published',
     ]);
     Post::factory()->create([
         'title' => 'Post 3',
         'date' => new Carbon('2021-01-03'),
+        'status' => 'published',
     ]);
 
     $tags = collect([

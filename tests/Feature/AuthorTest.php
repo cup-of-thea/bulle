@@ -48,6 +48,7 @@ it('displays author details with posts', function () {
         'slug' => 'post-1',
         'content' => 'Post 1 content',
         'date' => now(),
+        'status' => 'published',
     ]);
 
     livewire(ShowAuthorComponent::class, ['author' => $author])

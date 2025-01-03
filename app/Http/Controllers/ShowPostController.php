@@ -9,6 +9,6 @@ readonly class ShowPostController
 {
     public function __invoke(string $slug): View
     {
-        return view('posts.show', ['post' => Post::where('posts.slug', $slug)->first()]);
+        return view('posts.show', ['post' => Post::where('posts.slug', $slug)->firstOrFail()]);
     }
 }
