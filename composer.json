@@ -17,6 +17,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.4",
+        "spatie/laravel-markdown": "^2.7",
         "spatie/laravel-sluggable": "^3.7",
         "thea/markdown-blog": "^1.4"
     },
