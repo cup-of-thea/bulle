@@ -48,9 +48,9 @@
             <p class="mt-6 text-xl leading-8">
                 {{ $post->description }}
             </p>
-            <div class="mt-10 max-w-2xl prose">
+            <x-markdown class="mt-10 max-w-2xl prose">
                 {!! $post->content !!}
-            </div>
+            </x-markdown>
         </div>
     </div>
 
