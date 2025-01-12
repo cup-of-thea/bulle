@@ -11,7 +11,7 @@
         <meta property="og:article:tag" content="{{ $post->tags->implode('title', ', ') }}"/>
         <link rel="canonical" href="{{ $post->canonical ?: route('posts.show', $post->slug) }}"/>
     </x-slot:meta>
-    <x-slot:metaTitle>{{ $post->title }}</x-slot:metaTitle>
+    <x-slot:metaTitle>{!! $post->title !!}</x-slot:metaTitle>
     <div class="bg-white px-6 py-32 lg:px-8">
         <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
             <div class="flex flex-wrap items-center gap-x-4 text-xs">
