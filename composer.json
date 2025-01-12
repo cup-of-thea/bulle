@@ -12,6 +12,7 @@
         "blade-ui-kit/blade-icons": "^1.6",
         "codeat3/blade-simple-icons": "^5.20",
         "filament/filament": "^3.2",
+        "filament/spatie-laravel-settings-plugin": "^3.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
