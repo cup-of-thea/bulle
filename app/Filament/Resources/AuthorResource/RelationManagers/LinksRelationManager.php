@@ -33,6 +33,7 @@ class LinksRelationManager extends RelationManager
                         'iconoir-tiktok' => 'TikTok',
                         'iconoir-threads' => 'Threads',
                         'iconoir-instagram' => 'Instagram',
+                        'iconoir-mastodon' => 'Mastodon',
                         'si-bento' => 'Bento',
                         'iconoir-shop' => 'Boutique',
                     ])
