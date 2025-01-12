@@ -1,3 +1,36 @@
+## 1.13.0 (2025-01-12)
+
+### Feat
+
+- **links**: add mastodon option
+- **posts**: fix special chars in titles
+- **authors**: add pronouns to authors profile
+- **banner**: add banner a global setting
+- **posts**: add status to posts
+- **permanent**: add permanent authors
+- **optimizations**: create new views to optimize relations
+- wip
+- **admin**: add posts admin
+- **admin**: add author model
+- **admin**: admin users
+
+### Fix
+
+- **responsive**: fix x-scroll on menus
+- **posts**: add markdown renderer
+- **posts**: do not allow to see un published posts
+- **sqlite**: rewrite views for sqlite and mysqljk
+- **sqlite**: allow to create views in sqlite
+- **authors**: fix broken links
+- **repository**: specify title column
+
+### Refactor
+
+- **clean**: use static analysis to clean code
+- **pint**: ran pint to improve code quality
+- **wipe**: clean unused classes
+- **post**: remove references to old model
+
 ## 1.12.0 (2024-12-18)
 
 ### Feat
