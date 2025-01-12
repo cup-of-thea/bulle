@@ -30,6 +30,9 @@ class AuthorResource extends Resource
                 Forms\Components\TextInput::make('slug')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('pronouns')
+                    ->label('Pronoms')
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('title')
                     ->label('Titre')
                     ->maxLength(255),
@@ -52,6 +55,8 @@ class AuthorResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('pronouns')
+                    ->label('Pronoms'),
                 Tables\Columns\TextColumn::make('title')
                     ->label('Titre')
                     ->searchable(),
