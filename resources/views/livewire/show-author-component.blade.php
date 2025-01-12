@@ -16,6 +16,9 @@
                     <div class="mt-4">
                         <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                             {{ $author->name }}
+                            @if($author->pronouns)
+                                <span class="text-sm text-gray-500">({{ $author->pronouns }})</span>
+                            @endif
                         </h1>
 
                         <h2 id="information-heading" class="sr-only">Product information</h2>
