@@ -5,7 +5,7 @@
         <div class="lg:grid lg:grid-cols-7 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
             <!-- Author image -->
             <div class="lg:col-span-4 lg:row-end-1">
-                <div class="aspect-h-3 aspect-w-4 overflow-hidden rounded-lg bg-gray-100">
+                <div class="aspect-h-4 aspect-w-4 overflow-hidden rounded-lg bg-gray-100">
                     <img src="{{ $author->avatar }}" alt="" class="object-cover object-center">
                 </div>
             </div>
