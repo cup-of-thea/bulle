@@ -3,13 +3,13 @@
 namespace App\Models;
 
 use App\Models\Traits\HasLastPost;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
-use Illuminate\Database\Eloquent\Builder;
 
 
 /**
@@ -24,15 +24,10 @@ class Edition extends Model
 
     protected $withCount = ['posts'];
 
-    protected static function booted(): void
+    public function scopePublished(Builder $query): Builder
     {
-        static::addGlobalScope('published', function (Builder $builder) {
-            $builder
-                ->where('status', 'published')
-            ;
-        });
+        return $query->where('status', 'published');
     }
-
 
     public function getSlugOptions(): SlugOptions
     {
