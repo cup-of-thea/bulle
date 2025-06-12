@@ -12,19 +12,19 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Collection;
 
 class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
     protected static ?string $label = 'Article';
+    protected static ?string $navigationIcon = 'iconoir-post';
 
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->withoutGlobalScopes();
     }
-
-    protected static ?string $navigationIcon = 'iconoir-post';
 
     public static function form(Form $form): Form
     {
@@ -108,12 +108,12 @@ class PostResource extends Resource
                 Tables\Grouping\Group::make('category.title')
                     ->label('Catégorie')
                     ->titlePrefixedWithLabel(false)
-                    ->getTitleFromRecordUsing(fn (Post $post) => $post->category?->title)
+                    ->getTitleFromRecordUsing(fn(Post $post) => $post->category?->title)
                     ->collapsible(),
                 Tables\Grouping\Group::make('edition.title')
                     ->label('Édition')
                     ->titlePrefixedWithLabel(false)
-                    ->getTitleFromRecordUsing(fn (Post $post) => $post->edition?->title)
+                    ->getTitleFromRecordUsing(fn(Post $post) => $post->edition?->title)
                     ->collapsible(),
             ])
             ->defaultSort('date', 'desc')
@@ -156,7 +156,15 @@ class PostResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                Tables\Filters\SelectFilter::make('status')
+                    ->options([
+                        'draft' => 'Brouillon',
+                        'published' => 'Publié',
+                    ]),
+                Tables\Filters\SelectFilter::make('Catégorie')
+                    ->relationship('category', 'title'),
+                Tables\Filters\SelectFilter::make('Édition')
+                    ->relationship('edition', 'title'),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
@@ -164,6 +172,16 @@ class PostResource extends Resource
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\BulkAction::make('Publier tous les articles')
+                        ->label('Publier tous les articles')
+                        ->action(fn(Collection $records) => $records->each->update(['status' => 'published']))
+                        ->requiresConfirmation()
+                        ->icon('heroicon-o-check-circle'),
+                    Tables\Actions\BulkAction::make('Dépublier tous les articles')
+                        ->label('Dépublier tous les articles')
+                        ->action(fn(Collection $records) => $records->each->update(['status' => 'draft']))
+                        ->requiresConfirmation()
+                        ->icon('heroicon-o-x-circle'),
                 ]),
             ]);
     }
