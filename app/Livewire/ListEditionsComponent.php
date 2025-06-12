@@ -12,6 +12,6 @@ class ListEditionsComponent extends Component
     #[Computed]
     public function editions(): Collection
     {
-        return Edition::limit(500)->orderBy('updated_at', 'desc')->get();
+        return Edition::published()->limit(500)->orderBy('updated_at', 'desc')->get();
     }
 }
